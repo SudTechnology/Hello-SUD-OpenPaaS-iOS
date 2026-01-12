@@ -1,0 +1,6 @@
+framework module SUD_GIP {
+  umbrella header "SUD_GIP-umbrella.h"
+
+  export *
+  module * { export * }
+}
