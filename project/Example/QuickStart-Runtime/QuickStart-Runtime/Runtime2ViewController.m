@@ -87,11 +87,7 @@ SUDRuntime2GameCustomCommandListener>
 - (void)startClick:(UIButton *)sender {
     
     [self destroyClick:nil];
-    
-    [ISUDAPPD e:3];
-    [ISUDAPPD d];
     [[SUD_GIP getCfg] setLogLevel:SudLogDEBUG];
-    
     [SVProgressHUD showWithStatus:@"Login"];
     [SVProgressHUD setMaximumDismissTimeInterval:3];
     

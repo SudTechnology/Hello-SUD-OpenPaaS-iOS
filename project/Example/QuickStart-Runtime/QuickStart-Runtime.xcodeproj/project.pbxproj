@@ -18,7 +18,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		6CAEA1F32EAF89BD005E1B37 /* Exceptions for "QuickStart-Runtime" folder in "QuickStart-Runtime" target */ = {
+		6C38F0252F14E6AF00E9D5C2 /* Exceptions for "QuickStart-Runtime" folder in "QuickStart-Runtime" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -31,7 +31,7 @@
 		6CAEA1DE2EAF89BA005E1B37 /* QuickStart-Runtime */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				6CAEA1F32EAF89BD005E1B37 /* Exceptions for "QuickStart-Runtime" folder in "QuickStart-Runtime" target */,
+				6C38F0252F14E6AF00E9D5C2 /* Exceptions for "QuickStart-Runtime" folder in "QuickStart-Runtime" target */,
 			);
 			path = "QuickStart-Runtime";
 			sourceTree = "<group>";
@@ -162,9 +162,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QuickStart-Runtime/Pods-QuickStart-Runtime-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QuickStart-Runtime/Pods-QuickStart-Runtime-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
