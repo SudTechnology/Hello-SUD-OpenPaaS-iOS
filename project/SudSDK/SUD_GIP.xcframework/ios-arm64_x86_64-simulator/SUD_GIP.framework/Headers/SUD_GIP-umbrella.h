@@ -25,9 +25,13 @@
 #import "SUDRuntime1LoadGameParamModel.h"
 #import "SUDRuntime2.h"
 #import "SUDRuntime2GameAudioSession.h"
+#import "SUDRuntime2GameConfig.h"
 #import "SUDRuntime2GameHandle.h"
 #import "SUDRuntime2GameMediaPlayerHandle.h"
+#import "SUDRuntime2GamePackageManager.h"
+#import "SUDRuntime2GamePluginManager.h"
 #import "SUDRuntime2GameRuntime.h"
+#import "SUDRuntime2GameUserManager.h"
 #import "SUDRuntime2LoadPackageParamModel.h"
 #import "SUDRuntimeInitSDKParamModel.h"
 #import "SUDAiModel.h"
@@ -35,7 +39,7 @@
 #import "SUDInitSDKParamModel.h"
 #import "SUDLoadMGMode.h"
 #import "SUDLoadMGParamModel.h"
-#import "SudNetworkCheckParamModel.h"
+#import "SUDNetworkCheckParamModel.h"
 #import "SUD_GIP.h"
 
 FOUNDATION_EXPORT double SUD_GIPVersionNumber;

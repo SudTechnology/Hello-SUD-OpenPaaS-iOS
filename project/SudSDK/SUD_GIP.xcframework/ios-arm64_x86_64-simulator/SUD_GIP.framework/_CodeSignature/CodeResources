@@ -68,57 +68,73 @@
 		<data>
 		TS9rb/sXVF3hC1RtaZ0onmnCSJw=
 		</data>
+		<key>Headers/SUDNetworkCheckParamModel.h</key>
+		<data>
+		aI4G2tjfvTe6UQ1KS+mnp+0vzRQ=
+		</data>
 		<key>Headers/SUDRuntime1.h</key>
 		<data>
-		NqKj9onVEKVuFDrzx2N5MIg5F0A=
+		SW5iDxdeKPUvufbHQpdwYqwwjfw=
 		</data>
 		<key>Headers/SUDRuntime1LoadGameParamModel.h</key>
 		<data>
-		WdQzYVJkbHb9GutDLjWENlut3/8=
+		l0qw4ZPpW9aN1OtfDg5oEBEiKm0=
 		</data>
 		<key>Headers/SUDRuntime2.h</key>
 		<data>
-		Elezu7maDm0PkRDJkNoMzdCJl9Y=
+		vDK9Vg37NRmOKgJwp2wlnXNMZE8=
 		</data>
 		<key>Headers/SUDRuntime2GameAudioSession.h</key>
 		<data>
-		SSXmMCWcjeQ/4V45ft2JqYksO2Y=
+		Ywo1QksDsp2NFiid+tcoG2fBI+M=
+		</data>
+		<key>Headers/SUDRuntime2GameConfig.h</key>
+		<data>
+		4eOsAKX0F2RzdeQCfmLLAIkyhHc=
 		</data>
 		<key>Headers/SUDRuntime2GameHandle.h</key>
 		<data>
-		uH5JCp2bzvIw2bmx1ebxA8whgFQ=
+		3JF+AroQCm6eGms+4ZlKMNdkkJc=
 		</data>
 		<key>Headers/SUDRuntime2GameMediaPlayerHandle.h</key>
 		<data>
-		BgbINzSrKq0aremlTWb3GU/qHbk=
+		kEfa9HZfxRVwCbxVlzleA1LnDgA=
+		</data>
+		<key>Headers/SUDRuntime2GamePackageManager.h</key>
+		<data>
+		dNbAeOsPU4WWyxtQKGakn0Dom/8=
+		</data>
+		<key>Headers/SUDRuntime2GamePluginManager.h</key>
+		<data>
+		Rur2bSalFnXSaZGCaGyt3Th3W7A=
 		</data>
 		<key>Headers/SUDRuntime2GameRuntime.h</key>
 		<data>
-		KV9iCllykHaOCCj0dYla1/Lx+uA=
+		PuL17pUdBxLRBUlIYFf9vz8l3Ww=
+		</data>
+		<key>Headers/SUDRuntime2GameUserManager.h</key>
+		<data>
+		kC2CjEglXQ3Gy9jgSPXjEdDNx34=
 		</data>
 		<key>Headers/SUDRuntime2LoadPackageParamModel.h</key>
 		<data>
-		ViLCrkzeP/G63E0Gd/PG9OQBDLY=
+		HI2OoF7ZSYFuS9Heawkf8hp4PK0=
 		</data>
 		<key>Headers/SUDRuntimeInitSDKParamModel.h</key>
 		<data>
-		ztlx2TvAnFnWlrgpwIQZCZHCnS0=
+		t3sHbFBKPQNakX9kpSVPYV61VaE=
 		</data>
 		<key>Headers/SUD_GIP-umbrella.h</key>
 		<data>
-		+7hbBUFwop3QJ416Qfb1IqUAevc=
+		rX3Rnuw/u4MIXacTyerLoh+ZmIo=
 		</data>
 		<key>Headers/SUD_GIP.h</key>
 		<data>
 		zWebQhO0b2ZyfeRnY4r57xArosg=
 		</data>
-		<key>Headers/SudNetworkCheckParamModel.h</key>
-		<data>
-		aI4G2tjfvTe6UQ1KS+mnp+0vzRQ=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		rrDJsz7iUgAKt0ni67q0O19fRYM=
+		CEvlAf3aJSx6i+NRYlc36C3B57w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -377,74 +393,109 @@
 			DQ4oy9FJUTvTqGiClwruZdX7rIKJSh80iW27Z/sOefw=
 			</data>
 		</dict>
+		<key>Headers/SUDNetworkCheckParamModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0GmRCwhIv6hsI65Zv9bGcILxPO6tmIxaPOpc+mPxXeg=
+			</data>
+		</dict>
 		<key>Headers/SUDRuntime1.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QYhk9OxtjNI1G8/2nwOx9HLEqvEpO0gZ/7g53aIVNqM=
+			+x3A2J2V48TjYCmSBKD4dC6Wg5HT3G/bGzTM7VxifGA=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntime1LoadGameParamModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			baQNXjURGWQR4vspKdTWXYgAydigH+0p6UlvyQTQXhU=
+			lOyNuGH3LdW7tfhK3TErzu977xwQfmwbMdfIHAifad0=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntime2.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q+1N5FdDDQ6u5y1yUv+PmDJRS2kDph95qVFXaJYfZfI=
+			KPyJRW4NlqCFOQ5mDrMyrGk98U8tmPZnYomR3HJ7ey4=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntime2GameAudioSession.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h0PPxLouzLbJNqxHar0S2pLVOw+Z9qF353t2cx4JHk4=
+			u5PdSLr8smga5qdvJFfaFMcnsnnsrhPOEnVQ4onSvIk=
+			</data>
+		</dict>
+		<key>Headers/SUDRuntime2GameConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZvFMmKgtpOvKAR8Gc4JM1aFUpPumY+4BRXWOnZHbkTI=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntime2GameHandle.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rNJUAG/ovb/8LZp6wYd21LDC+D0zVm4yauxO3T0yHyg=
+			/rXZpYDq3TOoAqxV3cpv/dg3oCjwWVRwoO+xHPSIdCU=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntime2GameMediaPlayerHandle.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cr8RBep8ZdZw0rd0tjZE045ODkchIVDW/1SGkOr6ZB0=
+			ot5g9NnPBQlTLHPjsL+VKKWVWHiTUbKcmpOi8YVIG44=
+			</data>
+		</dict>
+		<key>Headers/SUDRuntime2GamePackageManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4pCDn6LiTn+ZjYXsXbsFKYyZ/nBVnFoSdmnYrhwzZJE=
+			</data>
+		</dict>
+		<key>Headers/SUDRuntime2GamePluginManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Lh1PF+WNlsl+VB+s+OMh6Sw3Ruoa9Wnct93HPJ6t1JU=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntime2GameRuntime.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UxcWpoVmXQCgwkE7SD10nHHr8PRVMmDnuunClQ1ZXOM=
+			+HAhvF5Zmk+ZJNfat2nuu9vazmN3Ob6Io1UNa1qB3J8=
+			</data>
+		</dict>
+		<key>Headers/SUDRuntime2GameUserManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s/SYDLzcCeGkK5lY+7QeWObSRUbnjMw+PQ89WdFVTv4=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntime2LoadPackageParamModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROJzL6jr7zbuVYC/AoOK9VwSMzPdOqYPZL77I0j+BF4=
+			rMq/zssfTZLmOUXdA9/AJ81zZrXh5DZE/H1l0wtPESE=
 			</data>
 		</dict>
 		<key>Headers/SUDRuntimeInitSDKParamModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F8XUZ1z5yKXOmc5MyJvkCb+LC5HEt+F4wDtDBySiUg8=
+			GANcLM2qF0iv7GsGb37AlYIcG4oFcRx9Rd7w+x+m2cY=
 			</data>
 		</dict>
 		<key>Headers/SUD_GIP-umbrella.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dvM1JuWeDyX5D8D1h8skyhE2MqpX1JSJ9Zd4a5VEajE=
+			Ojirn+ZfVQTw6uGxqcN8CN61zmjQYNyRbWbhx9zKnwY=
 			</data>
 		</dict>
 		<key>Headers/SUD_GIP.h</key>
@@ -452,13 +503,6 @@
 			<key>hash2</key>
 			<data>
 			bTjFBswOqeMVjzBxDS/13tXr+tsgyBJvw4aljcl0ZOI=
-			</data>
-		</dict>
-		<key>Headers/SudNetworkCheckParamModel.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0GmRCwhIv6hsI65Zv9bGcILxPO6tmIxaPOpc+mPxXeg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
