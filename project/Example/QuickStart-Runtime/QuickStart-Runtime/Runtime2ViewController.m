@@ -188,9 +188,10 @@ SUDRuntime2GameCustomCommandListener>
     [_gameOptions setValue:loadGamePramModel.version forKey:SUD_RT_KEY_GAME_START_OPTIONS_GAME_VERSION];
     // 将应用程序目录添加到 search path 中
     NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+    NSString *customJsPath = [bundlePath stringByAppendingPathComponent:@"custom.js"];
     [_gameOptions setValue:bundlePath
                     forKey:SUD_RT_KEY_GAME_START_OPTIONS_CUSTOM_SEARCH_PATH];
-    [_gameOptions setValue:[bundlePath stringByAppendingPathComponent:@"custom.js"]
+    [_gameOptions setValue:customJsPath
                     forKey:SUD_RT_KEY_GAME_START_OPTIONS_CUSTOM_JS_ENTRY];
 #if DEBUG
     [_gameOptions setValue:@(1)
