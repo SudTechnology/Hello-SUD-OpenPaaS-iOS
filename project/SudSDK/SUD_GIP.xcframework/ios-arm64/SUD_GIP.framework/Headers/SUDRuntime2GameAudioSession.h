@@ -10,11 +10,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Whether to use the speaker for playback. Playback device priority: Headphones > Bluetooth > Device speaker
-extern NSString * _Nonnull const SUD_RT2_KEY_AUDIO_SPEAKER_ON;
+extern NSString * _Nonnull const SUD_RT_KEY_AUDIO_SPEAKER_ON;
 /// Whether to mix audio with other apps and other games (other games within this APP)
-extern NSString * _Nonnull const SUD_RT2_KEY_AUDIO_MIX_WITH_OTHER;
+extern NSString * _Nonnull const SUD_RT_KEY_AUDIO_MIX_WITH_OTHER;
 /// Whether to respect the device's mute switch setting
-extern NSString * _Nonnull const SUD_RT2_KEY_AUDIO_OBEY_MUTE_SWITCH;
+extern NSString * _Nonnull const SUD_RT_KEY_AUDIO_OBEY_MUTE_SWITCH;
 
 @protocol SUDRuntime2GameQueryAudioOptionsHandle <NSObject>
 

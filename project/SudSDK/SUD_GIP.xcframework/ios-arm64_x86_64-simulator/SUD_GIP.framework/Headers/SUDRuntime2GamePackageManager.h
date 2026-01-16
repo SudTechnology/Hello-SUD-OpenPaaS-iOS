@@ -14,40 +14,40 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 /// The remote URL where the game package can be downloaded from.
-extern NSString * const SUD_RT2_KEY_PACKAGE_URL;
+extern NSString * const SUD_RT_KEY_PACKAGE_URL;
 
 /// The SHA-256 or MD5 hash string used to verify the integrity of the downloaded package.
-extern NSString * const SUD_RT2_KEY_PACKAGE_HASH;
+extern NSString * const SUD_RT_KEY_PACKAGE_HASH;
 
 /// The local storage path where the package file (.zip/.cpk) is located.
-extern NSString * const SUD_RT2_KEY_PACKAGE_PATH;
+extern NSString * const SUD_RT_KEY_PACKAGE_PATH;
 
 /// Boolean flag indicating whether the package should be unzipped (extract mode) or read directly.
-extern NSString * const SUD_RT2_KEY_PACKAGE_IS_EXTRACT_MODE;
+extern NSString * const SUD_RT_KEY_PACKAGE_IS_EXTRACT_MODE;
 
 /// The unique identifier (ID) assigned to the specific game.
-extern NSString * const SUD_RT2_KEY_PACKAGE_GAME_ID;
+extern NSString * const SUD_RT_KEY_PACKAGE_GAME_ID;
 
 /// The version string of the game package (e.g., "1.0.2").
-extern NSString * const SUD_RT2_KEY_PACKAGE_VERSION;
+extern NSString * const SUD_RT_KEY_PACKAGE_VERSION;
 
 /// Boolean flag indicating whether to merge new package data with existing local files.
-extern NSString * const SUD_RT2_KEY_PACKAGE_MERGE;
+extern NSString * const SUD_RT_KEY_PACKAGE_MERGE;
 
 /// Boolean flag indicating whether the source CPK/package file should be deleted after extraction.
-extern NSString * const SUD_RT2_KEY_PACKAGE_DELETE_CPK;
+extern NSString * const SUD_RT_KEY_PACKAGE_DELETE_CPK;
 
 /// A dictionary or string for passing additional custom parameters or metadata.
-extern NSString * const SUD_RT2_KEY_PACKAGE_EXTRA;
+extern NSString * const SUD_RT_KEY_PACKAGE_EXTRA;
 
 /// The relative or absolute path to the main content directory inside the package.
-extern NSString * const SUD_RT2_KEY_PACKAGE_CONTENT_PATH;
+extern NSString * const SUD_RT_KEY_PACKAGE_CONTENT_PATH;
 
 /// The file path to the package's detailed configuration or manifest file.
-extern NSString * const SUD_RT2_KEY_PACKAGE_DETAIL_PATH;
+extern NSString * const SUD_RT_KEY_PACKAGE_DETAIL_PATH;
 
 /// The root directory for sub-packages or split asset bundles.
-extern NSString * const SUD_RT2_KEY_PACKAGE_SUBPACKAGE_ROOT;
+extern NSString * const SUD_RT_KEY_PACKAGE_SUBPACKAGE_ROOT;
 
 @protocol SUDRuntime2GameConfig;
 
@@ -60,7 +60,7 @@ extern NSString * const SUD_RT2_KEY_PACKAGE_SUBPACKAGE_ROOT;
 /**
  * Updates or sets the package metadata for a specific game.
  * @param gameId Unique identifier for the game.
- * @param info Dictionary containing package configuration (refer to SUD_RT2_KEY_PACKAGE constants).
+ * @param info Dictionary containing package configuration (refer to SUD_RT_KEY_PACKAGE constants).
  * @return YES if the info was successfully set, NO otherwise.
  */
 - (BOOL)setPackageInfo:(nonnull NSString *)gameId info:(nonnull NSDictionary *)info;
@@ -86,7 +86,7 @@ extern NSString * const SUD_RT2_KEY_PACKAGE_SUBPACKAGE_ROOT;
 
 /**
  * Downloads a game package from a remote server.
- * @param info Metadata containing SUD_RT2_KEY_PACKAGE_URL and HASH.
+ * @param info Metadata containing SUD_RT_KEY_PACKAGE_URL and HASH.
  * @param start Callback triggered when the download begins.
  * @param retry Callback triggered upon a retry attempt, providing the current retry count.
  * @param progress Callback providing the downloaded size and total expected size in bytes.

@@ -14,23 +14,23 @@ NS_ASSUME_NONNULL_BEGIN
  * to their respective timeout durations in milliseconds.
  */
 /// Timeout key for file download operations.
-extern NSString * const SUD_RT2_GAME_CONFIG_NETWORK_TIMEOUT_DOWNLOAD;
+extern NSString * const SUD_RT_GAME_CONFIG_NETWORK_TIMEOUT_DOWNLOAD;
 /// Timeout key for file upload operations.
-extern NSString * const SUD_RT2_GAME_CONFIG_NETWORK_TIMEOUT_UPLOAD;
+extern NSString * const SUD_RT_GAME_CONFIG_NETWORK_TIMEOUT_UPLOAD;
 /// Timeout key for establishing WebSocket connections.
-extern NSString * const SUD_RT2_GAME_CONFIG_NETWORK_TIMEOUT_WEB_SOCKET;
+extern NSString * const SUD_RT_GAME_CONFIG_NETWORK_TIMEOUT_WEB_SOCKET;
 /// Timeout key for general HTTP/REST API requests.
-extern NSString * const SUD_RT2_GAME_CONFIG_NETWORK_TIMEOUT_REQUEST;
+extern NSString * const SUD_RT_GAME_CONFIG_NETWORK_TIMEOUT_REQUEST;
 
 /**
  * Plugin configuration keys used within the plugin dictionaries.
  */
 /// The provider or vendor name of the plugin.
-extern NSString * const SUD_RT2_GAME_CONFIG_PLUGIN_PROVIDER;
+extern NSString * const SUD_RT_GAME_CONFIG_PLUGIN_PROVIDER;
 /// The specific version string of the plugin.
-extern NSString * const SUD_RT2_GAME_CONFIG_PLUGIN_VERSION;
+extern NSString * const SUD_RT_GAME_CONFIG_PLUGIN_VERSION;
 /// The local filesystem path or resource path for the plugin.
-extern NSString * const SUD_RT2_GAME_CONFIG_PLUGIN_PATH;
+extern NSString * const SUD_RT_GAME_CONFIG_PLUGIN_PATH;
 
 /**
  * @protocol SUDRuntime2GameConfig

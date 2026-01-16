@@ -11,21 +11,21 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Path where the resources used by the Core are located
-extern NSString * const SUD_RT2_KEY_RUNTIME_ASSETS_PATH;
+extern NSString * const SUD_RT_KEY_RUNTIME_ASSETS_PATH;
 /// Game package manager name
-extern NSString * const SUD_RT2_KEY_MANAGER_GAME_PACKAGE;
+extern NSString * const SUD_RT_KEY_MANAGER_GAME_PACKAGE;
 /// User manager name
-extern NSString * const SUD_RT2_KEY_MANAGER_USER;
+extern NSString * const SUD_RT_KEY_MANAGER_USER;
 /// Plugin manager name
-extern NSString * const SUD_RT2_KEY_MANAGER_PLUGIN;
+extern NSString * const SUD_RT_KEY_MANAGER_PLUGIN;
 /// Path where the Runtime stores installed game packages
-extern NSString * const SUD_RT2_KEY_RUNTIME_STORAGE_PATH_APP;
+extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_APP;
 /// Temporary file storage path available for the Runtime
-extern NSString * const SUD_RT2_KEY_RUNTIME_STORAGE_PATH_CACHE;
+extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_CACHE;
 /// Path where the Runtime stores user game data
-extern NSString * const SUD_RT2_KEY_RUNTIME_STORAGE_PATH_USER;
+extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_USER;
 /// Path where the Runtime stores plugins
-extern NSString * const SUD_RT2_KEY_RUNTIME_STORAGE_PATH_PLUGIN;
+extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_PLUGIN;
 
 
 @protocol SUDRuntime2GameRuntime;

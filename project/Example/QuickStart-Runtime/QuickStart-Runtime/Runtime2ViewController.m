@@ -157,9 +157,9 @@ SUDRuntime2GameCustomCommandListener>
     NSString *gameUserId = [NSString stringWithFormat:@"%@", QsrCommon.shared.userId];
     WeakSelf
     [_runtime createGameHandleWithOptions:@{
-        SUD_RT2_KEY_GAME_USER_ID: gameUserId,
-        SUD_RT2_KEY_GAME_HTTP_CACHE_LIMIT_STORAGE: @(200),
-        SUD_RT2_KEY_GAME_HTTP_CACHE_PATH: [NSTemporaryDirectory() stringByAppendingPathComponent:@"http"],
+        SUD_RT_KEY_GAME_USER_ID: gameUserId,
+        SUD_RT_KEY_GAME_HTTP_CACHE_LIMIT_STORAGE: @(200),
+        SUD_RT_KEY_GAME_HTTP_CACHE_PATH: [NSTemporaryDirectory() stringByAppendingPathComponent:@"http"],
     } completion:^(id<SUDRuntime2GameHandle>  _Nullable handle, NSError * _Nullable error) {
         NSLog(@"createGameHandleWithOptions gameTag:%@， error:%@, gameUserId:%@", loadGamePramModel.gameId, error, gameUserId);
         if (error) {
@@ -185,19 +185,19 @@ SUDRuntime2GameCustomCommandListener>
     /// 游戏运行参数配置
     ///
     NSMutableDictionary *_gameOptions = [[NSMutableDictionary alloc]init];
-    [_gameOptions setValue:loadGamePramModel.version forKey:SUD_RT2_KEY_GAME_START_OPTIONS_GAME_VERSION];
+    [_gameOptions setValue:loadGamePramModel.version forKey:SUD_RT_KEY_GAME_START_OPTIONS_GAME_VERSION];
     // 将应用程序目录添加到 search path 中
     NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
     [_gameOptions setValue:bundlePath
-                    forKey:SUD_RT2_KEY_GAME_START_OPTIONS_CUSTOM_SEARCH_PATH];
+                    forKey:SUD_RT_KEY_GAME_START_OPTIONS_CUSTOM_SEARCH_PATH];
     [_gameOptions setValue:[bundlePath stringByAppendingPathComponent:@"custom.js"]
-                    forKey:SUD_RT2_KEY_GAME_START_OPTIONS_CUSTOM_JS_ENTRY];
+                    forKey:SUD_RT_KEY_GAME_START_OPTIONS_CUSTOM_JS_ENTRY];
 #if DEBUG
     [_gameOptions setValue:@(1)
-                    forKey:SUD_RT2_KEY_GAME_DEBUG_OPTION_ENABLE_V_CONSOLE];
+                    forKey:SUD_RT_KEY_GAME_DEBUG_OPTION_ENABLE_V_CONSOLE];
 #endif
     [_gameOptions setValue:@(1)
-                    forKey:SUD_RT2_KEY_GAME_START_OPTIONS_ENABLE_THIRD_SCRIPT];
+                    forKey:SUD_RT_KEY_GAME_START_OPTIONS_ENABLE_THIRD_SCRIPT];
 
     NSLog(@"_onGameHandleCreateSuccess:%@", loadGamePramModel.gameId);
     /// 设置相关运行时状态监听

@@ -14,16 +14,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 /// The remote source URL for downloading the plugin package.
-extern NSString * const SUD_RT2_KEY_PLUGIN_PACKAGE_URL;
+extern NSString * const SUD_RT_KEY_PLUGIN_PACKAGE_URL;
 
 /// The local filesystem path where the plugin package is or should be stored.
-extern NSString * const SUD_RT2_KEY_PLUGIN_PACKAGE_PATH;
+extern NSString * const SUD_RT_KEY_PLUGIN_PACKAGE_PATH;
 
 /// The hash value (e.g., MD5/SHA256) used to verify the integrity of the plugin file.
-extern NSString * const SUD_RT2_KEY_PLUGIN_PACKAGE_HASH;
+extern NSString * const SUD_RT_KEY_PLUGIN_PACKAGE_HASH;
 
 /// A boolean flag indicating whether the plugin needs to be unzipped/extracted before use.
-extern NSString * const SUD_RT2_KEY_PLUGIN_PACKAGE_IS_EXTRACT_MODE;
+extern NSString * const SUD_RT_KEY_PLUGIN_PACKAGE_IS_EXTRACT_MODE;
 
 
 /**
@@ -46,7 +46,7 @@ extern NSString * const SUD_RT2_KEY_PLUGIN_PACKAGE_IS_EXTRACT_MODE;
 
 /**
  * Downloads a plugin package from a remote server.
- * @param info Metadata containing SUD_RT2_KEY_PLUGIN_PACKAGE_URL and HASH.
+ * @param info Metadata containing SUD_RT_KEY_PLUGIN_PACKAGE_URL and HASH.
  * @param start Callback invoked when the download task initializes.
  * @param retry Callback invoked on network retry, providing the current attempt count.
  * @param progress Callback providing real-time download metrics in bytes.
