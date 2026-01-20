@@ -32,9 +32,12 @@ SUDRuntime2GameCustomCommandListener>
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *gamePkgPath = [[NSBundle mainBundle]pathForResource:@"game.creator.cccshooter.13" ofType:@"cpk"];// local path
+    //gamePkgPath = @"http://test-runtime.cocos.com/cocos-runtime-demo/cpk/13/game.creator.cccshooter.13.cpk";// or remote url
     self.gameInfo = @{@"gameId": @"sud.tech.test",
                       @"version":@"1.0.0",
-                      @"path": @"http://test-runtime.cocos.com/cocos-runtime-demo/cpk/13/game.creator.cccshooter.13.cpk"};
+                      @"path": gamePkgPath};
     
     [SVProgressHUD setOffsetFromCenter:UIOffsetMake(self.view.frame.size.width/2., self.view.frame.size.height/2.)];
     self.view.backgroundColor = UIColor.redColor;
