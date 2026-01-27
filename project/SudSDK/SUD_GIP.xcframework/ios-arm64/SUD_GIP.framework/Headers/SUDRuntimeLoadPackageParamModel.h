@@ -1,5 +1,5 @@
 //
-//  SUDRuntime2LoadPackageParamModel.h
+//  SUDRuntimeLoadPackageParamModel.h
 //  SUD_GIP
 //
 //  Created by kaniel on 10/18/25.
@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /// Parameters for loading the game
-@interface SUDRuntime2LoadPackageParamModel : NSObject
+@interface SUDRuntimeLoadPackageParamModel : NSObject
 
 /// Game ID - SUD platform or custom xxxx
 @property(nonatomic, strong)NSString *gameId;

@@ -86,7 +86,7 @@
     if (!_runtime2Btn) {
         _runtime2Btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_runtime2Btn setBackgroundImage:[self imageWithColor:UIColor.orangeColor] forState:UIControlStateNormal];
-        [_runtime2Btn setTitle:@"Runtime2" forState:UIControlStateNormal];
+        [_runtime2Btn setTitle:@"Runtime" forState:UIControlStateNormal];
         _runtime2Btn.layer.cornerRadius = 15;
         _runtime2Btn.clipsToBounds = YES;
         [_runtime2Btn addTarget:self action:@selector(runtime2BtnClick:) forControlEvents:UIControlEventTouchUpInside];

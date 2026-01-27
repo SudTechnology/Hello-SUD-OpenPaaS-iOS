@@ -10,20 +10,20 @@
 
 @interface Runtime2ViewController()
 
-<SUDRuntime2GameDrawFrameListener,
-SUDRuntime2GameLoadSubpackageListener,
-SUDRuntime2GameQueryExitListener,
-SUDRuntime2GameStateChangeListener,
-SUDRuntime2GameScreenStateChangeListener,
-SUDRuntime2GameQueryClipboardListener,
-SUDRuntime2GameCustomCommandListener>
+<SUDRuntimeGameDrawFrameListener,
+SUDRuntimeGameLoadSubpackageListener,
+SUDRuntimeGameQueryExitListener,
+SUDRuntimeGameStateChangeListener,
+SUDRuntimeGameScreenStateChangeListener,
+SUDRuntimeGameQueryClipboardListener,
+SUDRuntimeGameCustomCommandListener>
 
 @property(nonatomic, strong)UIButton *backBtn;
 @property(nonatomic, strong)UIButton *startBtn;
 @property(nonatomic, strong)UIButton *destroyBtn;
 @property(nonatomic, strong)UIView *gameContentView;
-@property(nonatomic, strong)id<SUDRuntime2GameRuntime> runtime;
-@property(nonatomic, strong)id<SUDRuntime2GameHandle> gameHandle;
+@property(nonatomic, strong)id<SUDRuntimeGameRuntime> runtime;
+@property(nonatomic, strong)id<SUDRuntimeGameHandle> gameHandle;
 @property(nonatomic, strong)UIView *gameView;
 @property(nonatomic, strong)NSDictionary *gameInfo;
 @end
@@ -94,7 +94,7 @@ SUDRuntime2GameCustomCommandListener>
     [SVProgressHUD showWithStatus:@"Login"];
     [SVProgressHUD setMaximumDismissTimeInterval:3];
     
-    /// 获取初始化SDK code
+    /// get the code, next initSDK
     [QsrCommon.shared reqGetCode:^(NSString *code) {
         [SVProgressHUD dismiss];
         
@@ -102,8 +102,8 @@ SUDRuntime2GameCustomCommandListener>
         paramModel.appId = SUD_GIP_APP_ID;
         paramModel.appKey = SUD_GIP_APP_KEY;
         paramModel.code = code;
-        /// 初始化SDK，初始化一次成功后，内部会自行判断，不会重复初始化
-        [SUDRuntime2 initSDK:paramModel completion:^(NSError *_Nullable error) {
+        /// Initialize the SDK. Once successful, internal logic ensures it won't be re-initialized.
+        [SUDRuntime initSDK:paramModel completion:^(NSError *_Nullable error) {
             if (error) {
                 NSLog(@"initSDK result:%@", error.localizedDescription);
                 [SVProgressHUD showErrorWithStatus:error.localizedDescription];
@@ -121,23 +121,23 @@ SUDRuntime2GameCustomCommandListener>
 
 - (void)handleLoadGame {
     
-    SUDRuntime2LoadPackageParamModel *paramModel = SUDRuntime2LoadPackageParamModel.new;
+    SUDRuntimeLoadPackageParamModel *paramModel = SUDRuntimeLoadPackageParamModel.new;
     paramModel.gameId = self.gameInfo[@"gameId"];
     paramModel.version = self.gameInfo[@"version"];
     paramModel.path = self.gameInfo[@"path"];
 
     [SVProgressHUD showProgress:0 status:@"Loading package"];
     WeakSelf
-    // 创建游戏运行时
-    [SUDRuntime2 createRuntime:nil completion:^(id<SUDRuntime2GameRuntime>  _Nullable runtime, NSError *_Nullable error) {
+    // create runtime
+    [SUDRuntime createRuntime:nil completion:^(id<SUDRuntimeGameRuntime>  _Nullable runtime, NSError *_Nullable error) {
         weakSelf.runtime = runtime;
         if (error) {
             NSLog(@"createRuntime error:%@", error.localizedDescription);
             [SVProgressHUD showErrorWithStatus:error.localizedDescription];
             return;
         }
-        /// 加载游戏
-        [SUDRuntime2 loadPackage:paramModel progress:^(NSInteger progress) {
+        /// load the game package
+        [runtime loadPackage:paramModel progress:^(NSInteger progress) {
             NSLog(@"loadGame progress:%@", @(progress));
             [SVProgressHUD showProgress:progress/100.0 status:@"Loading package"];
         } completion:^(NSError * _Nullable error) {
@@ -148,14 +148,14 @@ SUDRuntime2GameCustomCommandListener>
                 [weakSelf updateBtnStateWithIsLoadedGame:NO];
                 return;
             }
-            /// 运行游戏
+            /// run game
             [weakSelf handleRunGame:paramModel];
         }];
     }];
 
 }
 
-- (void)handleRunGame:(SUDRuntime2LoadPackageParamModel *)loadGamePramModel {
+- (void)handleRunGame:(SUDRuntimeLoadPackageParamModel *)loadGamePramModel {
 
     NSString *gameUserId = [NSString stringWithFormat:@"%@", QsrCommon.shared.userId];
     WeakSelf
@@ -163,7 +163,7 @@ SUDRuntime2GameCustomCommandListener>
         SUD_RT_KEY_GAME_USER_ID: gameUserId,
         SUD_RT_KEY_GAME_HTTP_CACHE_LIMIT_STORAGE: @(200),
         SUD_RT_KEY_GAME_HTTP_CACHE_PATH: [NSTemporaryDirectory() stringByAppendingPathComponent:@"http"],
-    } completion:^(id<SUDRuntime2GameHandle>  _Nullable handle, NSError * _Nullable error) {
+    } completion:^(id<SUDRuntimeGameHandle>  _Nullable handle, NSError * _Nullable error) {
         NSLog(@"createGameHandleWithOptions gameTag:%@， error:%@, gameUserId:%@", loadGamePramModel.gameId, error, gameUserId);
         if (error) {
             [weakSelf updateBtnStateWithIsLoadedGame:NO];
@@ -175,9 +175,9 @@ SUDRuntime2GameCustomCommandListener>
     }];
 }
 
-- (void)onGameHandleCreateSuccess:(SUDRuntime2LoadPackageParamModel *)loadGamePramModel {
+- (void)onGameHandleCreateSuccess:(SUDRuntimeLoadPackageParamModel *)loadGamePramModel {
     
-    /// 设置游戏视图
+    /// add gameview
     UIView *gameView = [self.gameHandle getGameView];
     self.gameView = gameView;
     [self.gameContentView addSubview:gameView];
@@ -185,11 +185,11 @@ SUDRuntime2GameCustomCommandListener>
         make.edges.equalTo(self.gameContentView);
     }];
     
-    /// 游戏运行参数配置
+    /// config the game options
     ///
     NSMutableDictionary *_gameOptions = [[NSMutableDictionary alloc]init];
     [_gameOptions setValue:loadGamePramModel.version forKey:SUD_RT_KEY_GAME_START_OPTIONS_GAME_VERSION];
-    // 将应用程序目录添加到 search path 中
+    // Add the application directory to the search path. custom.js is a custom module for app-to-game interaction.
     NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
     NSString *customJsPath = [bundlePath stringByAppendingPathComponent:@"custom.js"];
     [_gameOptions setValue:bundlePath
@@ -212,15 +212,15 @@ SUDRuntime2GameCustomCommandListener>
     [_gameHandle setGameStartOptions:loadGamePramModel.gameId
                              options:_gameOptions];
 
-    // 创建游戏实例
+    // create game handler
     [_gameHandle create];
-    // 开始游戏实例
+    // start game
     NSData *startData = [NSJSONSerialization dataWithJSONObject:@{@"appId": loadGamePramModel.gameId}
                                                         options:NSJSONWritingPrettyPrinted
                                                           error:nil];
     NSLog(@"_gameHandle start:%@", loadGamePramModel.gameId);
     [_gameHandle start:[[NSString alloc] initWithData:startData encoding:NSUTF8StringEncoding]];
-    // 接受事件输入
+    // play game
     [_gameHandle play];
     
     [self updateBtnStateWithIsLoadedGame:YES];
@@ -236,11 +236,13 @@ SUDRuntime2GameCustomCommandListener>
     NSLog(@"onStateChangedFrom:%@->%@", @(fromState), @(toState));
 }
 
-- (void)onCallCustomCommand:(id<SUDRuntime2GameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv {
+/// In-game commands will call back to the native side.
+- (void)onCallCustomCommand:(id<SUDRuntimeGameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv {
     NSLog(@"onCallCustomCommand:%@", argv);
 }
 
-- (void)onCallCustomCommandSync:(id<SUDRuntime2GameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv {
+/// In-game commands will call back to the native side. sync
+- (void)onCallCustomCommandSync:(id<SUDRuntimeGameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv {
     NSLog(@"onCallCustomCommandSync:%@", argv);
 }
 

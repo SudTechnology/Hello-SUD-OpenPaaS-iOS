@@ -1,16 +1,16 @@
 //
-//  SUDRuntime2GameHandle.h
+//  SUDRuntimeGameHandle.h
 //  SUD_GIP
 //
 //  Created by kaniel on 10/18/25.
 //
 
-#ifndef SUDRuntime2GameHandle_h
-#define SUDRuntime2GameHandle_h
+#ifndef SUDRuntimeGameHandle_h
+#define SUDRuntimeGameHandle_h
 
 #import <Foundation/Foundation.h>
-#import "SUDRuntime2GameMediaPlayerHandle.h"
-#import "SUDRuntime2GameAudioSession.h"
+#import "SUDRuntimeGameMediaPlayerHandle.h"
+#import "SUDRuntimeGameAudioSession.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -76,27 +76,27 @@ extern NSString * const SUD_RT_KEY_GAME_USER_ID;
 extern NSString * const SUD_RT_KEY_GAME_START_OPTIONS_WEBGL_CONTEXT_FORCE_ALPHA;
 
 
-typedef NS_ENUM(NSUInteger, SUDRuntime2GameState) {
+typedef NS_ENUM(NSUInteger, SUDRuntimeGameState) {
     SUD_RT_GAME_STATE_UNAVAILABLE = 0,
     SUD_RT_GAME_STATE_WAITING = 1,
     SUD_RT_GAME_STATE_RUNNING = 2,
     SUD_RT_GAME_STATE_PLAYING = 3,
 };
 
-typedef NS_ENUM(NSUInteger, SUDRuntime2RenderThreadMode) {
+typedef NS_ENUM(NSUInteger, SUDRuntimeRenderThreadMode) {
     SUD_RT_RENDER_THREAD_MODE_AUTO = 0,
     SUD_RT_RENDER_THREAD_MODE_GAME_THREAD = 1,
     SUD_RT_RENDER_THREAD_MODE_STANDALONE = 2,
     SUD_RT_RENDER_THREAD_MODE_UI_THREAD = 3
 };
 
-typedef NS_ENUM(NSUInteger, SUDRuntime2PermissionAuthStatus) {
+typedef NS_ENUM(NSUInteger, SUDRuntimePermissionAuthStatus) {
     SUD_RT_PERMISSION_AUTH_STATUS_UNDETERMINED = 0,
     SUD_RT_PERMISSION_AUTH_STATUS_GRANTED = 1,
     SUD_RT_PERMISSION_AUTH_STATUS_DENIED = 2,
 };
 
-typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
+typedef NS_ENUM(NSUInteger, SUDRuntimeSystemPermissionAuthStatus) {
     SUD_RT_SYSTEM_PERMISSION_AUTH_STATUS_UNDETERMINED = 0,
     SUD_RT_SYSTEM_PERMISSION_AUTH_STATUS_GRANTED = 1,
     SUD_RT_SYSTEM_PERMISSION_AUTH_STATUS_DENIED = 2,
@@ -104,9 +104,9 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 
 @class UIView;
 
-@protocol SUDRuntime2GameAudioSession;
+@protocol SUDRuntimeGameAudioSession;
 
-@protocol SUDRuntime2GameCustomCommandHandle <NSObject>
+@protocol SUDRuntimeGameCustomCommandHandle <NSObject>
 - (void)customCommandFailure:(NSString *)err;
 - (void)customCommandSuccess;
 - (void)pushResultWithBool:(BOOL)res;
@@ -123,30 +123,30 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 - (void)pushResultNull;
 @end
 
-@protocol SUDRuntime2GameCustomCommandListener <NSObject>
+@protocol SUDRuntimeGameCustomCommandListener <NSObject>
 
 @optional
-- (void)onCallCustomCommand:(id<SUDRuntime2GameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv;
+- (void)onCallCustomCommand:(id<SUDRuntimeGameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv;
 
-- (void)onCallCustomCommandSync:(id<SUDRuntime2GameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv;
+- (void)onCallCustomCommandSync:(id<SUDRuntimeGameCustomCommandHandle>)handle info:(nullable NSDictionary *)argv;
 
 @end
 
-@protocol SUDRuntime2GameDrawFrameListener <NSObject>
+@protocol SUDRuntimeGameDrawFrameListener <NSObject>
 
 @optional
 - (void)onDrawFrame:(long)frameCounter;
 
 @end
 
-@protocol SUDRuntime2GameFatalErrorListener <NSObject>
+@protocol SUDRuntimeGameFatalErrorListener <NSObject>
 
 @optional
 - (void)onGameFatalError:(NSString *)message;
 
 @end
 
-@protocol SUDRuntime2GameLoadSubpackageHandle <NSObject>
+@protocol SUDRuntimeGameLoadSubpackageHandle <NSObject>
 
 - (void)loadSubpackageFailure:(NSString *)packageName withError:(NSString *)error;
 
@@ -156,14 +156,14 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 
 @end
 
-@protocol SUDRuntime2GameLoadSubpackageListener <NSObject>
+@protocol SUDRuntimeGameLoadSubpackageListener <NSObject>
 
 @optional
-- (void)onLoadSubpackage:(id<SUDRuntime2GameLoadSubpackageHandle>)handle name:(NSString *)name root:(NSString *)root;
+- (void)onLoadSubpackage:(id<SUDRuntimeGameLoadSubpackageHandle>)handle name:(NSString *)name root:(NSString *)root;
 
 @end
 
-@protocol SUDRuntime2GameQueryClipboardHandle <NSObject>
+@protocol SUDRuntimeGameQueryClipboardHandle <NSObject>
 
 - (void)allowGetClipboardData:(NSString *)data;
 
@@ -175,60 +175,60 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 
 @end
 
-@protocol SUDRuntime2GameQueryClipboardListener <NSObject>
+@protocol SUDRuntimeGameQueryClipboardListener <NSObject>
 
 @optional
-- (void)onGetClipboardData:(id<SUDRuntime2GameQueryClipboardHandle>)handle
+- (void)onGetClipboardData:(id<SUDRuntimeGameQueryClipboardHandle>)handle
                       data:(NSString *)data
                      appId:(NSString *)appId;
 
-- (void)onSetClipboardData:(id<SUDRuntime2GameQueryClipboardHandle>)handle
+- (void)onSetClipboardData:(id<SUDRuntimeGameQueryClipboardHandle>)handle
                       data:(NSString *)data
                      appId:(NSString *)appId;
 
 @end
 
-@protocol SUDRuntime2GameQueryExitListener <NSObject>
+@protocol SUDRuntimeGameQueryExitListener <NSObject>
 
 @optional
 - (void)onQueryExit:(NSString *)appID result:(nullable NSString *)result;
 
 @end
 
-@protocol SUDRuntime2GameQueryPermissionHandle <NSObject>
+@protocol SUDRuntimeGameQueryPermissionHandle <NSObject>
 
-- (void)completeQueryPermission:(NSString *)permission authStatus:(SUDRuntime2PermissionAuthStatus)authStatus;
+- (void)completeQueryPermission:(NSString *)permission authStatus:(SUDRuntimePermissionAuthStatus)authStatus;
 
 @end
 
-@protocol SUDRuntime2GameQueryPermissionListener <NSObject>
+@protocol SUDRuntimeGameQueryPermissionListener <NSObject>
 
-- (void)onQueryPermission:(id<SUDRuntime2GameQueryPermissionHandle>)handle
+- (void)onQueryPermission:(id<SUDRuntimeGameQueryPermissionHandle>)handle
                permission:(NSString *)permission
                     appId:(NSString *)appId
-               authStatus:(SUDRuntime2PermissionAuthStatus)authStatus;
+               authStatus:(SUDRuntimePermissionAuthStatus)authStatus;
 
 @end
 
-@protocol SUDRuntime2GameQuerySystemPermissionHandle <NSObject>
+@protocol SUDRuntimeGameQuerySystemPermissionHandle <NSObject>
 
 - (void)continueQuerySystemPermission:(NSString *)permission;
 
 @end
 
-@protocol SUDRuntime2GameQuerySystemPermissionListener <NSObject>
+@protocol SUDRuntimeGameQuerySystemPermissionListener <NSObject>
 
 @optional
-- (void)beforeQuerySystemPermission:(id<SUDRuntime2GameQuerySystemPermissionHandle>)handle
+- (void)beforeQuerySystemPermission:(id<SUDRuntimeGameQuerySystemPermissionHandle>)handle
                        fromJSMethod:(NSString *)methodName
                          permission:(NSString *)permission
                               appId:(NSString *)appId
-                         authStatus:(SUDRuntime2SystemPermissionAuthStatus)authStatus
+                         authStatus:(SUDRuntimeSystemPermissionAuthStatus)authStatus
                       serviceStatus:(BOOL)enabled;
 
 @end
 
-@protocol SUDRuntime2GameStateChangeListener <NSObject>
+@protocol SUDRuntimeGameStateChangeListener <NSObject>
 
 @optional
 - (void)onStateChangedFailureFrom:(int)fromState to:(int)toSstate error:(NSError *)error;
@@ -239,7 +239,7 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 
 @end
 
-@protocol SUDRuntime2GameScreenStateChangeListener <NSObject>
+@protocol SUDRuntimeGameScreenStateChangeListener <NSObject>
 
 @optional
 - (BOOL)queryChangeScreenBrightness:(float)brightness info:(NSDictionary *)info;
@@ -248,7 +248,7 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 
 @end
 
-@protocol SUDRuntime2MediaPlayerListener <NSObject>
+@protocol SUDRuntimeMediaPlayerListener <NSObject>
 
 - (void)onMediaPlayerCreated:(UInt64) instanceID;
 
@@ -256,15 +256,15 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 
 @end
 
-@protocol SUDRuntime2GameHandle <NSObject>
+@protocol SUDRuntimeGameHandle <NSObject>
 
 - (void)create;
 
 - (void)destroy;
 
-- (id<SUDRuntime2GameAudioSession>)getGameAudioSession;
+- (id<SUDRuntimeGameAudioSession>)getGameAudioSession;
 
-- (id<SUDRuntime2GameMediaPlayerHandle>)getMediaPlayerHandle:(UInt64) instanceID;
+- (id<SUDRuntimeGameMediaPlayerHandle>)getMediaPlayerHandle:(UInt64) instanceID;
 
 - (NSInteger)getGameState;
 
@@ -279,29 +279,29 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
                                      NSDictionary * _Nullable returnValue,
                                      NSError * _Nullable error))completion;
 
-- (void)setCustomCommandListener:(nullable id<SUDRuntime2GameCustomCommandListener>)listener;
+- (void)setCustomCommandListener:(nullable id<SUDRuntimeGameCustomCommandListener>)listener;
 
-- (void)setGameDrawFrameListener:(nullable id<SUDRuntime2GameDrawFrameListener>)listener;
+- (void)setGameDrawFrameListener:(nullable id<SUDRuntimeGameDrawFrameListener>)listener;
 
-- (void)setGameFatalErrorListener:(nullable id<SUDRuntime2GameFatalErrorListener>)listener;
+- (void)setGameFatalErrorListener:(nullable id<SUDRuntimeGameFatalErrorListener>)listener;
 
-- (void)setGameLoadSubpackageListener:(nullable id<SUDRuntime2GameLoadSubpackageListener>)listener;
+- (void)setGameLoadSubpackageListener:(nullable id<SUDRuntimeGameLoadSubpackageListener>)listener;
 
-- (void)setGameQueryClipboardListener:(nullable id<SUDRuntime2GameQueryClipboardListener>)listener;
+- (void)setGameQueryClipboardListener:(nullable id<SUDRuntimeGameQueryClipboardListener>)listener;
 
-- (void)setGameQueryExitListener:(nullable id<SUDRuntime2GameQueryExitListener>)listener;
+- (void)setGameQueryExitListener:(nullable id<SUDRuntimeGameQueryExitListener>)listener;
 
-- (void)setGameQueryPermissionListener:(nullable id<SUDRuntime2GameQueryPermissionListener>)listener;
+- (void)setGameQueryPermissionListener:(nullable id<SUDRuntimeGameQueryPermissionListener>)listener;
 
-- (void)setGameQuerySystemPermissionListener:(nullable id<SUDRuntime2GameQuerySystemPermissionListener>)listener;
+- (void)setGameQuerySystemPermissionListener:(nullable id<SUDRuntimeGameQuerySystemPermissionListener>)listener;
 
 - (BOOL)setGameStartOptions:(NSString *)gameId options:(NSDictionary *)options;
 
-- (void)setGameStateListener:(nullable id<SUDRuntime2GameStateChangeListener>)listener;
+- (void)setGameStateListener:(nullable id<SUDRuntimeGameStateChangeListener>)listener;
 
-- (void)setGameScreenStateChangeListener:(nullable id<SUDRuntime2GameScreenStateChangeListener>)listener;
+- (void)setGameScreenStateChangeListener:(nullable id<SUDRuntimeGameScreenStateChangeListener>)listener;
 
-- (void)setMediaPlayerListener:(nullable id<SUDRuntime2MediaPlayerListener>)listener;
+- (void)setMediaPlayerListener:(nullable id<SUDRuntimeMediaPlayerListener>)listener;
 
 - (void)start:(nullable NSString *)onShowMsg;
 
@@ -312,4 +312,4 @@ typedef NS_ENUM(NSUInteger, SUDRuntime2SystemPermissionAuthStatus) {
 NS_ASSUME_NONNULL_END
 
 
-#endif /* SUDRuntime2GameHandle_h */
+#endif /* SUDRuntimeGameHandle_h */

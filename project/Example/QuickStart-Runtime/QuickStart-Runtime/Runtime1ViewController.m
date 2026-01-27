@@ -95,7 +95,7 @@
         paramModel.appKey = SUD_GIP_APP_KEY;
         paramModel.code = code;
         /// SDK will skip if initialized, so call it everytime would be ok
-        [SUDRuntime2 initSDK:paramModel completion:^(NSError *_Nullable error) {
+        [SUDRuntime initSDK:paramModel completion:^(NSError *_Nullable error) {
             if (error) {
                 NSLog(@"initSDK result:%@", error.localizedDescription);
                 [SVProgressHUD showErrorWithStatus:error.localizedDescription];

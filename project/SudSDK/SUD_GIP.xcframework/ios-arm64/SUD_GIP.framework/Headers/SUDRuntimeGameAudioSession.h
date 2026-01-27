@@ -1,5 +1,5 @@
 //
-//  SUDRuntime2GameAudioSession.h
+//  SUDRuntimeGameAudioSession.h
 //  SUD_GIP
 //
 //  Created by kaniel on 10/18/25.
@@ -16,20 +16,20 @@ extern NSString * _Nonnull const SUD_RT_KEY_AUDIO_MIX_WITH_OTHER;
 /// Whether to respect the device's mute switch setting
 extern NSString * _Nonnull const SUD_RT_KEY_AUDIO_OBEY_MUTE_SWITCH;
 
-@protocol SUDRuntime2GameQueryAudioOptionsHandle <NSObject>
+@protocol SUDRuntimeGameQueryAudioOptionsHandle <NSObject>
 
 - (void)complete:(BOOL)success error:(nullable NSError *)error;
 
 @end
 
 
-@protocol SUDRuntime2GameQueryAudioOptionsListener <NSObject>
+@protocol SUDRuntimeGameQueryAudioOptionsListener <NSObject>
 
-- (void)onQueryAudioSession:(id<SUDRuntime2GameQueryAudioOptionsHandle>)handle appId:(NSString *)appId options:(NSDictionary *)options;
+- (void)onQueryAudioSession:(id<SUDRuntimeGameQueryAudioOptionsHandle>)handle appId:(NSString *)appId options:(NSDictionary *)options;
 
 @end
 
-@protocol SUDRuntime2GameAudioSession <NSObject>
+@protocol SUDRuntimeGameAudioSession <NSObject>
 
 - (float)getVolumeFactor;
 
@@ -37,7 +37,7 @@ extern NSString * _Nonnull const SUD_RT_KEY_AUDIO_OBEY_MUTE_SWITCH;
 
 - (void)mute:(BOOL)mute;
 
-- (void)setGameQueryAudioOptionsListener:(nullable id<SUDRuntime2GameQueryAudioOptionsListener>)listener;
+- (void)setGameQueryAudioOptionsListener:(nullable id<SUDRuntimeGameQueryAudioOptionsListener>)listener;
 
 - (void)setVolumeFactor:(float)factor;
 

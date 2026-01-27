@@ -1,5 +1,5 @@
 //
-//  SUDRuntime2GamePluginManager.h
+//  SUDRuntimeGamePluginManager.h
 //  SUD_GIP
 //
 //  Created by kaniel on 1/14/26.
@@ -27,10 +27,10 @@ extern NSString * const SUD_RT_KEY_PLUGIN_PACKAGE_IS_EXTRACT_MODE;
 
 
 /**
- * @protocol SUDRuntime2GamePluginManager
+ * @protocol SUDRuntimeGamePluginManager
  * @brief Handles the discovery, downloading, and installation of game-specific plugins.
  */
-@protocol SUDRuntime2GamePluginManager <NSObject>
+@protocol SUDRuntimeGamePluginManager <NSObject>
 
 /**
  * Aborts all current plugin-related network requests (downloads).

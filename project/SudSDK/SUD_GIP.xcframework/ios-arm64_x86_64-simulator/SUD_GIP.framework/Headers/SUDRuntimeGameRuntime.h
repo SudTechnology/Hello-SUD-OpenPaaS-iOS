@@ -1,13 +1,13 @@
 //
-//  SUDRuntime2GameRuntime.h
+//  SUDRuntimeGameRuntime.h
 //  SUD_GIP
 //
 //  Created by kaniel on 10/18/25.
 //
 
 #import <Foundation/Foundation.h>
-#import "SUDRuntime2GameHandle.h"
-
+#import "SUDRuntimeGameHandle.h"
+#import "SUDRuntimeLoadPackageParamModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 /// Path where the resources used by the Core are located
@@ -26,11 +26,12 @@ extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_CACHE;
 extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_USER;
 /// Path where the Runtime stores plugins
 extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_PLUGIN;
+/// Runtime type
+extern NSString * const SUD_RT_KEY_RUNTIME_TYPE;
 
+@protocol SUDRuntimeGameRuntime;
 
-@protocol SUDRuntime2GameRuntime;
-
-@protocol SUDRuntime2GameRuntime <NSObject>
+@protocol SUDRuntimeGameRuntime <NSObject>
 
 + (NSString *)getRuntimeDesc;
 
@@ -46,10 +47,17 @@ extern NSString * const SUD_RT_KEY_RUNTIME_STORAGE_PATH_PLUGIN;
                           completion:(nullable void (^)(NSError * _Nullable error))completion;
 
 - (void)createGameHandleWithOptions:(NSDictionary *)options
-                         completion:(nullable void (^)(id<SUDRuntime2GameHandle> _Nullable handle,
+                         completion:(nullable void (^)(id<SUDRuntimeGameHandle> _Nullable handle,
                                                        NSError * _Nullable error))completion;
 
 - (nullable NSObject *)getManagerWithName:(NSString *)name options:(nullable NSDictionary *)options;
 
+/// Load game package
+/// @param paramModel Load parameters
+/// @param progress Progress callback
+/// @param completion Completion callback
+- (void)loadPackage:(SUDRuntimeLoadPackageParamModel *)paramModel
+       progress:(nullable void(^)(NSInteger progress))progress
+     completion:(nullable void(^)(NSError *_Nullable error))completion;
 @end
 NS_ASSUME_NONNULL_END

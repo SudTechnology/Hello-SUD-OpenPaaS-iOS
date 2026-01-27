@@ -1,5 +1,5 @@
 //
-//  SUDRuntime2GamePackageManager.h
+//  SUDRuntimeGamePackageManager.h
 //  SUD_GIP
 //
 //  Created by kaniel on 1/14/26.
@@ -49,13 +49,13 @@ extern NSString * const SUD_RT_KEY_PACKAGE_DETAIL_PATH;
 /// The root directory for sub-packages or split asset bundles.
 extern NSString * const SUD_RT_KEY_PACKAGE_SUBPACKAGE_ROOT;
 
-@protocol SUDRuntime2GameConfig;
+@protocol SUDRuntimeGameConfig;
 
 /**
- * @protocol SUDRuntime2GamePackageManager
+ * @protocol SUDRuntimeGamePackageManager
  * @brief Manages the lifecycle of game packages, including downloading, installation, and retrieval.
  */
-@protocol SUDRuntime2GamePackageManager <NSObject>
+@protocol SUDRuntimeGamePackageManager <NSObject>
 
 /**
  * Updates or sets the package metadata for a specific game.
@@ -70,7 +70,7 @@ extern NSString * const SUD_RT_KEY_PACKAGE_SUBPACKAGE_ROOT;
  * @param gameId Unique identifier for the game.
  * @return An object conforming to CRCocosGameConfigV2.
  */
-- (id<SUDRuntime2GameConfig>)getGameConfig:(nonnull NSString *)gameId;
+- (id<SUDRuntimeGameConfig>)getGameConfig:(nonnull NSString *)gameId;
 
 /**
  * Retrieves the currently stored package information for a game.

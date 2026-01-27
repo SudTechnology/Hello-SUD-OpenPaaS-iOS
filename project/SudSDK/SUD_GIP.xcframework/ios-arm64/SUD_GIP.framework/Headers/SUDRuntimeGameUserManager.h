@@ -1,5 +1,5 @@
 //
-//  SUDRuntime2GameUserManager.h
+//  SUDRuntimeGameUserManager.h
 //  SUD_GIP
 //
 //  Created by kaniel on 1/14/26.
@@ -54,10 +54,10 @@ extern NSString * const SUD_RT_KEY_PERMISSION_SAVE_TO_ALBUM;
 
 
 /**
- * @protocol SUDRuntime2GameUserManager
+ * @protocol SUDRuntimeGameUserManager
  * @brief Manages user-specific game data, storage paths, and metadata synchronization.
  */
-@protocol SUDRuntime2GameUserManager <NSObject>
+@protocol SUDRuntimeGameUserManager <NSObject>
 
 /**
  * Cancels any pending asynchronous requests to remove game data.

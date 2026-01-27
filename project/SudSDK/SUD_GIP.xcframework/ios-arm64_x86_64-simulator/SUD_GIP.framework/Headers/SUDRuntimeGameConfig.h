@@ -1,5 +1,5 @@
 //
-//  SUDRuntime2GameConfig.h
+//  SUDRuntimeGameConfig.h
 //  SUD_GIP
 //
 //  Created by kaniel on 1/14/26.
@@ -33,11 +33,11 @@ extern NSString * const SUD_RT_GAME_CONFIG_PLUGIN_VERSION;
 extern NSString * const SUD_RT_GAME_CONFIG_PLUGIN_PATH;
 
 /**
- * @protocol SUDRuntime2GameConfig
+ * @protocol SUDRuntimeGameConfig
  * @brief Provides configuration settings for the Cocos engine runtime environment.
  * Maps closely to the standard 'game.json' or 'project.config.json' settings in game development.
  */
-@protocol SUDRuntime2GameConfig <NSObject>
+@protocol SUDRuntimeGameConfig <NSObject>
 
 /**
  * Determines whether the system status bar should be visible during gameplay.

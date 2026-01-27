@@ -1,5 +1,5 @@
 //
-//  SUDRuntime2GameMediaPlayerHandle.h
+//  SUDRuntimeGameMediaPlayerHandle.h
 //  SUD_GIP
 //
 //  Created by kaniel on 10/18/25.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol SUDRuntime2GameMediaPlayerHandle <NSObject>
+@protocol SUDRuntimeGameMediaPlayerHandle <NSObject>
 - (UInt64)getInstanceID;
 
 - (void)setMediaCAEAGLLayer:(CAEAGLLayer *) layer;
