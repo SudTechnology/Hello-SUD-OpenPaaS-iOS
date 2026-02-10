@@ -82,7 +82,7 @@
     
     [ISUDAPPD e:3];
     [ISUDAPPD d];
-    [[SUD_GIP getCfg] setLogLevel:SudLogDEBUG];
+    [[SUD_GI getCfg] setLogLevel:SudLogDEBUG];
     [SVProgressHUD showWithStatus:@"Login"];
     [SVProgressHUD setMaximumDismissTimeInterval:3];
     
@@ -91,8 +91,8 @@
         [SVProgressHUD dismiss];
         
         SUDRuntimeInitSDKParamModel *paramModel = [[SUDRuntimeInitSDKParamModel alloc]init];
-        paramModel.appId = SUD_GIP_APP_ID;
-        paramModel.appKey = SUD_GIP_APP_KEY;
+        paramModel.appId = SUD_GI_APP_ID;
+        paramModel.appKey = SUD_GI_APP_KEY;
         paramModel.code = code;
         /// SDK will skip if initialized, so call it everytime would be ok
         [SUDRuntime initSDK:paramModel completion:^(NSError *_Nullable error) {

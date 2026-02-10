@@ -33,11 +33,15 @@ SUDRuntimeGameCustomCommandListener>
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *gamePkgPath = [[NSBundle mainBundle]pathForResource:@"game.creator.cccshooter.13" ofType:@"cpk"];// local path
+//    NSString *gamePkgPath = [[NSBundle mainBundle]pathForResource:@"game.creator.cccshooter.13" ofType:@"cpk"];// local path
     //gamePkgPath = @"http://test-runtime.cocos.com/cocos-runtime-demo/cpk/13/game.creator.cccshooter.13.cpk";// or remote url
-    self.gameInfo = @{@"gameId": @"sud.tech.test",
-                      @"version":@"1.0.0",
-                      @"path": gamePkgPath};
+//    self.gameInfo = @{@"gameId": @"sud.tech.test",
+//                      @"version":@"1.0.0",
+//                      @"path": gamePkgPath};
+    
+    // 2 by gameId, contact SUD about how to getting gameId
+    self.gameInfo = @{@"gameId": @"2017065825404788738",
+                      @"version":@"1.0.0"};
     
     [SVProgressHUD setOffsetFromCenter:UIOffsetMake(self.view.frame.size.width/2., self.view.frame.size.height/2.)];
     self.view.backgroundColor = UIColor.redColor;
@@ -90,7 +94,7 @@ SUDRuntimeGameCustomCommandListener>
 - (void)startClick:(UIButton *)sender {
     
     [self destroyClick:nil];
-    [[SUD_GIP getCfg] setLogLevel:SudLogDEBUG];
+    [[SUD_GI getCfg] setLogLevel:SudLogDEBUG];
     [SVProgressHUD showWithStatus:@"Login"];
     [SVProgressHUD setMaximumDismissTimeInterval:3];
     
@@ -99,8 +103,8 @@ SUDRuntimeGameCustomCommandListener>
         [SVProgressHUD dismiss];
         
         SUDRuntimeInitSDKParamModel *paramModel = [[SUDRuntimeInitSDKParamModel alloc]init];
-        paramModel.appId = SUD_GIP_APP_ID;
-        paramModel.appKey = SUD_GIP_APP_KEY;
+        paramModel.appId = SUD_GI_APP_ID;
+        paramModel.appKey = SUD_GI_APP_KEY;
         paramModel.code = code;
         /// Initialize the SDK. Once successful, internal logic ensures it won't be re-initialized.
         [SUDRuntime initSDK:paramModel completion:^(NSError *_Nullable error) {
@@ -254,6 +258,7 @@ SUDRuntimeGameCustomCommandListener>
 - (void)destroyCurrentGame {
     if (_gameHandle) {
         [_gameHandle destroy];
+        _gameHandle = nil;
     }
     if (self.gameView) {
         [self.gameView removeFromSuperview];

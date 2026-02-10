@@ -1,15 +1,15 @@
 PODS:
   - Masonry (1.1.0)
-  - SUD-GIP (1.0.0):
-    - SUD-GIP/Stand (= 1.0.0)
-  - SUD-GIP/Base (1.0.0)
-  - SUD-GIP/Stand (1.0.0):
-    - SUD-GIP/Base
+  - SUD-GI (1.0.0):
+    - SUD-GI/Stand (= 1.0.0)
+  - SUD-GI/Base (1.0.0)
+  - SUD-GI/Stand (1.0.0):
+    - SUD-GI/Base
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Masonry
-  - SUD-GIP (from `../../`)
+  - SUD-GI (from `../../`)
   - SVProgressHUD (~> 2.2.5)
 
 SPEC REPOS:
@@ -18,14 +18,14 @@ SPEC REPOS:
     - SVProgressHUD
 
 EXTERNAL SOURCES:
-  SUD-GIP:
+  SUD-GI:
     :path: "../../"
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SUD-GIP: 140e1ed41f2eaf170d781f8393851a716250a253
+  SUD-GI: f0059b6e307c02a4592bb99d8dadc64348a1be5f
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 3a1b92516da82cc968f6d65af9e58645fd015c8a
+PODFILE CHECKSUM: bb398f33d8cc5b4cd34d03410628071f348cbfdb
 
 COCOAPODS: 1.16.2

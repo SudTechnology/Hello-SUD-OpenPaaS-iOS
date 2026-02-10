@@ -21,7 +21,7 @@
 - (void)reqGetCode:(void(^)(NSString *code))success fail:(void(^)(NSInteger code, NSString *msg))fail {
     
     NSString *getCodeUrl = @"https://fat-hellosud-base.s00.tech/login/v3";
-    NSDictionary *dicParam = @{@"user_id": self.userId, @"app_id":SUD_GIP_APP_ID };
+    NSDictionary *dicParam = @{@"user_id": self.userId, @"app_id":SUD_GI_APP_ID };
     [self postHttpRequestWithURL:getCodeUrl param:dicParam success:^(NSDictionary *rootDict) {
         
         NSDictionary *dic = [rootDict objectForKey:@"data"];

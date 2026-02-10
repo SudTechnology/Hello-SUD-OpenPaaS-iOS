@@ -8,10 +8,10 @@
 #import <Foundation/Foundation.h>
 #import <Masonry/Masonry.h>
 #import <SVProgressHUD/SVProgressHUD.h>
-#import <SUD_GIP/SUD_GIP-umbrella.h>
+#import <SUD_GI/SUD_GI-umbrella.h>
 
-#define SUD_GIP_APP_ID   @"1461564080052506636"
-#define SUD_GIP_APP_KEY  @"03pNxK2lEXsKiiwrBQ9GbH541Fk2Sfnc"
+#define SUD_GI_APP_ID   @"1461564080052506636"
+#define SUD_GI_APP_KEY  @"03pNxK2lEXsKiiwrBQ9GbH541Fk2Sfnc"
 
 /// weakself宏
 #define WeakSelf __weak typeof(self) weakSelf = self;
