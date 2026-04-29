@@ -7,12 +7,12 @@
 
 #import "ViewController.h"
 #import "QsrCommon.h"
-#import "Runtime1ViewController.h"
-#import "Runtime2ViewController.h"
+#import "QuickStartViewController.h"
 
 @interface ViewController()
 @property(nonatomic, strong)UIButton *runtime1Btn;
 @property(nonatomic, strong)UIButton *runtime2Btn;
+
 @end
 
 @implementation ViewController
@@ -33,7 +33,7 @@
     
     [self.runtime2Btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@44);
-        make.width.equalTo(@80);
+        make.width.equalTo(@120);
         make.centerX.equalTo(self.view);
         make.bottom.equalTo(@-90);
     }];
@@ -41,15 +41,10 @@
 }
 
 
-- (void)runtime1BtnClick:(UIButton *)sender {
-    Runtime1ViewController *vc = [[Runtime1ViewController alloc]init];
-    vc.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:vc animated:YES completion:nil];
 
-}
 
 - (void)runtime2BtnClick:(id)sender {
-    Runtime2ViewController *vc = [[Runtime2ViewController alloc]init];
+    QuickStartViewController *vc = [[QuickStartViewController alloc]init];
     vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }
@@ -70,23 +65,12 @@
     return image;
 }
 
-- (UIButton *)runtime1Btn {
-    if (!_runtime1Btn) {
-        _runtime1Btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_runtime1Btn setBackgroundImage:[self imageWithColor:UIColor.orangeColor] forState:UIControlStateNormal];
-        [_runtime1Btn setTitle:@"Runtime1" forState:UIControlStateNormal];
-        _runtime1Btn.layer.cornerRadius = 15;
-        _runtime1Btn.clipsToBounds = YES;
-        [_runtime1Btn addTarget:self action:@selector(runtime1BtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _runtime1Btn;
-}
 
 - (UIButton *)runtime2Btn {
     if (!_runtime2Btn) {
         _runtime2Btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_runtime2Btn setBackgroundImage:[self imageWithColor:UIColor.orangeColor] forState:UIControlStateNormal];
-        [_runtime2Btn setTitle:@"Runtime" forState:UIControlStateNormal];
+        [_runtime2Btn setTitle:@"OpenPaaS" forState:UIControlStateNormal];
         _runtime2Btn.layer.cornerRadius = 15;
         _runtime2Btn.clipsToBounds = YES;
         [_runtime2Btn addTarget:self action:@selector(runtime2BtnClick:) forControlEvents:UIControlEventTouchUpInside];

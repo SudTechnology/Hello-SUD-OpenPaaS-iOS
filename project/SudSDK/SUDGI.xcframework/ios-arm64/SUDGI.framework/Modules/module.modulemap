@@ -1,0 +1,6 @@
+framework module SUDGI {
+  umbrella header "SUDGI-umbrella.h"
+
+  export *
+  module * { export * }
+}

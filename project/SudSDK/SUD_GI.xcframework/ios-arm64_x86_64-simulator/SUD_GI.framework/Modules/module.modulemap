@@ -1,6 +1,0 @@
-framework module SUD_GI {
-  umbrella header "SUD_GI-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,31 +1,35 @@
 PODS:
   - Masonry (1.1.0)
-  - SUD-GI (1.0.0):
-    - SUD-GI/Stand (= 1.0.0)
-  - SUD-GI/Base (1.0.0)
-  - SUD-GI/Stand (1.0.0):
-    - SUD-GI/Base
+  - MJExtension (3.4.1)
+  - SUDGI (1.0.0):
+    - SUDGI/Stand (= 1.0.0)
+  - SUDGI/Base (1.0.0)
+  - SUDGI/Stand (1.0.0):
+    - SUDGI/Base
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Masonry
-  - SUD-GI (from `../../`)
+  - MJExtension
+  - SUDGI (from `../../`)
   - SVProgressHUD (~> 2.2.5)
 
 SPEC REPOS:
   trunk:
     - Masonry
+    - MJExtension
     - SVProgressHUD
 
 EXTERNAL SOURCES:
-  SUD-GI:
+  SUDGI:
     :path: "../../"
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SUD-GI: f0059b6e307c02a4592bb99d8dadc64348a1be5f
+  MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+  SUDGI: 2e9e63e79eccda4978fc9847fe088f2fcec3ce5a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: bb398f33d8cc5b4cd34d03410628071f348cbfdb
+PODFILE CHECKSUM: 6dc175b41747e10313840ecc707b58f129ae548b
 
 COCOAPODS: 1.16.2

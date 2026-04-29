@@ -4,7 +4,8 @@ use_frameworks!
 target 'QuickStart-Runtime' do
   pod 'Masonry'
   pod 'SVProgressHUD', '~> 2.2.5'
-  pod 'SUD-GI', :path => '../../'
+  pod "MJExtension"
+  pod 'SUDGI', :path => '../../'
 end
 
 post_install do |installer|
