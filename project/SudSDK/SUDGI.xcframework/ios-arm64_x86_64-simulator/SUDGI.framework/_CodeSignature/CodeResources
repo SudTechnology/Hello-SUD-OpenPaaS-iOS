@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SUDGI-umbrella.h</key>
 		<data>
-		XrXp9axYHVrUzn9MONcRn14WsEg=
+		T04XZTdPMI7mDGcQqXiuk9ra6TM=
 		</data>
 		<key>Headers/SUDGI.h</key>
 		<data>
@@ -70,47 +70,91 @@
 		</data>
 		<key>Headers/SUDOP.h</key>
 		<data>
-		tAbnRJtSZnJMWtSSY0pQWxTvHpo=
+		Gypf42sSNrhmcrnroWk4++cIXII=
+		</data>
+		<key>Headers/SUDOPAd.h</key>
+		<data>
+		8G289GjeqQA/Bm0mgr94ew8ZmO0=
 		</data>
 		<key>Headers/SUDOPBannerAd.h</key>
 		<data>
-		ncVBfkQoHuVoi52GY3LJoATGfkw=
+		191Gh7GAefnZid04/AqN/fSFCJY=
+		</data>
+		<key>Headers/SUDOPChooseImageOptions.h</key>
+		<data>
+		GytO1E6y7Xcitrw5NysEjE3T4o8=
 		</data>
 		<key>Headers/SUDOPCommon.h</key>
 		<data>
-		w3HedDay8NzjiTdqgJAY/mCJbZU=
+		xn1L8TQSfuf8ZcCPq3SIQaaBu5s=
 		</data>
 		<key>Headers/SUDOPCustomAd.h</key>
 		<data>
-		L/H7AaWbVlvxQ47hDKuRUFpyM8o=
+		6mA7pEjw4cyyzu8wGg3QsN223Ug=
 		</data>
 		<key>Headers/SUDOPGameBannerAd.h</key>
 		<data>
-		qMbfGXEqAytb+A2awqtJX8UTVSo=
+		DBpeZy94O6AyGmFqIe9IRrggyZI=
 		</data>
 		<key>Headers/SUDOPGameDrawerAd.h</key>
 		<data>
-		btv5hYJOsVrwKMNXgrxf6Rn6Few=
+		mGf+tdcQOk/Ana4IuslD3fL9nbI=
 		</data>
 		<key>Headers/SUDOPGamePortalAd.h</key>
 		<data>
-		xDX8rDusemE8K4l7Sx+WczUKNwk=
+		HN5R7JDb7K84kP6sJ8lJNXc3hys=
 		</data>
 		<key>Headers/SUDOPGameTask.h</key>
 		<data>
-		t8vl0nGgC0SDDh8+I4vwpC349sg=
+		xWAb8nV70oW/1fyTFL10FOR1B/8=
+		</data>
+		<key>Headers/SUDOPHideLoadingOptions.h</key>
+		<data>
+		DvzbDWK/+504XFJhZbtvuWeb7FA=
+		</data>
+		<key>Headers/SUDOPHideToastOptions.h</key>
+		<data>
+		xPThtAz0KcE1ck1XS6OEmYGaqI8=
 		</data>
 		<key>Headers/SUDOPInterstitialAd.h</key>
 		<data>
-		Rn7zKVc7V1OQtVbealF5iDQihX0=
+		+vXoybGUIts3Cw5R2ha9Q37H9tM=
+		</data>
+		<key>Headers/SUDOPPreviewImageOptions.h</key>
+		<data>
+		8oWwmrKIk6nfwb5HbiHbMy6PMNQ=
 		</data>
 		<key>Headers/SUDOPRequestPaymentOptions.h</key>
 		<data>
 		LgmXwg/3H9dxR7L2+xAPU3FIvsE=
 		</data>
+		<key>Headers/SUDOPRewardVideoAd.h</key>
+		<data>
+		mtKaIJt3sPxcOk1p7iq1ZmE4NhY=
+		</data>
+		<key>Headers/SUDOPSaveImageToPhotosAlbumOptions.h</key>
+		<data>
+		2IWaZ2hlfT4MpqcNdkqi27XcK/g=
+		</data>
+		<key>Headers/SUDOPShowActionSheetOptions.h</key>
+		<data>
+		oP1ZxZUgMeqaUkvwY8BhvptD4vw=
+		</data>
+		<key>Headers/SUDOPShowLoadingOptions.h</key>
+		<data>
+		hwXzeMvoW1w7NPtXbpRLqx8EAAg=
+		</data>
+		<key>Headers/SUDOPShowModalOptions.h</key>
+		<data>
+		J+wANoWT9JdE9219v2owxOLH6Ac=
+		</data>
+		<key>Headers/SUDOPShowToastOptions.h</key>
+		<data>
+		GANd/M/l4k7/kdf3KXNHIWGTeBw=
+		</data>
 		<key>Headers/SUDOPWrappedClientDelegate.h</key>
 		<data>
-		F5EAT9GYuLUfhW+kYozCDL+Y2rs=
+		5yYJuivj1PPiU5SKDxkvYDposeQ=
 		</data>
 		<key>Headers/SUDRT.h</key>
 		<data>
@@ -130,7 +174,7 @@
 		</data>
 		<key>Headers/SUDRTGameHandle.h</key>
 		<data>
-		lt4y2jDqbYoByid9YsoDQAj2n4A=
+		YXWvBoT0wJA41Ja2DlI+CX7rpcQ=
 		</data>
 		<key>Headers/SUDRTGameMediaPlayerHandle.h</key>
 		<data>
@@ -154,7 +198,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aYAvyVQ3z0zKNjNYJzfJGbAVFU8=
+		Xy7JC6ZeKJ8xNt6v1k/sGvf20Tg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -163,6 +207,30 @@
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		UxEVK4RT5Go72c2jSqXNFSLPPn4=
+		</data>
+		<key>SUDGI_Res.bundle/Info.plist</key>
+		<data>
+		xXdHY7PIRSIdX47/xtgqgOHgpWs=
+		</data>
+		<key>SUDGI_Res.bundle/SudPlugin</key>
+		<data>
+		hWIqVIjDSaeZyE2biyaD/fdkdSU=
+		</data>
+		<key>SUDGI_Res.bundle/fsm_mgp_game_loading_progress.png</key>
+		<data>
+		dtpNcJpsR3zafFe134BfDkM+F/8=
+		</data>
+		<key>SUDGI_Res.bundle/fsm_mgp_game_loading_progress_bg.png</key>
+		<data>
+		G5Xy+4h7dGMY6FJB5kqFR+sdgmo=
+		</data>
+		<key>SUDGI_Res.bundle/sud-crt-plugin-ob.js</key>
+		<data>
+		P9pF8NkplrEkx5lAjSWSAw7c0QM=
+		</data>
+		<key>SUDGI_Res.bundle/sud.png</key>
+		<data>
+		vQlHDEdu0+Q1In7/lmqL55xESZU=
 		</data>
 		<key>SudGIP-Res.bundle/Info.plist</key>
 		<data>
@@ -190,11 +258,11 @@
 		</data>
 		<key>default-assets.bundle/App.momd/App.mom</key>
 		<data>
-		PQxmYAHoCDsmFxW5bv6rvo02yhE=
+		ENtlbSZGqTq5GYhtPYZBM3GekHE=
 		</data>
 		<key>default-assets.bundle/App.momd/App_v2.mom</key>
 		<data>
-		OeW9ZKi+w1Vb56q8+vs3h3VT4M4=
+		tdElziUQO4bcTYyF5lpACS1qunc=
 		</data>
 		<key>default-assets.bundle/App.momd/App_v2.omo</key>
 		<data>
@@ -206,19 +274,23 @@
 		</data>
 		<key>default-assets.bundle/Info.plist</key>
 		<data>
-		0ffLYJLzsox0qL+qC2iwWsSBVqg=
+		J83a2dfAPGkPI1Jfkiqf20HTDDc=
 		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		+Z9prJp0rjb8C+hmB0Jw62hNAQg=
+		doEqPHUZxr+QMSfxpcERz4VkVSs=
 		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
 		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
+		<key>default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		p2D2/LFAINVLlq8F9Wz8uDdO6kU=
+		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		fcjw+HS44BXhfOie4H9Kt3hbrkU=
+		JYR2jukrZgcPqfgcrs+tPySa0G8=
 		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -239,11 +311,11 @@
 		</dict>
 		<key>default-assets.bundle/rt-script/_jsb-runtime.js</key>
 		<data>
-		2YR7+/P35VVRPKc9iI0UZQeFjHM=
+		PgZwdZ+0YObzk66yBGFESrriwRQ=
 		</data>
 		<key>default-assets.bundle/rt-script/_jsb-worker.js</key>
 		<data>
-		3bldPtPM+nxdpXNzchQaFhZD9Xk=
+		znD5YlRmW+mMo0w+idX0oPZj/kc=
 		</data>
 		<key>default-assets.bundle/vConsole.html</key>
 		<data>
@@ -332,7 +404,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKVrecy3bVO1PyyjT6Jr720m/QgCAi/TEHRSUFDN5Ns=
+			B5kjeBsqfUKYHAUPrLvnwGRl71ZNd9BWFfxF9rWJL+8=
 			</data>
 		</dict>
 		<key>Headers/SUDGI.h</key>
@@ -381,63 +453,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OYjx1VY6PWnyrPhNXbd4LkuJjK6NsFm2j/ZBa3Uuzwg=
+			qrehk9j2io3dhaHxgX+HsaWMyXVTaNYuYMjHbcSwpXw=
+			</data>
+		</dict>
+		<key>Headers/SUDOPAd.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OtsZrcMYlwwHV8JSu+boNXlr/LuhU2pEJ9wqWtU2YvQ=
 			</data>
 		</dict>
 		<key>Headers/SUDOPBannerAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			knv7u8I642chIIF02shyVtTb3SAsp8tyhxUV6lZVo+A=
+			UOkGF4vYaAAmuF9ww+c/39yq+gjpL8nCwm57E7wfhGg=
+			</data>
+		</dict>
+		<key>Headers/SUDOPChooseImageOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KJXFSKOiQpG252QcOyG1KCptVMWYGlVD6nsFmgTEqEA=
 			</data>
 		</dict>
 		<key>Headers/SUDOPCommon.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOxJesRCXnaZTx6hxHt97nWgM16zkfKxN4zWuAT1Ln0=
+			zZ64H7jkP7uloPcWyRNGdsH7fsc7ZkSMKimcwNc7p0k=
 			</data>
 		</dict>
 		<key>Headers/SUDOPCustomAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RKJ4wKK4GUFAcM/X1x2KARU6axgMygHBhIPYDZpRdhw=
+			RAO7ThnvuMlbAUHmEub+EkVVfvi2iFGhZnlvotT9FxM=
 			</data>
 		</dict>
 		<key>Headers/SUDOPGameBannerAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1mK+c8zcvHpseGnjNy9gIa/dXpkkCBxoAW2MVC0h8wE=
+			/BE1If5UiHrqlvNi9kllcyjx2SnndTFrSyrIhxbpN9c=
 			</data>
 		</dict>
 		<key>Headers/SUDOPGameDrawerAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tCU6HEqWWC7Q4oFvOkE8kRmcj7wCvsjeI9hpBdE1f7Q=
+			4vcbYvPshTQMyKnHvPJ66sCgg/qwRxiJSzRQOHfh14M=
 			</data>
 		</dict>
 		<key>Headers/SUDOPGamePortalAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CELnfZ1eqAinn5kV4tnfSMUTXdw3ZW7V8hdw27w9VaQ=
+			IB8Vx7sSyCa/MHErnWZEUEr4CDVgcIm7DFxqYQUNd90=
 			</data>
 		</dict>
 		<key>Headers/SUDOPGameTask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lgMkkfzgQpKHUMFWAeFgfh6Cj8G9QM16ZOyBE9okU5U=
+			bGJv+9INXkajnyW3hh5OEzUhzVh5cD9j/YBzoT6mC3Q=
+			</data>
+		</dict>
+		<key>Headers/SUDOPHideLoadingOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Jeet/t76FBjN88d5GnaZbXdFx1xqgD/HqJTFS+6XwN4=
+			</data>
+		</dict>
+		<key>Headers/SUDOPHideToastOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AgPy6fheCmahcrssHWJwW6dfSRit15VhBjQC/Iu0wWY=
 			</data>
 		</dict>
 		<key>Headers/SUDOPInterstitialAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y744ppfJZfBzA9FlO1QbmPhWvCjLPPjiYdRSInBkrNI=
+			Qy1vYOhmt0c6fdy9W7ptU6HEhBxb65W9B6pgE+9PTtE=
+			</data>
+		</dict>
+		<key>Headers/SUDOPPreviewImageOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qcBeIEeHzC15uErDAkZOZkFivXG/mD5zvaSVgx8+uds=
 			</data>
 		</dict>
 		<key>Headers/SUDOPRequestPaymentOptions.h</key>
@@ -447,11 +554,53 @@
 			4lbd/GgDgKub98JPKbZHxOZFYMCLf0H9koLHp3L3g2k=
 			</data>
 		</dict>
+		<key>Headers/SUDOPRewardVideoAd.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ye3osgKBnC4u9rF0QHves46x8Verv1/SJgGq7J6Rk5E=
+			</data>
+		</dict>
+		<key>Headers/SUDOPSaveImageToPhotosAlbumOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dbBinTZ/1QIeh6Fc6OF0OY+VmaQUE1qKhqUYRd9Qz+A=
+			</data>
+		</dict>
+		<key>Headers/SUDOPShowActionSheetOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B9EsPg3hQQkcKlazH2TPOi1ChZnO8UJHSd/m/TqRjKY=
+			</data>
+		</dict>
+		<key>Headers/SUDOPShowLoadingOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HQTZhXbRKjwMx3iDBxFabXC5KDdA4oD6ovn3ZoNjXHE=
+			</data>
+		</dict>
+		<key>Headers/SUDOPShowModalOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Sv2cg6+uJiR7PDNZ4pZKZul4RJ4Av03P8TR/VubiApI=
+			</data>
+		</dict>
+		<key>Headers/SUDOPShowToastOptions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KUo28YXLGNvJzVdE2r0bbTUii5Ih2MiWf/zMRTvsqjw=
+			</data>
+		</dict>
 		<key>Headers/SUDOPWrappedClientDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7wLYlHrV+UggC1DlCGoCiXHIbFv7fGGEEWPHE8iBaa8=
+			RWJkmH5GuOaxi7GAeuKcZbv3B1uJ5gy8c/tKAEMHKVg=
 			</data>
 		</dict>
 		<key>Headers/SUDRT.h</key>
@@ -486,7 +635,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3NaR3/1QQjKZsIvfeh9E/EFo8YLdWXyN3kIz+OPckug=
+			yvkC40pT7MMyHpj2AOQX4p6LL2ou5WVkyXYpSiJYM0w=
 			</data>
 		</dict>
 		<key>Headers/SUDRTGameMediaPlayerHandle.h</key>
@@ -538,6 +687,48 @@
 			kPGmYfDyf2azbKXBmS5xIz2nXwItVc0pbRc3Eptrn94=
 			</data>
 		</dict>
+		<key>SUDGI_Res.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fBxZCBmoVqWAQT7D86qbQMmbnG3BGsnpQSwXuVJyFcY=
+			</data>
+		</dict>
+		<key>SUDGI_Res.bundle/SudPlugin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			r8yQatWPxBHGtcsQ3V5ef1xM1/5LQL5s9Hvw4VsCn48=
+			</data>
+		</dict>
+		<key>SUDGI_Res.bundle/fsm_mgp_game_loading_progress.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PmZ2XWgwRMBpMFC0fewgSN0AQWnYtYfKIc73k87S9No=
+			</data>
+		</dict>
+		<key>SUDGI_Res.bundle/fsm_mgp_game_loading_progress_bg.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kWsbDMHTQ7BUH2wEALcw8lnRExfB0XZ+DgAVGha920M=
+			</data>
+		</dict>
+		<key>SUDGI_Res.bundle/sud-crt-plugin-ob.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i11y86KOUUhIOjmMDUvIO3PPYo3PZkFyK2X7e8E8KXA=
+			</data>
+		</dict>
+		<key>SUDGI_Res.bundle/sud.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jGjXGnBah08RrghQiM7wJELGteiQM/iZdJDXE8Bq6C8=
+			</data>
+		</dict>
 		<key>SudGIP-Res.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -584,14 +775,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JY3kZOYHttuMVh+iFINOdKXV1PRGR9COc9ACOn2vc/g=
+			C6zRXyZcjejm09t3XuQBGK3kE6eIImYAVRVAxLyTGIk=
 			</data>
 		</dict>
 		<key>default-assets.bundle/App.momd/App_v2.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1I2v8EFi167e6b+9APmQiAdMUuVPSRgoSpHoiox9rso=
+			thmlUrbQKmevKsGrj4nJIDSnTk48VVEAOV2g9xlnJhI=
 			</data>
 		</dict>
 		<key>default-assets.bundle/App.momd/App_v2.omo</key>
@@ -612,14 +803,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FmCLl6dM0q9SvWJBHAR6VWVuMCfsZ1nKvb/zGCTxz/s=
+			zHHZXsb710zFAYUrBoXt5b5muiyRinWaamDMovzNNQw=
 			</data>
 		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qo/zjGBJouR9V2dWGWTJGgKHVk5UUcij4DAQqoFe6Tk=
+			cav8yA+7hmaHLOEy7iu8Oa/xzAx0oAnVjiLpdfAhH14=
 			</data>
 		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeRequirements</key>
@@ -629,11 +820,18 @@
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
+		<key>default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4ZZmvgzcKmHo63+ySwBK48yGIrjqLXmHpsy2EaLvucU=
+			</data>
+		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PAxUKgldrLEsGNAtwGyY8QyGDT5WCciIgp8OZsLZHis=
+			ib2QLS2mTHXzt5GO0WzZcqwYtmkTUT25N1+a56Rbb6o=
 			</data>
 		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeSignature</key>
@@ -663,14 +861,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			drcHeLKzggpdMjP9jmeyX5nX1MZvdRBGLeb9650E9uA=
+			RiTP+MmGyHwTage6mIMy/aaifoHL9Np9GqVuAMvBmwg=
 			</data>
 		</dict>
 		<key>default-assets.bundle/rt-script/_jsb-worker.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0RgYFoVhSAjG6gZ0Qv6sYXoqGgbUQ2Wwaw6LTi5K37A=
+			iBaOkDDCeQ0DZ1e24cvAdRSr3CY+vLORfcHwVBIu+oI=
 			</data>
 		</dict>
 		<key>default-assets.bundle/vConsole.html</key>

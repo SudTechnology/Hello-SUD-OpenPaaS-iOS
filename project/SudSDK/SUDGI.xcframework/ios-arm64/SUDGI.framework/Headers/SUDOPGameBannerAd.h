@@ -6,15 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "SUDOPAd.h"
 NS_ASSUME_NONNULL_BEGIN
 @class SUDOPGameBannerAd;
-/// Game->APP event
-@protocol SUDOPGameBannerAdDelegate <NSObject>
-- (void)gameBannerAdShow:(SUDOPGameBannerAd *)gameBannerAd;
-- (void)gameBannerAdHide:(SUDOPGameBannerAd *)gameBannerAd;
-- (void)gameBannerAdAdDestroy:(SUDOPGameBannerAd *)gameBannerAd;
-@end
 
 @interface SUDOPGameBannerAdStyle : NSObject
 @property(nonatomic, assign)NSInteger top;
@@ -23,21 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong)NSString * orientation;
 @end
 
-/// banner
-@interface SUDOPGameBannerAd : NSObject
-@property(nonatomic, strong)NSString *adUnitId;
+/// Game banner ad
+@interface SUDOPGameBannerAd : SUDOPAd
 @property(nonatomic, strong, nullable)SUDOPGameBannerAdStyle *style;
-@property(nonatomic, weak)id<SUDOPGameBannerAdDelegate> delegte;
 
-/// notify ad Loaded
-- (void)notifyOnLoad;
-
-- (void)notifyOnShow;
-
-- (void)notifyOnClickWith:(NSInteger)code msg:(NSString *)msg;
-
-/// notify ad error
-- (void)notifyOnError:(NSError *)error;
 @end
 
 NS_ASSUME_NONNULL_END

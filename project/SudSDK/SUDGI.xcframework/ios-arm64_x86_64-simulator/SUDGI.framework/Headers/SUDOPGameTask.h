@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "SUDOPCommon.h"
 NS_ASSUME_NONNULL_BEGIN
 /**
@@ -18,6 +19,5 @@ NS_ASSUME_NONNULL_BEGIN
  * Cancels the ongoing task and releases associated resources.
  */
 - (void)destroy;
-
 @end
 NS_ASSUME_NONNULL_END

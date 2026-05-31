@@ -6,11 +6,11 @@
 	<dict>
 		<key>App.momd/App.mom</key>
 		<data>
-		PQxmYAHoCDsmFxW5bv6rvo02yhE=
+		ENtlbSZGqTq5GYhtPYZBM3GekHE=
 		</data>
 		<key>App.momd/App_v2.mom</key>
 		<data>
-		OeW9ZKi+w1Vb56q8+vs3h3VT4M4=
+		tdElziUQO4bcTYyF5lpACS1qunc=
 		</data>
 		<key>App.momd/App_v2.omo</key>
 		<data>
@@ -35,11 +35,11 @@
 		</dict>
 		<key>rt-script/_jsb-runtime.js</key>
 		<data>
-		2YR7+/P35VVRPKc9iI0UZQeFjHM=
+		PgZwdZ+0YObzk66yBGFESrriwRQ=
 		</data>
 		<key>rt-script/_jsb-worker.js</key>
 		<data>
-		3bldPtPM+nxdpXNzchQaFhZD9Xk=
+		znD5YlRmW+mMo0w+idX0oPZj/kc=
 		</data>
 		<key>vConsole.html</key>
 		<data>
@@ -63,20 +63,32 @@
 	<dict>
 		<key>App.momd/App.mom</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ENtlbSZGqTq5GYhtPYZBM3GekHE=
+			</data>
 			<key>hash2</key>
 			<data>
-			JY3kZOYHttuMVh+iFINOdKXV1PRGR9COc9ACOn2vc/g=
+			C6zRXyZcjejm09t3XuQBGK3kE6eIImYAVRVAxLyTGIk=
 			</data>
 		</dict>
 		<key>App.momd/App_v2.mom</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			tdElziUQO4bcTYyF5lpACS1qunc=
+			</data>
 			<key>hash2</key>
 			<data>
-			1I2v8EFi167e6b+9APmQiAdMUuVPSRgoSpHoiox9rso=
+			thmlUrbQKmevKsGrj4nJIDSnTk48VVEAOV2g9xlnJhI=
 			</data>
 		</dict>
 		<key>App.momd/App_v2.omo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			VGabWfDtM1kRMzebU8sM8xDQRAc=
+			</data>
 			<key>hash2</key>
 			<data>
 			9RRICwqu1GAbuc0/9eHacWE3QlhzKS/EMiqAyL41vmQ=
@@ -84,6 +96,10 @@
 		</dict>
 		<key>App.momd/VersionInfo.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/jIzLgfn+iVaWApT/wvqmdPuiRs=
+			</data>
 			<key>hash2</key>
 			<data>
 			V5kXsIXR0PVXS7Nzn1RNepMUv1QZdaZORKs62B2T6gE=
@@ -91,6 +107,10 @@
 		</dict>
 		<key>device_list.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			KUDSpoN1caNH1OkEH5rxzdUCGn0=
+			</data>
 			<key>hash2</key>
 			<data>
 			L5HNb07FQY38xtRYro8Z7hXhnfqB91xOySzcVCzo8mw=
@@ -98,6 +118,10 @@
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xKjN17lP/jUe701LOrtta9Qo3RQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			AkvyR+sV5r2XvMebfIGK+uJWZJaS9HeS6ILDzpMIvag=
@@ -107,20 +131,32 @@
 		</dict>
 		<key>rt-script/_jsb-runtime.js</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PgZwdZ+0YObzk66yBGFESrriwRQ=
+			</data>
 			<key>hash2</key>
 			<data>
-			drcHeLKzggpdMjP9jmeyX5nX1MZvdRBGLeb9650E9uA=
+			RiTP+MmGyHwTage6mIMy/aaifoHL9Np9GqVuAMvBmwg=
 			</data>
 		</dict>
 		<key>rt-script/_jsb-worker.js</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			znD5YlRmW+mMo0w+idX0oPZj/kc=
+			</data>
 			<key>hash2</key>
 			<data>
-			0RgYFoVhSAjG6gZ0Qv6sYXoqGgbUQ2Wwaw6LTi5K37A=
+			iBaOkDDCeQ0DZ1e24cvAdRSr3CY+vLORfcHwVBIu+oI=
 			</data>
 		</dict>
 		<key>vConsole.html</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Yv/Ed+9MxTR8RKe04nx1VeNYF4M=
+			</data>
 			<key>hash2</key>
 			<data>
 			QRN1CORWmUkHyQh1moQ2JyPjuP7GqV9Uj7wbfLwoEYE=
@@ -128,6 +164,10 @@
 		</dict>
 		<key>vconsole.min.js</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kf0GAc0xQ2eK5R1fRS27y4xs0ZQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			CxZoeGHGayxV3yedUbzh7xCYMPlSFN+U6DGFKWwjyjs=
@@ -135,6 +175,10 @@
 		</dict>
 		<key>zh-Hans.lproj/Localizable.strings</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8+SXLEyt76KGPFcv+2XT/3rHd2U=
+			</data>
 			<key>hash2</key>
 			<data>
 			q4KBqoXYDHKMn+cB4XmagOO8SpgiVgVZBfD1NcqMXVE=

@@ -94,7 +94,7 @@ typedef NS_ENUM(NSUInteger, SUDRTGameState) {
 /**
  * Defines the threading model for the game's rendering engine.
  */
-typedef NS_ENUM(NSUInteger, SUDRuntimeRenderThreadMode) {
+typedef NS_ENUM(NSUInteger, SUDRTRenderThreadMode) {
     /// Automatically determines the best rendering thread based on system load.
     SUD_RT_RENDER_THREAD_MODE_AUTO = 0,
     /// Renders on the dedicated game logic thread.
@@ -108,7 +108,7 @@ typedef NS_ENUM(NSUInteger, SUDRuntimeRenderThreadMode) {
 /**
  * Authentication status for specific game-level permissions.
  */
-typedef NS_ENUM(NSUInteger, SUDRuntimePermissionAuthStatus) {
+typedef NS_ENUM(NSUInteger, SUDRTPermissionAuthStatus) {
     /// The user has not yet been asked for permission.
     SUD_RT_PERMISSION_AUTH_STATUS_UNDETERMINED = 0,
     /// Permission has been granted by the user.
@@ -120,7 +120,7 @@ typedef NS_ENUM(NSUInteger, SUDRuntimePermissionAuthStatus) {
 /**
  * Authentication status for OS-level system permissions (e.g., Camera, Mic).
  */
-typedef NS_ENUM(NSUInteger, SUDRuntimeSystemPermissionAuthStatus) {
+typedef NS_ENUM(NSUInteger, SUDRTSystemPermissionAuthStatus) {
     /// System permission state is unknown.
     SUD_RT_SYSTEM_PERMISSION_AUTH_STATUS_UNDETERMINED = 0,
     /// System permission is granted.
@@ -257,7 +257,7 @@ typedef NS_ENUM(NSUInteger, SUDRuntimeSystemPermissionAuthStatus) {
  */
 @protocol SUDRTGameQueryPermissionHandle <NSObject>
 /// Respond to the game with the final authorization status.
-- (void)completeQueryPermission:(NSString *)permission authStatus:(SUDRuntimePermissionAuthStatus)authStatus;
+- (void)completeQueryPermission:(NSString *)permission authStatus:(SUDRTPermissionAuthStatus)authStatus;
 @end
 
 /**
@@ -265,7 +265,7 @@ typedef NS_ENUM(NSUInteger, SUDRuntimeSystemPermissionAuthStatus) {
  */
 @protocol SUDRTGameQueryPermissionListener <NSObject>
 /// Called when the game asks for a specific app-level permission.
-- (void)onQueryPermission:(id<SUDRTGameQueryPermissionHandle>)handle permission:(NSString *)permission appId:(NSString *)appId authStatus:(SUDRuntimePermissionAuthStatus)authStatus;
+- (void)onQueryPermission:(id<SUDRTGameQueryPermissionHandle>)handle permission:(NSString *)permission appId:(NSString *)appId authStatus:(SUDRTPermissionAuthStatus)authStatus;
 @end
 
 /**
@@ -282,7 +282,7 @@ typedef NS_ENUM(NSUInteger, SUDRuntimeSystemPermissionAuthStatus) {
 @protocol SUDRTGameQuerySystemPermissionListener <NSObject>
 @optional
 /// Called before the system permission dialog is shown to allow the app to show a custom rationale UI.
-- (void)beforeQuerySystemPermission:(id<SUDRTGameQuerySystemPermissionHandle>)handle fromJSMethod:(NSString *)methodName permission:(NSString *)permission appId:(NSString *)appId authStatus:(SUDRuntimeSystemPermissionAuthStatus)authStatus serviceStatus:(BOOL)enabled;
+- (void)beforeQuerySystemPermission:(id<SUDRTGameQuerySystemPermissionHandle>)handle fromJSMethod:(NSString *)methodName permission:(NSString *)permission appId:(NSString *)appId authStatus:(SUDRTSystemPermissionAuthStatus)authStatus serviceStatus:(BOOL)enabled;
 @end
 
 /**
@@ -323,6 +323,8 @@ typedef NS_ENUM(NSUInteger, SUDRuntimeSystemPermissionAuthStatus) {
  * The primary interface for controlling an active game instance.
  */
 @protocol SUDRTGameHandle <NSObject>
+
+- (NSDictionary *)getDebuggableState;
 
 /// Initializes the game resources.
 - (void)create;

@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol SUDRTGameHandle;
 @protocol SUDOPGameHandleProvider;
+@class SUDOPGameInfo;
 #pragma mark - Common Types
 
 typedef NS_ENUM(NSInteger, SUDOPFIDType) {
@@ -27,16 +28,18 @@ typedef NS_ENUM(NSInteger, SUDOPFIDType) {
  * Completion block for general asynchronous operations.
  * @param error An error object if the operation failed, or nil if it succeeded.
  */
-typedef void(^SUDOPCompletion)(NSError *_Nullable error);
+typedef void(^SUDOPCompletionBlock)(NSError *_Nullable error);
 
-typedef void(^SUDOPDidGameHandleCreated)(id<SUDRTGameHandle>gameHandle);
-
+typedef void(^SUDOPDidGameHandleCreatedBlock)(id<SUDRTGameHandle>gameHandle);
+typedef void(^SUDOPDidGameViewCreatedBlock)(UIView *gameView);
 /**
  * Completion block for game-related operations (download, load, start).
  * @param gameHandleProvider Provides the game handle upon success.
  * @param error An error object if the operation failed, or nil if it succeeded.
  */
-typedef void(^SUDOPGameOperationCompletion)(id<SUDOPGameHandleProvider> _Nullable gameHandleProvider, NSError *_Nullable error);
+typedef void(^SUDOPGameOperationCompletionBlock)(id<SUDOPGameHandleProvider> _Nullable gameHandleProvider, NSError *_Nullable error);
+
+typedef void(^SUDOPProgressBlock)(NSInteger progress);
 
 #pragma mark - Protocols
 
@@ -114,6 +117,64 @@ typedef void(^SUDOPGameOperationCompletion)(id<SUDOPGameHandleProvider> _Nullabl
 
 @end
 
+@interface SUDOPGameInfo : NSObject
+/// portrait | lanscape
+@property(nonatomic, strong)NSString *deviceOrientation;
+@end
 
+
+/**
+ Game information model containing metadata about a game.
+ */
+@interface SUDOPGameInformation : NSObject
+
+/// Unique identifier of the game
+@property (nonatomic, strong) NSString *gameID;
+
+/// Game name (localized dictionary)
+@property (nonatomic, strong) NSDictionary<NSString *, NSString *> *gameName;
+
+/// URL of the game icon
+@property (nonatomic, strong) NSString *gameIcon;
+
+/// Game introduction (localized dictionary)
+@property (nonatomic, strong) NSDictionary<NSString *, NSString *> *gameIntroduction;
+
+/// Game detailed description (localized dictionary)
+@property (nonatomic, strong) NSDictionary<NSString *, NSString *> *gameDescription;
+
+/// Game category:
+/// 1 - RPG
+/// 2 - Strategy & Management
+/// 3 - Casual & Puzzle
+/// 4 - Action & Adventure
+/// 5 - Shooter
+/// 6 - Sports & Racing
+/// 7 - Card & Board
+/// 8 - Music & Dance
+@property (nonatomic, assign) NSInteger category;
+
+/// Customer service phone number
+@property (nonatomic, strong) NSString *servicePhone;
+
+/// Customer service email address
+@property (nonatomic, strong) NSString *serviceEmail;
+
+/// Subject type: 0 - Individual, 1 - Enterprise
+@property (nonatomic, assign) NSInteger subjectType;
+
+/// Subject name (full enterprise name or individual name)
+@property (nonatomic, strong) NSString *subjectName;
+
+/// Privacy policy URL
+@property (nonatomic, strong) NSString *privacyPolicyUrl;
+
+/// Game version string
+@property (nonatomic, strong) NSString *version;
+
+/// Last update timestamp (in milliseconds)
+@property (nonatomic, assign) long long updateTime;
+
+@end
 
 NS_ASSUME_NONNULL_END

@@ -1,41 +1,27 @@
-Pod::Spec.new do |spec|
-    spec.name              = 'SUDGI'
-    spec.version           = '1.0.0'
-    spec.license           = { :type => 'Copyright',:text => "Copyright © 2020-2024 SUD. All Rights Reserved.\n" }
-    spec.homepage          = 'https://docs.sud.tech'
-    spec.authors           = { 'sud.tech' => 'dev@sud.tech' }
-    spec.summary           = 'The SUDGI SDK for iOS.'
-    spec.description       = 'SudASR is a ASR SDK for iOS by SUD.'
-    spec.documentation_url = 'https://docs.sud.tech'
-    spec.platforms         = { 'ios':'11.0' }
-    spec.source       = {:path => '.'}
-    spec.requires_arc     = true
-    spec.default_subspec = 'Stand'
-
-    spec.subspec 'Base' do |ss|
-      ss.vendored_frameworks = 'SudSDK/SUDGI.xcframework'
-    end
-
-    spec.subspec 'Stand' do |ss|
-
-      ss.dependency "#{spec.name}/Base"
-      
-    end
-  end
-
-
-## 备注：
-# 1. 本地依赖SDK时
-# 屏蔽直接依赖 ss.dependency 'SudMGPxx', 'x.x.x.x'，放开
-# ss.vendored_frameworks = [
-#   'SudSDK/SUDGI.xcframework'
-# ]
 #
-# 2. 本地远程依赖SDK
-# 屏蔽本地依赖SDK
-# ss.vendored_frameworks = [
-#   'SudSDK/SUDGI.xcframework'
-# ]
-# 放开远程依赖：ss.dependency 'SudMGPxx', 'x.x.x.x'
+# Be sure to run `pod lib lint SudMGP.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
 
-
+Pod::Spec.new do |s|
+  s.name             = 'SUDGI'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of SudMGPSDK.'
+  
+  s.description      = <<-DESC
+  TODO: Add long description of the pod here.
+  DESC
+  
+  s.homepage         = 'https://github.com/dingguanghui/SudMGPSDK'
+  #s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'dev' => 'dev@sud.tech' }
+  s.source       = {:path => '.'}
+  s.frameworks = 'Foundation', 'UIKit'
+  s.requires_arc = true
+  
+  s.ios.deployment_target = '11.0'
+  s.vendored_frameworks = ['SudSDK/SUDGI.xcframework','SudSDK/shine.xcframework']
+end
