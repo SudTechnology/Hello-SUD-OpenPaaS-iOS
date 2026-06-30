@@ -6,52 +6,53 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "SUDOPCommon.h"
 NS_ASSUME_NONNULL_BEGIN
 @class SUDOPAd;
 @class SUDOPRewardVideoAdSSVData;
 
 /// Game->APP event
 @protocol SUDOPAdDelegate <NSObject>
+
+@optional
 /**
  Notifies that the ad has been shown.
  @param ad The ad object being displayed.
  */
-- (void)sudopAdShow:(SUDOPAd *)ad;
+- (void)showAd:(SUDOPAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle;
 
 /**
  Notifies that the ad has been hidden.
  @param ad The ad object that was hidden.
  */
-- (void)sudopAdHide:(SUDOPAd *)ad;
+- (void)hideAd:(SUDOPAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle;
 
 /**
  Notifies that the ad has been destroyed and should be cleaned up.
  @param ad The ad object being destroyed.
  */
-- (void)sudopAdDestroy:(SUDOPAd *)ad;
-
-@optional
+- (void)destroyAd:(SUDOPAd *)ad;
 
 /**
  Called when the ad has finished loading and is ready to be shown.
  @param ad The ad object that finished loading.
  */
-- (void)sudopAdLoad:(SUDOPAd *)ad;
+- (void)loadAd:(SUDOPAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle;
 
 /**
  Asks whether the ad is currently being shown.
  @param bannerAd The banner ad object to check.
  @return YES if the ad is currently visible, NO otherwise.
  */
-- (BOOL)sudopAdIsShow:(SUDOPAd *)bannerAd;
+- (BOOL)isShowAd:(SUDOPAd *)bannerAd;
 
 /**
  Provides server-side verification data for rewarded video ads.
  @param ad The ad object associated with the SSV data.
  @param ssvData The server-side verification data containing reward validation information.
  */
-- (void)sudopAd:(SUDOPAd *)ad setServerSideVerificationData:(SUDOPRewardVideoAdSSVData *)ssvData;
+- (void)setServerSideVerificationData:(SUDOPRewardVideoAdSSVData *)ssvData forAd:(SUDOPAd *)ad;
+
 @end
 
 /// Base ad class

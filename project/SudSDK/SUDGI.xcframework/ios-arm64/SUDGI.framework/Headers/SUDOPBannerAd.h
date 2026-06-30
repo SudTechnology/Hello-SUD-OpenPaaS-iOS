@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign)NSInteger top;
 @property(nonatomic, assign)NSInteger width;
 @property(nonatomic, assign)NSInteger height;
+@property(nonatomic, assign)NSInteger realWidth;
+@property(nonatomic, assign)NSInteger realHeight;
 @end
 
 /// Banner ad

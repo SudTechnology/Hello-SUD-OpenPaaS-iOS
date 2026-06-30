@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDGI-umbrella.h</key>
 		<data>
-		H5TTNt/H159pa9ogPQ6hCuK1A2U=
+		qJ/IGsDhXo2jZzy1a/1wN4klyV0=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDGI.h</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPAd.h</key>
 		<data>
-		8G289GjeqQA/Bm0mgr94ew8ZmO0=
+		fMuSiJmi1yvnxa4/SAQUzLBTGZ4=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPBannerAd.h</key>
 		<data>
-		191Gh7GAefnZid04/AqN/fSFCJY=
+		t21/ayNftce31jtIIFyr8RCvH6U=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPChooseImageOptions.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPCommon.h</key>
 		<data>
-		xn1L8TQSfuf8ZcCPq3SIQaaBu5s=
+		ZcejuDot/FuW4g8D5ERxbo5sOe4=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPCustomAd.h</key>
 		<data>
@@ -119,6 +119,10 @@
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPInterstitialAd.h</key>
 		<data>
 		+vXoybGUIts3Cw5R2ha9Q37H9tM=
+		</data>
+		<key>ios-arm64/SUDGI.framework/Headers/SUDOPMenuButtonBoundingClientRect.h</key>
+		<data>
+		OrxktxjtkcYZdZoqJ4oYT0QZwSk=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPPreviewImageOptions.h</key>
 		<data>
@@ -154,7 +158,7 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPWrappedClientDelegate.h</key>
 		<data>
-		5yYJuivj1PPiU5SKDxkvYDposeQ=
+		KGf6JFfDAIUG/lyyWWqAkkSVb28=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRT.h</key>
 		<data>
@@ -162,7 +166,7 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTExtendedClient.h</key>
 		<data>
-		ZCATMYp05iecJZahjpcZgsgYNEQ=
+		Tgo4EXvUFpK/+Ltis5TzqxgF+7g=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGameAudioSession.h</key>
 		<data>
@@ -198,7 +202,7 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/Info.plist</key>
 		<data>
-		zzmeEZjgTCaCsaMWfd7vYGdUA8Y=
+		2BYI66OWdoh2yioIP4nJzl2Wd+s=
 		</data>
 		<key>ios-arm64/SUDGI.framework/Modules/module.modulemap</key>
 		<data>
@@ -210,11 +214,11 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/SUDGI</key>
 		<data>
-		0rDbSr2cnYWBi4NYmrnHDlenRdY=
+		ziLKx05GSZsr0uhIWXjz7yQ9gpo=
 		</data>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/Info.plist</key>
 		<data>
-		Rkko7vaMmCbn75YKiiSaF/tcxAU=
+		Okb216aGMOaavvfPt3fpagmPPVo=
 		</data>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/SudPlugin</key>
 		<data>
@@ -232,17 +236,21 @@
 		<data>
 		P9pF8NkplrEkx5lAjSWSAw7c0QM=
 		</data>
+		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/sud-video.js</key>
+		<data>
+		KmkEbrpQcNosqyT2FJn8Ls1gf2A=
+		</data>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/sud.png</key>
 		<data>
 		vQlHDEdu0+Q1In7/lmqL55xESZU=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/App.momd/App.mom</key>
 		<data>
-		ENtlbSZGqTq5GYhtPYZBM3GekHE=
+		qeCtTLqzbD+EJNlXKquWgqB41z4=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/App.momd/App_v2.mom</key>
 		<data>
-		tdElziUQO4bcTYyF5lpACS1qunc=
+		2+ti9NTmfKlpyqabOmpy30vNU+E=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/App.momd/App_v2.omo</key>
 		<data>
@@ -254,27 +262,23 @@
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/Info.plist</key>
 		<data>
-		jNX0LNnvEcHbJpndzMVPwHza/mQ=
+		Hp0TE8owlbSckpjVEVG1uHMWrvQ=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		l7lgaSDHmeSY7y1cttAERf6KDmk=
+		gdEbGKWs/e2lbMnHZ2vZPPTXE9c=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
-		M2lCjD9l0zaywW++XDwGYjVsVVI=
-		</data>
-		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		Ix4+5t4O357k1fmyXSBLbBYNtlo=
+		7CouAKmH1hiAmK9xkBYU1i0OzJM=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		JYR2jukrZgcPqfgcrs+tPySa0G8=
+		TgxdlAkp2IzkSzybCIU2TYieupo=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		V5u9znnyy8N5mN9Kpp8AGMZgXvk=
+		aRXMqdRtpoM0v0O1HiLoE9Qk4RA=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/device_list.plist</key>
 		<data>
@@ -291,7 +295,7 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/rt-script/_jsb-runtime.js</key>
 		<data>
-		PgZwdZ+0YObzk66yBGFESrriwRQ=
+		zrn6knGZEWAGuz+TrGdNS2dCka8=
 		</data>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/rt-script/_jsb-worker.js</key>
 		<data>
@@ -352,7 +356,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDGI-umbrella.h</key>
 		<data>
-		T04XZTdPMI7mDGcQqXiuk9ra6TM=
+		s7dsZtZRCwiAPhiroCCcT+/Ku5Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDGI.h</key>
 		<data>
@@ -384,11 +388,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPAd.h</key>
 		<data>
-		8G289GjeqQA/Bm0mgr94ew8ZmO0=
+		fMuSiJmi1yvnxa4/SAQUzLBTGZ4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPBannerAd.h</key>
 		<data>
-		191Gh7GAefnZid04/AqN/fSFCJY=
+		t21/ayNftce31jtIIFyr8RCvH6U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPChooseImageOptions.h</key>
 		<data>
@@ -396,7 +400,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPCommon.h</key>
 		<data>
-		xn1L8TQSfuf8ZcCPq3SIQaaBu5s=
+		ZcejuDot/FuW4g8D5ERxbo5sOe4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPCustomAd.h</key>
 		<data>
@@ -429,6 +433,10 @@
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPInterstitialAd.h</key>
 		<data>
 		+vXoybGUIts3Cw5R2ha9Q37H9tM=
+		</data>
+		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPMenuButtonBoundingClientRect.h</key>
+		<data>
+		OrxktxjtkcYZdZoqJ4oYT0QZwSk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPPreviewImageOptions.h</key>
 		<data>
@@ -464,7 +472,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPWrappedClientDelegate.h</key>
 		<data>
-		5yYJuivj1PPiU5SKDxkvYDposeQ=
+		KGf6JFfDAIUG/lyyWWqAkkSVb28=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRT.h</key>
 		<data>
@@ -472,7 +480,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTExtendedClient.h</key>
 		<data>
-		ZCATMYp05iecJZahjpcZgsgYNEQ=
+		Tgo4EXvUFpK/+Ltis5TzqxgF+7g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGameAudioSession.h</key>
 		<data>
@@ -508,7 +516,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Info.plist</key>
 		<data>
-		Xy7JC6ZeKJ8xNt6v1k/sGvf20Tg=
+		oDeh3otihpqGdBe9AL5PReiXzr4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Modules/module.modulemap</key>
 		<data>
@@ -520,11 +528,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI</key>
 		<data>
-		5t5d0HuOC/kAV6jtR4GMMD0ZqHM=
+		ydv1WjzjfGgOI6GVWZ0JA2OB2rM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/Info.plist</key>
 		<data>
-		xXdHY7PIRSIdX47/xtgqgOHgpWs=
+		uQHortmBAiEnJb7/MVzn0Uk8eMA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/SudPlugin</key>
 		<data>
@@ -542,13 +550,17 @@
 		<data>
 		P9pF8NkplrEkx5lAjSWSAw7c0QM=
 		</data>
+		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/sud-video.js</key>
+		<data>
+		KmkEbrpQcNosqyT2FJn8Ls1gf2A=
+		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/sud.png</key>
 		<data>
 		vQlHDEdu0+Q1In7/lmqL55xESZU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/Info.plist</key>
 		<data>
-		rSS7FXm+5VDJ2YJzUo/bMMwEcss=
+		1X6FQ2WT26tCEntElonk77BVlOc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/SudPlugin</key>
 		<data>
@@ -566,21 +578,25 @@
 		<data>
 		P9pF8NkplrEkx5lAjSWSAw7c0QM=
 		</data>
+		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/sud-video.js</key>
+		<data>
+		KmkEbrpQcNosqyT2FJn8Ls1gf2A=
+		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/sud.png</key>
 		<data>
 		vQlHDEdu0+Q1In7/lmqL55xESZU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Jv5JPeRDSaXz9MDpLgiwdvqjEMM=
+		XMd0h6lXQ5oN68AI6Pe7BaQkcoQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/App.momd/App.mom</key>
 		<data>
-		ENtlbSZGqTq5GYhtPYZBM3GekHE=
+		qeCtTLqzbD+EJNlXKquWgqB41z4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/App.momd/App_v2.mom</key>
 		<data>
-		tdElziUQO4bcTYyF5lpACS1qunc=
+		2+ti9NTmfKlpyqabOmpy30vNU+E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/App.momd/App_v2.omo</key>
 		<data>
@@ -592,23 +608,19 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/Info.plist</key>
 		<data>
-		J83a2dfAPGkPI1Jfkiqf20HTDDc=
+		09lpdhsW/F77LgM9anOs1T7hfjw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		doEqPHUZxr+QMSfxpcERz4VkVSs=
+		KzjoFdACC0/4Y3eP7A4yEYiqjj0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
 		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
-		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		p2D2/LFAINVLlq8F9Wz8uDdO6kU=
-		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		JYR2jukrZgcPqfgcrs+tPySa0G8=
+		TgxdlAkp2IzkSzybCIU2TYieupo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -629,7 +641,7 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/rt-script/_jsb-runtime.js</key>
 		<data>
-		PgZwdZ+0YObzk66yBGFESrriwRQ=
+		zrn6knGZEWAGuz+TrGdNS2dCka8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/rt-script/_jsb-worker.js</key>
 		<data>
@@ -657,10 +669,6 @@
 	<dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDAPPD.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lbeozzxIptdlOJ/DbsPLh8sTRCU=
-			</data>
 			<key>hash2</key>
 			<data>
 			sqaZEMNrcXkeVhLBGHZIhCkZ1W7G/DtEtED2e7mWMus=
@@ -668,10 +676,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDAiAgent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			shHSqJv3v3AjrN9jG4HhiuQmndM=
-			</data>
 			<key>hash2</key>
 			<data>
 			lRfxkujzu2QDSg9m0H417ntnczsSHIdtWIt5j3hKxlI=
@@ -679,10 +683,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDCfg.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6bhB1jJBSaRvdjimtjS1nKfU0cs=
-			</data>
 			<key>hash2</key>
 			<data>
 			fVgLw3NGxVmn6elHPqd+YkXiTeUH05vyji7VVagEkV0=
@@ -690,10 +690,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDFSMMG.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KpFE5Pxp0rfdZUutEgleIA/qB8I=
-			</data>
 			<key>hash2</key>
 			<data>
 			v5vPiXIMdSEmnqV5O4UCSXkPsNQtu6yua6EY4r4RHeQ=
@@ -701,10 +697,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDFSMStateHandle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			skm1wKnWnfRJJfJqVGkRHDz2FJI=
-			</data>
 			<key>hash2</key>
 			<data>
 			CJUH1UYtJO0YsdjbeTddl8d9HtGT6d5k9DjNrwh6vN0=
@@ -712,10 +704,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDFSTAPP.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3vzjtHHebZwAU7ZfKNNR+tStA5o=
-			</data>
 			<key>hash2</key>
 			<data>
 			D9Wprak3OIrClbI30AR7C+eIoomsjL5mG1SFCdKTVuQ=
@@ -723,10 +711,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDListener.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MWYAldS0w8+55RTf5DiPOs7QSCQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			FqIuLdXvnClEYqhPjY/505TYEHyoRl8lF35iIYuOH7c=
@@ -734,10 +718,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/ISUDLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sT7sby1hVCv++frmdWPkLsr/MVo=
-			</data>
 			<key>hash2</key>
 			<data>
 			MuMFGgXlbK0+FY1sVPYlv6hLXb/FhSKiAm5MRAQacEM=
@@ -745,10 +725,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDAiModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8GEJ39aAlMrsm/Bd37T1rNgcvR0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Cgp8l+yPokt9T3s1bza4CjDtkaTFHOlgQz4hHyx2wfU=
@@ -756,21 +732,13 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDGI-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			H5TTNt/H159pa9ogPQ6hCuK1A2U=
-			</data>
 			<key>hash2</key>
 			<data>
-			VtGZFCY8p1F0hmCxZXSVAWj8jSyWbgxpmQaaIwDcp84=
+			u4FD4QEEw2+/+WXoeCBtGNlZ3sqEFZCjd5Dr9z64++M=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDGI.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zTkl7XfLwC/WD242ol58rrvu9EE=
-			</data>
 			<key>hash2</key>
 			<data>
 			4LeVIeG75pZRctEtQR86U8TcTBv4mnl/m7ot0OsHATU=
@@ -778,10 +746,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDGameCheckoutStatus.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wYLsaP56VU30AemU31AhJND26Lg=
-			</data>
 			<key>hash2</key>
 			<data>
 			yE/HrwMAJOt9e6CgwMtV5poOBTFhHuCb5s1hrEnMNl4=
@@ -789,10 +753,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDInitSDKParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SijBlZG1DWSGW0S0R+2GJnDmcLI=
-			</data>
 			<key>hash2</key>
 			<data>
 			3V5wnvW35GGi2xg4vms3jmd5ENKGVKD4FwkH2yxYEqg=
@@ -800,10 +760,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDLoadMGMode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HZ3bL+gOhrBHo5ynYL9c0ghD4S4=
-			</data>
 			<key>hash2</key>
 			<data>
 			hTTQs3Ti1SDla/CNxsMsAjIPn+GGJATGtjUykjjWMos=
@@ -811,10 +767,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDLoadMGParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TS9rb/sXVF3hC1RtaZ0onmnCSJw=
-			</data>
 			<key>hash2</key>
 			<data>
 			DQ4oy9FJUTvTqGiClwruZdX7rIKJSh80iW27Z/sOefw=
@@ -822,10 +774,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDNetworkCheckParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aI4G2tjfvTe6UQ1KS+mnp+0vzRQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			0GmRCwhIv6hsI65Zv9bGcILxPO6tmIxaPOpc+mPxXeg=
@@ -833,10 +781,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOP.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gypf42sSNrhmcrnroWk4++cIXII=
-			</data>
 			<key>hash2</key>
 			<data>
 			qrehk9j2io3dhaHxgX+HsaWMyXVTaNYuYMjHbcSwpXw=
@@ -844,32 +788,20 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8G289GjeqQA/Bm0mgr94ew8ZmO0=
-			</data>
 			<key>hash2</key>
 			<data>
-			OtsZrcMYlwwHV8JSu+boNXlr/LuhU2pEJ9wqWtU2YvQ=
+			oMOimRaO1Uuu9KjbQrUkF0ae7C8uWExDMoNTPqTn31k=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPBannerAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			191Gh7GAefnZid04/AqN/fSFCJY=
-			</data>
 			<key>hash2</key>
 			<data>
-			UOkGF4vYaAAmuF9ww+c/39yq+gjpL8nCwm57E7wfhGg=
+			SVTRQr3awYK+S0Nu1wigglQeNZY/PUkqo9B6hj/oGVo=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPChooseImageOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GytO1E6y7Xcitrw5NysEjE3T4o8=
-			</data>
 			<key>hash2</key>
 			<data>
 			KJXFSKOiQpG252QcOyG1KCptVMWYGlVD6nsFmgTEqEA=
@@ -877,21 +809,13 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPCommon.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xn1L8TQSfuf8ZcCPq3SIQaaBu5s=
-			</data>
 			<key>hash2</key>
 			<data>
-			zZ64H7jkP7uloPcWyRNGdsH7fsc7ZkSMKimcwNc7p0k=
+			ZMZu6XiUrTeipNDvMl8ogmyreAT7JsFzCLFKHcXetOE=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPCustomAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6mA7pEjw4cyyzu8wGg3QsN223Ug=
-			</data>
 			<key>hash2</key>
 			<data>
 			RAO7ThnvuMlbAUHmEub+EkVVfvi2iFGhZnlvotT9FxM=
@@ -899,10 +823,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPGameBannerAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DBpeZy94O6AyGmFqIe9IRrggyZI=
-			</data>
 			<key>hash2</key>
 			<data>
 			/BE1If5UiHrqlvNi9kllcyjx2SnndTFrSyrIhxbpN9c=
@@ -910,10 +830,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPGameDrawerAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mGf+tdcQOk/Ana4IuslD3fL9nbI=
-			</data>
 			<key>hash2</key>
 			<data>
 			4vcbYvPshTQMyKnHvPJ66sCgg/qwRxiJSzRQOHfh14M=
@@ -921,10 +837,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPGamePortalAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HN5R7JDb7K84kP6sJ8lJNXc3hys=
-			</data>
 			<key>hash2</key>
 			<data>
 			IB8Vx7sSyCa/MHErnWZEUEr4CDVgcIm7DFxqYQUNd90=
@@ -932,10 +844,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPGameTask.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xWAb8nV70oW/1fyTFL10FOR1B/8=
-			</data>
 			<key>hash2</key>
 			<data>
 			bGJv+9INXkajnyW3hh5OEzUhzVh5cD9j/YBzoT6mC3Q=
@@ -943,10 +851,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPHideLoadingOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DvzbDWK/+504XFJhZbtvuWeb7FA=
-			</data>
 			<key>hash2</key>
 			<data>
 			Jeet/t76FBjN88d5GnaZbXdFx1xqgD/HqJTFS+6XwN4=
@@ -954,10 +858,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPHideToastOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xPThtAz0KcE1ck1XS6OEmYGaqI8=
-			</data>
 			<key>hash2</key>
 			<data>
 			AgPy6fheCmahcrssHWJwW6dfSRit15VhBjQC/Iu0wWY=
@@ -965,21 +865,20 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPInterstitialAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+vXoybGUIts3Cw5R2ha9Q37H9tM=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qy1vYOhmt0c6fdy9W7ptU6HEhBxb65W9B6pgE+9PTtE=
 			</data>
 		</dict>
+		<key>ios-arm64/SUDGI.framework/Headers/SUDOPMenuButtonBoundingClientRect.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2rUvjHzTR/G3gJ3/qhpw1BX+fCjO34VLj24Cicmybjs=
+			</data>
+		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPPreviewImageOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8oWwmrKIk6nfwb5HbiHbMy6PMNQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			qcBeIEeHzC15uErDAkZOZkFivXG/mD5zvaSVgx8+uds=
@@ -987,10 +886,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPRequestPaymentOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LgmXwg/3H9dxR7L2+xAPU3FIvsE=
-			</data>
 			<key>hash2</key>
 			<data>
 			4lbd/GgDgKub98JPKbZHxOZFYMCLf0H9koLHp3L3g2k=
@@ -998,10 +893,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPRewardVideoAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mtKaIJt3sPxcOk1p7iq1ZmE4NhY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Ye3osgKBnC4u9rF0QHves46x8Verv1/SJgGq7J6Rk5E=
@@ -1009,10 +900,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPSaveImageToPhotosAlbumOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2IWaZ2hlfT4MpqcNdkqi27XcK/g=
-			</data>
 			<key>hash2</key>
 			<data>
 			dbBinTZ/1QIeh6Fc6OF0OY+VmaQUE1qKhqUYRd9Qz+A=
@@ -1020,10 +907,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPShowActionSheetOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oP1ZxZUgMeqaUkvwY8BhvptD4vw=
-			</data>
 			<key>hash2</key>
 			<data>
 			B9EsPg3hQQkcKlazH2TPOi1ChZnO8UJHSd/m/TqRjKY=
@@ -1031,10 +914,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPShowLoadingOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hwXzeMvoW1w7NPtXbpRLqx8EAAg=
-			</data>
 			<key>hash2</key>
 			<data>
 			HQTZhXbRKjwMx3iDBxFabXC5KDdA4oD6ovn3ZoNjXHE=
@@ -1042,10 +921,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPShowModalOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			J+wANoWT9JdE9219v2owxOLH6Ac=
-			</data>
 			<key>hash2</key>
 			<data>
 			Sv2cg6+uJiR7PDNZ4pZKZul4RJ4Av03P8TR/VubiApI=
@@ -1053,10 +928,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPShowToastOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GANd/M/l4k7/kdf3KXNHIWGTeBw=
-			</data>
 			<key>hash2</key>
 			<data>
 			KUo28YXLGNvJzVdE2r0bbTUii5Ih2MiWf/zMRTvsqjw=
@@ -1064,21 +935,13 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDOPWrappedClientDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5yYJuivj1PPiU5SKDxkvYDposeQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			RWJkmH5GuOaxi7GAeuKcZbv3B1uJ5gy8c/tKAEMHKVg=
+			jXrvOGV1ftaeP9G6U902hkz9jEpaLNjEN/KLzfqjxIc=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRT.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fuewiu8U6dEt30OcwmBfU2RWDo8=
-			</data>
 			<key>hash2</key>
 			<data>
 			815SjjWmA0HZ+ZWkoYoFiRD1hsLNhm9wvmSkbmYPbw8=
@@ -1086,21 +949,13 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTExtendedClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZCATMYp05iecJZahjpcZgsgYNEQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			EBAq84nQ8AIwipX8GrtwT4cH1vyUflp0lvZG+iNhO+M=
+			34g0F4hjgl8dJm7xy/GGv3gAJXVmefZXl+RPEdfvqvM=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGameAudioSession.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JT6eSkbu1e3eaG3amxQ5HjxHOvI=
-			</data>
 			<key>hash2</key>
 			<data>
 			g6n6O4xj3A9C9g1/DmM9P8xZxab7UoZUJOhoTgKHHrg=
@@ -1108,10 +963,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGameConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YUfN0ttlnhTNSALSS/kynHHs8K8=
-			</data>
 			<key>hash2</key>
 			<data>
 			uIV2htEGxH5Lz9Y5e3UWEQ2WiHPWzJ7kHnpmHHtrtrM=
@@ -1119,10 +970,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGameHandle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YXWvBoT0wJA41Ja2DlI+CX7rpcQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			yvkC40pT7MMyHpj2AOQX4p6LL2ou5WVkyXYpSiJYM0w=
@@ -1130,10 +977,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGameMediaPlayerHandle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jO2jM2xp25gG/jvwugGVBRuARJw=
-			</data>
 			<key>hash2</key>
 			<data>
 			jh+RJjnpVSkcatjiSjg54P1r1w3hO60JsUs8pJbSPLo=
@@ -1141,10 +984,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGamePackageManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1gusiW6gB6HtbvCfIurqzGj4s+s=
-			</data>
 			<key>hash2</key>
 			<data>
 			e6MMid33poLIw7v4ocCtH/Qv6LSgkwo65RcrOVjSfkc=
@@ -1152,10 +991,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGamePluginManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			15vxO2UtdTdShA9YRbAZSg6JF/k=
-			</data>
 			<key>hash2</key>
 			<data>
 			8Ly6C4C0CeNRESDRDTY0uXfReEXUVrsl88C4TJNvESk=
@@ -1163,10 +998,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTGameUserManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vGk6neZfCih1bU7dN0/5BkZsC/g=
-			</data>
 			<key>hash2</key>
 			<data>
 			z8fOodkELnZnqpzGXqQaclTW1s6+VeS83wYnOM/kirY=
@@ -1174,10 +1005,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Headers/SUDRTLoadPackageParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gQMWziXhgqI5u4JYlpNmpGI8Gqg=
-			</data>
 			<key>hash2</key>
 			<data>
 			zQfl2tfgg7wUPv5UGgj7urokosU+N1DCWncnI9/Ymwg=
@@ -1185,21 +1012,13 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zzmeEZjgTCaCsaMWfd7vYGdUA8Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			ssh+p9u4Orvi1aXr1895iSUCOPOpn9ACyI6pvD0ZjUE=
+			y80zRsH5v2jU/eANCSXowN7sUSGJejb2/a7C9PwzdGU=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9a9G1TFtGlKgyNmi3Y0TDgQaJQQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			zeYPibSCbkIX0idLSV8oeARv4JuASNP4lIa0BSkCInY=
@@ -1207,10 +1026,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UxEVK4RT5Go72c2jSqXNFSLPPn4=
-			</data>
 			<key>hash2</key>
 			<data>
 			kPGmYfDyf2azbKXBmS5xIz2nXwItVc0pbRc3Eptrn94=
@@ -1218,32 +1033,20 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/SUDGI</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0rDbSr2cnYWBi4NYmrnHDlenRdY=
-			</data>
 			<key>hash2</key>
 			<data>
-			IqMbU8EnHu0eaeFF7yWhMXpHYvGPtdfPYWbiCgqjGXI=
+			aDi4vSy0J1AgM5fDQi2AVt4+wyDEzs1BUN6+ua4R18U=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Rkko7vaMmCbn75YKiiSaF/tcxAU=
-			</data>
 			<key>hash2</key>
 			<data>
-			EbvS1vkQwrGv73s6eDmI4F956/8lMbH+SkMwI4GD3zY=
+			Pk2Awnot5WjEf2OjXk7ousf2qjChUT4uHJ3/in6sN9o=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/SudPlugin</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hWIqVIjDSaeZyE2biyaD/fdkdSU=
-			</data>
 			<key>hash2</key>
 			<data>
 			r8yQatWPxBHGtcsQ3V5ef1xM1/5LQL5s9Hvw4VsCn48=
@@ -1251,10 +1054,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/fsm_mgp_game_loading_progress.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dtpNcJpsR3zafFe134BfDkM+F/8=
-			</data>
 			<key>hash2</key>
 			<data>
 			PmZ2XWgwRMBpMFC0fewgSN0AQWnYtYfKIc73k87S9No=
@@ -1262,10 +1061,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/fsm_mgp_game_loading_progress_bg.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G5Xy+4h7dGMY6FJB5kqFR+sdgmo=
-			</data>
 			<key>hash2</key>
 			<data>
 			kWsbDMHTQ7BUH2wEALcw8lnRExfB0XZ+DgAVGha920M=
@@ -1273,21 +1068,20 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/sud-crt-plugin-ob.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P9pF8NkplrEkx5lAjSWSAw7c0QM=
-			</data>
 			<key>hash2</key>
 			<data>
 			i11y86KOUUhIOjmMDUvIO3PPYo3PZkFyK2X7e8E8KXA=
 			</data>
 		</dict>
+		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/sud-video.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ccNCVd/Bi+TnfIBgm+xBDpDLHtnVk1nPWd29+ahVZCg=
+			</data>
+		</dict>
 		<key>ios-arm64/SUDGI.framework/SUDGI_Res.bundle/sud.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vQlHDEdu0+Q1In7/lmqL55xESZU=
-			</data>
 			<key>hash2</key>
 			<data>
 			jGjXGnBah08RrghQiM7wJELGteiQM/iZdJDXE8Bq6C8=
@@ -1295,32 +1089,20 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/App.momd/App.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ENtlbSZGqTq5GYhtPYZBM3GekHE=
-			</data>
 			<key>hash2</key>
 			<data>
-			C6zRXyZcjejm09t3XuQBGK3kE6eIImYAVRVAxLyTGIk=
+			vv8bvtgEzn24kHgBTclISmX5gZ0OB6FHLY8wucmtxCQ=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/App.momd/App_v2.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tdElziUQO4bcTYyF5lpACS1qunc=
-			</data>
 			<key>hash2</key>
 			<data>
-			thmlUrbQKmevKsGrj4nJIDSnTk48VVEAOV2g9xlnJhI=
+			piznqXC7MzOQ9dt+MN45BaBIXI1BApnX/SAyNN/uw9c=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/App.momd/App_v2.omo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VGabWfDtM1kRMzebU8sM8xDQRAc=
-			</data>
 			<key>hash2</key>
 			<data>
 			9RRICwqu1GAbuc0/9eHacWE3QlhzKS/EMiqAyL41vmQ=
@@ -1328,10 +1110,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/App.momd/VersionInfo.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/jIzLgfn+iVaWApT/wvqmdPuiRs=
-			</data>
 			<key>hash2</key>
 			<data>
 			V5kXsIXR0PVXS7Nzn1RNepMUv1QZdaZORKs62B2T6gE=
@@ -1339,76 +1117,41 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jNX0LNnvEcHbJpndzMVPwHza/mQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			svqnhX7qAYA7mTkxToYlreZ2MxaNY715lqJMdWmW52Y=
+			IoN2IOVz7EPSZgZ+vd/vYWmXwa/3dLzUq8xqLXHpeDc=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			l7lgaSDHmeSY7y1cttAERf6KDmk=
-			</data>
 			<key>hash2</key>
 			<data>
-			hAyugReaDyWQVVmnnjwjlgQJxLb3z6GcjCFbF5Ih3+4=
+			QESPBbX5OVURWYbMEgInhtCHLLtIAIKwc6Dj50RZ8+E=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			M2lCjD9l0zaywW++XDwGYjVsVVI=
-			</data>
 			<key>hash2</key>
 			<data>
-			cHeiK7pFO0/t7FP+IRhZ7xfUt6dHkdgq8d8ZFGLl/8Q=
-			</data>
-		</dict>
-		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ix4+5t4O357k1fmyXSBLbBYNtlo=
-			</data>
-			<key>hash2</key>
-			<data>
-			GDZSWcRj+MHXa037KUHecdo7hyrHuvUjMaBjYm4rXWA=
+			bHBy4CBvz8ckf8JxOirlMkQYDyKfxdy/Y7z9l4G1dcw=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JYR2jukrZgcPqfgcrs+tPySa0G8=
-			</data>
 			<key>hash2</key>
 			<data>
-			ib2QLS2mTHXzt5GO0WzZcqwYtmkTUT25N1+a56Rbb6o=
+			x1Jni2ounw2IB0MSqwZ3iYLa3FyD2XAgNJpUQ3fbeBM=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeSignature</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V5u9znnyy8N5mN9Kpp8AGMZgXvk=
-			</data>
 			<key>hash2</key>
 			<data>
-			4Dp+gSVMJ75BVC3AlaCZWB5D7SeEc8MvzYjz/rf21aM=
+			aukRflyA3CfXX0reIc8AfGbNk+W4Q1SEExFu0r/Aogo=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/device_list.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KUDSpoN1caNH1OkEH5rxzdUCGn0=
-			</data>
 			<key>hash2</key>
 			<data>
 			L5HNb07FQY38xtRYro8Z7hXhnfqB91xOySzcVCzo8mw=
@@ -1416,10 +1159,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/en.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xKjN17lP/jUe701LOrtta9Qo3RQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			AkvyR+sV5r2XvMebfIGK+uJWZJaS9HeS6ILDzpMIvag=
@@ -1429,21 +1168,13 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/rt-script/_jsb-runtime.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PgZwdZ+0YObzk66yBGFESrriwRQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			RiTP+MmGyHwTage6mIMy/aaifoHL9Np9GqVuAMvBmwg=
+			Ossod7paIZ3EYmgwxXWYA9HfZc+oGzqHg40l0f+30wo=
 			</data>
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/rt-script/_jsb-worker.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			znD5YlRmW+mMo0w+idX0oPZj/kc=
-			</data>
 			<key>hash2</key>
 			<data>
 			iBaOkDDCeQ0DZ1e24cvAdRSr3CY+vLORfcHwVBIu+oI=
@@ -1451,10 +1182,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/vConsole.html</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Yv/Ed+9MxTR8RKe04nx1VeNYF4M=
-			</data>
 			<key>hash2</key>
 			<data>
 			QRN1CORWmUkHyQh1moQ2JyPjuP7GqV9Uj7wbfLwoEYE=
@@ -1462,10 +1189,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/vconsole.min.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kf0GAc0xQ2eK5R1fRS27y4xs0ZQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			CxZoeGHGayxV3yedUbzh7xCYMPlSFN+U6DGFKWwjyjs=
@@ -1473,10 +1196,6 @@
 		</dict>
 		<key>ios-arm64/SUDGI.framework/default-assets.bundle/zh-Hans.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8+SXLEyt76KGPFcv+2XT/3rHd2U=
-			</data>
 			<key>hash2</key>
 			<data>
 			q4KBqoXYDHKMn+cB4XmagOO8SpgiVgVZBfD1NcqMXVE=
@@ -1486,10 +1205,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDAPPD.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lbeozzxIptdlOJ/DbsPLh8sTRCU=
-			</data>
 			<key>hash2</key>
 			<data>
 			sqaZEMNrcXkeVhLBGHZIhCkZ1W7G/DtEtED2e7mWMus=
@@ -1497,10 +1212,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDAiAgent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			shHSqJv3v3AjrN9jG4HhiuQmndM=
-			</data>
 			<key>hash2</key>
 			<data>
 			lRfxkujzu2QDSg9m0H417ntnczsSHIdtWIt5j3hKxlI=
@@ -1508,10 +1219,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDCfg.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6bhB1jJBSaRvdjimtjS1nKfU0cs=
-			</data>
 			<key>hash2</key>
 			<data>
 			fVgLw3NGxVmn6elHPqd+YkXiTeUH05vyji7VVagEkV0=
@@ -1519,10 +1226,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDFSMMG.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KpFE5Pxp0rfdZUutEgleIA/qB8I=
-			</data>
 			<key>hash2</key>
 			<data>
 			v5vPiXIMdSEmnqV5O4UCSXkPsNQtu6yua6EY4r4RHeQ=
@@ -1530,10 +1233,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDFSMStateHandle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			skm1wKnWnfRJJfJqVGkRHDz2FJI=
-			</data>
 			<key>hash2</key>
 			<data>
 			CJUH1UYtJO0YsdjbeTddl8d9HtGT6d5k9DjNrwh6vN0=
@@ -1541,10 +1240,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDFSTAPP.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3vzjtHHebZwAU7ZfKNNR+tStA5o=
-			</data>
 			<key>hash2</key>
 			<data>
 			D9Wprak3OIrClbI30AR7C+eIoomsjL5mG1SFCdKTVuQ=
@@ -1552,10 +1247,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDListener.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MWYAldS0w8+55RTf5DiPOs7QSCQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			FqIuLdXvnClEYqhPjY/505TYEHyoRl8lF35iIYuOH7c=
@@ -1563,10 +1254,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/ISUDLogger.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sT7sby1hVCv++frmdWPkLsr/MVo=
-			</data>
 			<key>hash2</key>
 			<data>
 			MuMFGgXlbK0+FY1sVPYlv6hLXb/FhSKiAm5MRAQacEM=
@@ -1574,10 +1261,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDAiModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8GEJ39aAlMrsm/Bd37T1rNgcvR0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Cgp8l+yPokt9T3s1bza4CjDtkaTFHOlgQz4hHyx2wfU=
@@ -1585,21 +1268,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDGI-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			T04XZTdPMI7mDGcQqXiuk9ra6TM=
-			</data>
 			<key>hash2</key>
 			<data>
-			B5kjeBsqfUKYHAUPrLvnwGRl71ZNd9BWFfxF9rWJL+8=
+			kpiasDw10vSiu5je9bvkuUS/ww/x7lmvuf8junygwJE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDGI.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zTkl7XfLwC/WD242ol58rrvu9EE=
-			</data>
 			<key>hash2</key>
 			<data>
 			4LeVIeG75pZRctEtQR86U8TcTBv4mnl/m7ot0OsHATU=
@@ -1607,10 +1282,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDGameCheckoutStatus.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wYLsaP56VU30AemU31AhJND26Lg=
-			</data>
 			<key>hash2</key>
 			<data>
 			yE/HrwMAJOt9e6CgwMtV5poOBTFhHuCb5s1hrEnMNl4=
@@ -1618,10 +1289,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDInitSDKParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SijBlZG1DWSGW0S0R+2GJnDmcLI=
-			</data>
 			<key>hash2</key>
 			<data>
 			3V5wnvW35GGi2xg4vms3jmd5ENKGVKD4FwkH2yxYEqg=
@@ -1629,10 +1296,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDLoadMGMode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HZ3bL+gOhrBHo5ynYL9c0ghD4S4=
-			</data>
 			<key>hash2</key>
 			<data>
 			hTTQs3Ti1SDla/CNxsMsAjIPn+GGJATGtjUykjjWMos=
@@ -1640,10 +1303,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDLoadMGParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TS9rb/sXVF3hC1RtaZ0onmnCSJw=
-			</data>
 			<key>hash2</key>
 			<data>
 			DQ4oy9FJUTvTqGiClwruZdX7rIKJSh80iW27Z/sOefw=
@@ -1651,10 +1310,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDNetworkCheckParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aI4G2tjfvTe6UQ1KS+mnp+0vzRQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			0GmRCwhIv6hsI65Zv9bGcILxPO6tmIxaPOpc+mPxXeg=
@@ -1662,10 +1317,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOP.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Gypf42sSNrhmcrnroWk4++cIXII=
-			</data>
 			<key>hash2</key>
 			<data>
 			qrehk9j2io3dhaHxgX+HsaWMyXVTaNYuYMjHbcSwpXw=
@@ -1673,32 +1324,20 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8G289GjeqQA/Bm0mgr94ew8ZmO0=
-			</data>
 			<key>hash2</key>
 			<data>
-			OtsZrcMYlwwHV8JSu+boNXlr/LuhU2pEJ9wqWtU2YvQ=
+			oMOimRaO1Uuu9KjbQrUkF0ae7C8uWExDMoNTPqTn31k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPBannerAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			191Gh7GAefnZid04/AqN/fSFCJY=
-			</data>
 			<key>hash2</key>
 			<data>
-			UOkGF4vYaAAmuF9ww+c/39yq+gjpL8nCwm57E7wfhGg=
+			SVTRQr3awYK+S0Nu1wigglQeNZY/PUkqo9B6hj/oGVo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPChooseImageOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GytO1E6y7Xcitrw5NysEjE3T4o8=
-			</data>
 			<key>hash2</key>
 			<data>
 			KJXFSKOiQpG252QcOyG1KCptVMWYGlVD6nsFmgTEqEA=
@@ -1706,21 +1345,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPCommon.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xn1L8TQSfuf8ZcCPq3SIQaaBu5s=
-			</data>
 			<key>hash2</key>
 			<data>
-			zZ64H7jkP7uloPcWyRNGdsH7fsc7ZkSMKimcwNc7p0k=
+			ZMZu6XiUrTeipNDvMl8ogmyreAT7JsFzCLFKHcXetOE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPCustomAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6mA7pEjw4cyyzu8wGg3QsN223Ug=
-			</data>
 			<key>hash2</key>
 			<data>
 			RAO7ThnvuMlbAUHmEub+EkVVfvi2iFGhZnlvotT9FxM=
@@ -1728,10 +1359,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPGameBannerAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DBpeZy94O6AyGmFqIe9IRrggyZI=
-			</data>
 			<key>hash2</key>
 			<data>
 			/BE1If5UiHrqlvNi9kllcyjx2SnndTFrSyrIhxbpN9c=
@@ -1739,10 +1366,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPGameDrawerAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mGf+tdcQOk/Ana4IuslD3fL9nbI=
-			</data>
 			<key>hash2</key>
 			<data>
 			4vcbYvPshTQMyKnHvPJ66sCgg/qwRxiJSzRQOHfh14M=
@@ -1750,10 +1373,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPGamePortalAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HN5R7JDb7K84kP6sJ8lJNXc3hys=
-			</data>
 			<key>hash2</key>
 			<data>
 			IB8Vx7sSyCa/MHErnWZEUEr4CDVgcIm7DFxqYQUNd90=
@@ -1761,10 +1380,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPGameTask.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xWAb8nV70oW/1fyTFL10FOR1B/8=
-			</data>
 			<key>hash2</key>
 			<data>
 			bGJv+9INXkajnyW3hh5OEzUhzVh5cD9j/YBzoT6mC3Q=
@@ -1772,10 +1387,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPHideLoadingOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DvzbDWK/+504XFJhZbtvuWeb7FA=
-			</data>
 			<key>hash2</key>
 			<data>
 			Jeet/t76FBjN88d5GnaZbXdFx1xqgD/HqJTFS+6XwN4=
@@ -1783,10 +1394,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPHideToastOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xPThtAz0KcE1ck1XS6OEmYGaqI8=
-			</data>
 			<key>hash2</key>
 			<data>
 			AgPy6fheCmahcrssHWJwW6dfSRit15VhBjQC/Iu0wWY=
@@ -1794,21 +1401,20 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPInterstitialAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+vXoybGUIts3Cw5R2ha9Q37H9tM=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qy1vYOhmt0c6fdy9W7ptU6HEhBxb65W9B6pgE+9PTtE=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPMenuButtonBoundingClientRect.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2rUvjHzTR/G3gJ3/qhpw1BX+fCjO34VLj24Cicmybjs=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPPreviewImageOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8oWwmrKIk6nfwb5HbiHbMy6PMNQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			qcBeIEeHzC15uErDAkZOZkFivXG/mD5zvaSVgx8+uds=
@@ -1816,10 +1422,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPRequestPaymentOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LgmXwg/3H9dxR7L2+xAPU3FIvsE=
-			</data>
 			<key>hash2</key>
 			<data>
 			4lbd/GgDgKub98JPKbZHxOZFYMCLf0H9koLHp3L3g2k=
@@ -1827,10 +1429,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPRewardVideoAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mtKaIJt3sPxcOk1p7iq1ZmE4NhY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Ye3osgKBnC4u9rF0QHves46x8Verv1/SJgGq7J6Rk5E=
@@ -1838,10 +1436,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPSaveImageToPhotosAlbumOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2IWaZ2hlfT4MpqcNdkqi27XcK/g=
-			</data>
 			<key>hash2</key>
 			<data>
 			dbBinTZ/1QIeh6Fc6OF0OY+VmaQUE1qKhqUYRd9Qz+A=
@@ -1849,10 +1443,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPShowActionSheetOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oP1ZxZUgMeqaUkvwY8BhvptD4vw=
-			</data>
 			<key>hash2</key>
 			<data>
 			B9EsPg3hQQkcKlazH2TPOi1ChZnO8UJHSd/m/TqRjKY=
@@ -1860,10 +1450,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPShowLoadingOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hwXzeMvoW1w7NPtXbpRLqx8EAAg=
-			</data>
 			<key>hash2</key>
 			<data>
 			HQTZhXbRKjwMx3iDBxFabXC5KDdA4oD6ovn3ZoNjXHE=
@@ -1871,10 +1457,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPShowModalOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			J+wANoWT9JdE9219v2owxOLH6Ac=
-			</data>
 			<key>hash2</key>
 			<data>
 			Sv2cg6+uJiR7PDNZ4pZKZul4RJ4Av03P8TR/VubiApI=
@@ -1882,10 +1464,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPShowToastOptions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GANd/M/l4k7/kdf3KXNHIWGTeBw=
-			</data>
 			<key>hash2</key>
 			<data>
 			KUo28YXLGNvJzVdE2r0bbTUii5Ih2MiWf/zMRTvsqjw=
@@ -1893,21 +1471,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDOPWrappedClientDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5yYJuivj1PPiU5SKDxkvYDposeQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			RWJkmH5GuOaxi7GAeuKcZbv3B1uJ5gy8c/tKAEMHKVg=
+			jXrvOGV1ftaeP9G6U902hkz9jEpaLNjEN/KLzfqjxIc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRT.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fuewiu8U6dEt30OcwmBfU2RWDo8=
-			</data>
 			<key>hash2</key>
 			<data>
 			815SjjWmA0HZ+ZWkoYoFiRD1hsLNhm9wvmSkbmYPbw8=
@@ -1915,21 +1485,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTExtendedClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZCATMYp05iecJZahjpcZgsgYNEQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			EBAq84nQ8AIwipX8GrtwT4cH1vyUflp0lvZG+iNhO+M=
+			34g0F4hjgl8dJm7xy/GGv3gAJXVmefZXl+RPEdfvqvM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGameAudioSession.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JT6eSkbu1e3eaG3amxQ5HjxHOvI=
-			</data>
 			<key>hash2</key>
 			<data>
 			g6n6O4xj3A9C9g1/DmM9P8xZxab7UoZUJOhoTgKHHrg=
@@ -1937,10 +1499,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGameConfig.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YUfN0ttlnhTNSALSS/kynHHs8K8=
-			</data>
 			<key>hash2</key>
 			<data>
 			uIV2htEGxH5Lz9Y5e3UWEQ2WiHPWzJ7kHnpmHHtrtrM=
@@ -1948,10 +1506,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGameHandle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YXWvBoT0wJA41Ja2DlI+CX7rpcQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			yvkC40pT7MMyHpj2AOQX4p6LL2ou5WVkyXYpSiJYM0w=
@@ -1959,10 +1513,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGameMediaPlayerHandle.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jO2jM2xp25gG/jvwugGVBRuARJw=
-			</data>
 			<key>hash2</key>
 			<data>
 			jh+RJjnpVSkcatjiSjg54P1r1w3hO60JsUs8pJbSPLo=
@@ -1970,10 +1520,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGamePackageManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1gusiW6gB6HtbvCfIurqzGj4s+s=
-			</data>
 			<key>hash2</key>
 			<data>
 			e6MMid33poLIw7v4ocCtH/Qv6LSgkwo65RcrOVjSfkc=
@@ -1981,10 +1527,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGamePluginManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			15vxO2UtdTdShA9YRbAZSg6JF/k=
-			</data>
 			<key>hash2</key>
 			<data>
 			8Ly6C4C0CeNRESDRDTY0uXfReEXUVrsl88C4TJNvESk=
@@ -1992,10 +1534,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTGameUserManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vGk6neZfCih1bU7dN0/5BkZsC/g=
-			</data>
 			<key>hash2</key>
 			<data>
 			z8fOodkELnZnqpzGXqQaclTW1s6+VeS83wYnOM/kirY=
@@ -2003,10 +1541,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Headers/SUDRTLoadPackageParamModel.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			gQMWziXhgqI5u4JYlpNmpGI8Gqg=
-			</data>
 			<key>hash2</key>
 			<data>
 			zQfl2tfgg7wUPv5UGgj7urokosU+N1DCWncnI9/Ymwg=
@@ -2014,21 +1548,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Xy7JC6ZeKJ8xNt6v1k/sGvf20Tg=
-			</data>
 			<key>hash2</key>
 			<data>
-			zolma1vL6B6apFjEfqIQMTViopNJQU1uu4o6jhnGHnU=
+			OTt3xQgrCXDRsyspBXrnkD0NpJILm6WZgk3/IdV9hJM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9a9G1TFtGlKgyNmi3Y0TDgQaJQQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			zeYPibSCbkIX0idLSV8oeARv4JuASNP4lIa0BSkCInY=
@@ -2036,10 +1562,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UxEVK4RT5Go72c2jSqXNFSLPPn4=
-			</data>
 			<key>hash2</key>
 			<data>
 			kPGmYfDyf2azbKXBmS5xIz2nXwItVc0pbRc3Eptrn94=
@@ -2047,32 +1569,20 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5t5d0HuOC/kAV6jtR4GMMD0ZqHM=
-			</data>
 			<key>hash2</key>
 			<data>
-			uuvg6fvVlotoIgBsA/kt0v1eDIJDHoZpVqiNKtOgm7c=
+			EE/jJHC+zGKY6s2XTQ5U+0JiFh1HLQHxuDDRGFmBxGI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xXdHY7PIRSIdX47/xtgqgOHgpWs=
-			</data>
 			<key>hash2</key>
 			<data>
-			fBxZCBmoVqWAQT7D86qbQMmbnG3BGsnpQSwXuVJyFcY=
+			UMcqnsVOy6fFx6kucKNEpajou2a7VeWsok8AMSkzwjg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/SudPlugin</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hWIqVIjDSaeZyE2biyaD/fdkdSU=
-			</data>
 			<key>hash2</key>
 			<data>
 			r8yQatWPxBHGtcsQ3V5ef1xM1/5LQL5s9Hvw4VsCn48=
@@ -2080,10 +1590,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/fsm_mgp_game_loading_progress.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dtpNcJpsR3zafFe134BfDkM+F/8=
-			</data>
 			<key>hash2</key>
 			<data>
 			PmZ2XWgwRMBpMFC0fewgSN0AQWnYtYfKIc73k87S9No=
@@ -2091,10 +1597,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/fsm_mgp_game_loading_progress_bg.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G5Xy+4h7dGMY6FJB5kqFR+sdgmo=
-			</data>
 			<key>hash2</key>
 			<data>
 			kWsbDMHTQ7BUH2wEALcw8lnRExfB0XZ+DgAVGha920M=
@@ -2102,21 +1604,20 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/sud-crt-plugin-ob.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P9pF8NkplrEkx5lAjSWSAw7c0QM=
-			</data>
 			<key>hash2</key>
 			<data>
 			i11y86KOUUhIOjmMDUvIO3PPYo3PZkFyK2X7e8E8KXA=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/sud-video.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ccNCVd/Bi+TnfIBgm+xBDpDLHtnVk1nPWd29+ahVZCg=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SUDGI_Res.bundle/sud.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vQlHDEdu0+Q1In7/lmqL55xESZU=
-			</data>
 			<key>hash2</key>
 			<data>
 			jGjXGnBah08RrghQiM7wJELGteiQM/iZdJDXE8Bq6C8=
@@ -2124,21 +1625,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rSS7FXm+5VDJ2YJzUo/bMMwEcss=
-			</data>
 			<key>hash2</key>
 			<data>
-			94gGyDywTxcng6IN4tMzgRnEWhvi+LxiT/3cky2QjUs=
+			4SujrbvelbYimr6datKKT8UjRNReOXDHXWPSfCzX2ys=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/SudPlugin</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hWIqVIjDSaeZyE2biyaD/fdkdSU=
-			</data>
 			<key>hash2</key>
 			<data>
 			r8yQatWPxBHGtcsQ3V5ef1xM1/5LQL5s9Hvw4VsCn48=
@@ -2146,10 +1639,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/fsm_mgp_game_loading_progress.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dtpNcJpsR3zafFe134BfDkM+F/8=
-			</data>
 			<key>hash2</key>
 			<data>
 			PmZ2XWgwRMBpMFC0fewgSN0AQWnYtYfKIc73k87S9No=
@@ -2157,10 +1646,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/fsm_mgp_game_loading_progress_bg.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G5Xy+4h7dGMY6FJB5kqFR+sdgmo=
-			</data>
 			<key>hash2</key>
 			<data>
 			kWsbDMHTQ7BUH2wEALcw8lnRExfB0XZ+DgAVGha920M=
@@ -2168,21 +1653,20 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/sud-crt-plugin-ob.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			P9pF8NkplrEkx5lAjSWSAw7c0QM=
-			</data>
 			<key>hash2</key>
 			<data>
 			i11y86KOUUhIOjmMDUvIO3PPYo3PZkFyK2X7e8E8KXA=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/sud-video.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ccNCVd/Bi+TnfIBgm+xBDpDLHtnVk1nPWd29+ahVZCg=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/SudGIP-Res.bundle/sud.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vQlHDEdu0+Q1In7/lmqL55xESZU=
-			</data>
 			<key>hash2</key>
 			<data>
 			jGjXGnBah08RrghQiM7wJELGteiQM/iZdJDXE8Bq6C8=
@@ -2190,43 +1674,27 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Jv5JPeRDSaXz9MDpLgiwdvqjEMM=
-			</data>
 			<key>hash2</key>
 			<data>
-			QFEElLmR98s+kgIhN54+icw2Mps9DlFh235GdbkEMuY=
+			tSxqKZa3b0aSgB0oHRSPIW2VxoreXLe4BGcSo2CUacA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/App.momd/App.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ENtlbSZGqTq5GYhtPYZBM3GekHE=
-			</data>
 			<key>hash2</key>
 			<data>
-			C6zRXyZcjejm09t3XuQBGK3kE6eIImYAVRVAxLyTGIk=
+			vv8bvtgEzn24kHgBTclISmX5gZ0OB6FHLY8wucmtxCQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/App.momd/App_v2.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tdElziUQO4bcTYyF5lpACS1qunc=
-			</data>
 			<key>hash2</key>
 			<data>
-			thmlUrbQKmevKsGrj4nJIDSnTk48VVEAOV2g9xlnJhI=
+			piznqXC7MzOQ9dt+MN45BaBIXI1BApnX/SAyNN/uw9c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/App.momd/App_v2.omo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VGabWfDtM1kRMzebU8sM8xDQRAc=
-			</data>
 			<key>hash2</key>
 			<data>
 			9RRICwqu1GAbuc0/9eHacWE3QlhzKS/EMiqAyL41vmQ=
@@ -2234,10 +1702,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/App.momd/VersionInfo.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/jIzLgfn+iVaWApT/wvqmdPuiRs=
-			</data>
 			<key>hash2</key>
 			<data>
 			V5kXsIXR0PVXS7Nzn1RNepMUv1QZdaZORKs62B2T6gE=
@@ -2245,65 +1709,34 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			J83a2dfAPGkPI1Jfkiqf20HTDDc=
-			</data>
 			<key>hash2</key>
 			<data>
-			zHHZXsb710zFAYUrBoXt5b5muiyRinWaamDMovzNNQw=
+			newWBVLLKKRVxEg9+RW7oZvc39IXMBRKLHpeIQ35EvY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			doEqPHUZxr+QMSfxpcERz4VkVSs=
-			</data>
 			<key>hash2</key>
 			<data>
-			cav8yA+7hmaHLOEy7iu8Oa/xzAx0oAnVjiLpdfAhH14=
+			Lgx3l4p4QaIFXVHpubsj6XlAipqMaSl5VN90fVhMGvI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
 			<key>hash2</key>
 			<data>
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			p2D2/LFAINVLlq8F9Wz8uDdO6kU=
-			</data>
-			<key>hash2</key>
-			<data>
-			4ZZmvgzcKmHo63+ySwBK48yGIrjqLXmHpsy2EaLvucU=
-			</data>
-		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JYR2jukrZgcPqfgcrs+tPySa0G8=
-			</data>
 			<key>hash2</key>
 			<data>
-			ib2QLS2mTHXzt5GO0WzZcqwYtmkTUT25N1+a56Rbb6o=
+			x1Jni2ounw2IB0MSqwZ3iYLa3FyD2XAgNJpUQ3fbeBM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/_CodeSignature/CodeSignature</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
@@ -2311,10 +1744,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/device_list.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KUDSpoN1caNH1OkEH5rxzdUCGn0=
-			</data>
 			<key>hash2</key>
 			<data>
 			L5HNb07FQY38xtRYro8Z7hXhnfqB91xOySzcVCzo8mw=
@@ -2322,10 +1751,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/en.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xKjN17lP/jUe701LOrtta9Qo3RQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			AkvyR+sV5r2XvMebfIGK+uJWZJaS9HeS6ILDzpMIvag=
@@ -2335,21 +1760,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/rt-script/_jsb-runtime.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PgZwdZ+0YObzk66yBGFESrriwRQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			RiTP+MmGyHwTage6mIMy/aaifoHL9Np9GqVuAMvBmwg=
+			Ossod7paIZ3EYmgwxXWYA9HfZc+oGzqHg40l0f+30wo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/rt-script/_jsb-worker.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			znD5YlRmW+mMo0w+idX0oPZj/kc=
-			</data>
 			<key>hash2</key>
 			<data>
 			iBaOkDDCeQ0DZ1e24cvAdRSr3CY+vLORfcHwVBIu+oI=
@@ -2357,10 +1774,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/vConsole.html</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Yv/Ed+9MxTR8RKe04nx1VeNYF4M=
-			</data>
 			<key>hash2</key>
 			<data>
 			QRN1CORWmUkHyQh1moQ2JyPjuP7GqV9Uj7wbfLwoEYE=
@@ -2368,10 +1781,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/vconsole.min.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			kf0GAc0xQ2eK5R1fRS27y4xs0ZQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			CxZoeGHGayxV3yedUbzh7xCYMPlSFN+U6DGFKWwjyjs=
@@ -2379,10 +1788,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SUDGI.framework/default-assets.bundle/zh-Hans.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8+SXLEyt76KGPFcv+2XT/3rHd2U=
-			</data>
 			<key>hash2</key>
 			<data>
 			q4KBqoXYDHKMn+cB4XmagOO8SpgiVgVZBfD1NcqMXVE=

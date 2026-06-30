@@ -334,7 +334,7 @@
 
 - (void)refreshUI {
     NSString *gameName = [self localizedTextFromMap:self.gameInformation.gameName];
-    NSString *gameDescription = [self localizedTextFromMap:self.gameInformation.gameDescription];
+    NSString *gameDescription = [self localizedTextFromMap:self.gameInformation.gameIntroduction];
     
     self.gameNameLabel.text = gameName;
     self.companyNameLabel.text = self.gameInformation.subjectName ?: @"";

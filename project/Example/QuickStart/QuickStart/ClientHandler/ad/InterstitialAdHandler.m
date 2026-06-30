@@ -29,20 +29,25 @@
     interstitialAd.delegate = self;
     self.adView = [[SUDDemoInterstitialAdView alloc]init];
     self.adView.delegate = self;
+}
+
+- (void)loadAd:(SUDOPAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.adView loadAd];
+    [stateHandle success:nil];
 }
 
 
-
-- (void)sudopAdShow:(SUDOPInterstitialAd *)interstitialAd {
+- (void)showAd:(SUDOPInterstitialAd *)interstitialAd withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.adView showAdFromViewController:self.viewController];
+    [stateHandle success:nil];
     
 }
-- (void)sudopAdHide:(SUDOPInterstitialAd *)interstitialAd {
+- (void)hideAd:(SUDOPInterstitialAd *)interstitialAd withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.adView dismissAd];
+    [stateHandle success:nil];
     
 }
-- (void)sudopAdDestroy:(SUDOPInterstitialAd *)interstitialAd {
+- (void)destroyAd:(SUDOPInterstitialAd *)interstitialAd {
     [self.adView removeFromSuperview];
     self.ad = nil;
     self.adView = nil;

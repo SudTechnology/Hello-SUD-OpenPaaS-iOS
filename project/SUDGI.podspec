@@ -23,5 +23,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.ios.deployment_target = '11.0'
-  s.vendored_frameworks = ['SudSDK/SUDGI.xcframework','SudSDK/shine.xcframework']
+  s.vendored_frameworks = ['SUDSDK/SUDGI.xcframework','SUDSDK/shine.xcframework']
 end

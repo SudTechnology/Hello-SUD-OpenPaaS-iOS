@@ -33,6 +33,17 @@ typedef void(^SUDOPGameStartCompletion)(SUDOPGameSession * _Nullable session,
                    gameView:(UIView *)gameView
                  completion:(nullable SUDOPGameStartCompletion)completion;
 
+/// Starts a game with the specified game signature, configuration, and game view.
+///
+/// @param gameSignature The signature of the game to start.
+/// @param config The game configuration.
+/// @param gameView The view used to display the game.
+/// @param completion The completion callback invoked after the game starts, returning a game session or an error.
+- (void)startGameWithGameSignature:(NSString *)gameSignature
+                            config:(SUDOPGameConfig *)config
+                          gameView:(UIView *)gameView
+                        completion:(nullable SUDOPGameStartCompletion)completion;
+
 /// Destroys the game associated with the specified session ID.
 ///
 /// @param sessionId The ID of the game session to destroy.

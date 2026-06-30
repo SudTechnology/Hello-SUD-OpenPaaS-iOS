@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 从底部退出
 - (void)dismissAnimated:(BOOL)animated;
-
+- (CGRect)capsuleViewRect;
 @end
 
 NS_ASSUME_NONNULL_END

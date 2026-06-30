@@ -51,6 +51,29 @@ __attribute__((constructor)) static void sudrt_use_protocol_##proto(void) { \
     (void)@protocol(proto); \
 }
 
+/**
+ * Export a sync getter as a JS property getter.
+ * The property getter uses a dedicated hidden class method prefix
+ * to prevent it from being mistakenly collected by the normal sync method scanning logic.
+ */
+#define SUDRT_SYNC_PROPERTY_GET(js_name, return_type, method) \
+    + (NSArray<NSString *> *)__sud_property_get_##js_name { \
+        return @[ @#js_name, @#method, @"sync", @"property_get" ]; \
+    } \
+    - (return_type)method
+
+/**
+ * Export a sync setter as a JS property setter.
+ * The property setter uses a different hidden class method prefix from the getter,
+ * allowing the same JS property to declare both read and write accessors.
+ */
+#define SUDRT_SYNC_PROPERTY_SET(js_name, method) \
+    + (NSArray<NSString *> *)__sud_property_set_##js_name { \
+        return @[ @#js_name, @#method, @"sync", @"property_set" ]; \
+    } \
+    - (void)method
+
+
 /// tell compiler use this custom protocol
 SUDRT_USE_PROTOCOL(SUDRTJSCallback);
 NS_ASSUME_NONNULL_END

@@ -24,6 +24,7 @@
 #import "SUDOPRewardVideoAd.h"
 #import "SUDOPShowModalOptions.h"
 #import "SUDOPPreviewImageOptions.h"
+#import "SUDOPMenuButtonBoundingClientRect.h"
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -184,7 +185,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return A dictionary containing the position and size information of the menu button.
          The dictionary typically includes keys such as x, y, width, height, top, right, bottom, left.
  */
-- (NSDictionary *)getMenuButtonBoundingClientRect;
+- (nonnull SUDOPMenuButtonBoundingClientRect *)getMenuButtonBoundingClientRect;
 @end
 
 NS_ASSUME_NONNULL_END

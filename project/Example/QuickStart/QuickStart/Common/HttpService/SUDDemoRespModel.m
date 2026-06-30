@@ -6,7 +6,7 @@
 //
 
 #import "SUDDemoRespModel.h"
-#import "MJExtension/MJExtension.h"
+
 @implementation SUDDemoBaseRespModel
 
 /// 解码消息
@@ -28,6 +28,7 @@
         m.ret_msg = srcData[@"ret_msg"];
         m.ret_code = [srcData[@"ret_code"] integerValue];
     }
+    m.data = data;
     m.srcData = srcData;
     return m;
 }

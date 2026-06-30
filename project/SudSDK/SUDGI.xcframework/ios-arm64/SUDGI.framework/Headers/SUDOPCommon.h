@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, SUDOPFIDType) {
  */
 typedef void(^SUDOPCompletionBlock)(NSError *_Nullable error);
 
-typedef void(^SUDOPDidGameHandleCreatedBlock)(id<SUDRTGameHandle>gameHandle);
+typedef void(^SUDOPDidGameHandleCreatedBlock)(id<SUDRTGameHandle>gameHandle, SUDOPGameInfo *gameInfo);
 typedef void(^SUDOPDidGameViewCreatedBlock)(UIView *gameView);
 /**
  * Completion block for game-related operations (download, load, start).
@@ -68,7 +68,7 @@ typedef void(^SUDOPProgressBlock)(NSInteger progress);
  * * @param dataJson A JSON-formatted string containing the requested data or business result.
  * If no payload is required, pass an empty JSON object "{}" instead of nil.
  */
-- (void)success:(nonnull NSString *)dataJson;
+- (void)success:(nullable NSString *)dataJson;
 
 /**
  * Notifies the SDK that the operation failed.
@@ -117,8 +117,12 @@ typedef void(^SUDOPProgressBlock)(NSInteger progress);
 
 @end
 
+
+extern NSString * const kSUDOPGameDeviceOrientationAuto;
+extern NSString * const kSUDOPGameDeviceOrientationPortrait;
+extern NSString * const kSUDOPGameDeviceOrientationLanscape;
+
 @interface SUDOPGameInfo : NSObject
-/// portrait | lanscape
 @property(nonatomic, strong)NSString *deviceOrientation;
 @end
 

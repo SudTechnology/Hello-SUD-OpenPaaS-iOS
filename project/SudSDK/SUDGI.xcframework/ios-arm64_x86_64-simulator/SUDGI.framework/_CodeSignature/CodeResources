@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/SUDGI-umbrella.h</key>
 		<data>
-		T04XZTdPMI7mDGcQqXiuk9ra6TM=
+		s7dsZtZRCwiAPhiroCCcT+/Ku5Y=
 		</data>
 		<key>Headers/SUDGI.h</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Headers/SUDOPAd.h</key>
 		<data>
-		8G289GjeqQA/Bm0mgr94ew8ZmO0=
+		fMuSiJmi1yvnxa4/SAQUzLBTGZ4=
 		</data>
 		<key>Headers/SUDOPBannerAd.h</key>
 		<data>
-		191Gh7GAefnZid04/AqN/fSFCJY=
+		t21/ayNftce31jtIIFyr8RCvH6U=
 		</data>
 		<key>Headers/SUDOPChooseImageOptions.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/SUDOPCommon.h</key>
 		<data>
-		xn1L8TQSfuf8ZcCPq3SIQaaBu5s=
+		ZcejuDot/FuW4g8D5ERxbo5sOe4=
 		</data>
 		<key>Headers/SUDOPCustomAd.h</key>
 		<data>
@@ -119,6 +119,10 @@
 		<key>Headers/SUDOPInterstitialAd.h</key>
 		<data>
 		+vXoybGUIts3Cw5R2ha9Q37H9tM=
+		</data>
+		<key>Headers/SUDOPMenuButtonBoundingClientRect.h</key>
+		<data>
+		OrxktxjtkcYZdZoqJ4oYT0QZwSk=
 		</data>
 		<key>Headers/SUDOPPreviewImageOptions.h</key>
 		<data>
@@ -154,7 +158,7 @@
 		</data>
 		<key>Headers/SUDOPWrappedClientDelegate.h</key>
 		<data>
-		5yYJuivj1PPiU5SKDxkvYDposeQ=
+		KGf6JFfDAIUG/lyyWWqAkkSVb28=
 		</data>
 		<key>Headers/SUDRT.h</key>
 		<data>
@@ -162,7 +166,7 @@
 		</data>
 		<key>Headers/SUDRTExtendedClient.h</key>
 		<data>
-		ZCATMYp05iecJZahjpcZgsgYNEQ=
+		Tgo4EXvUFpK/+Ltis5TzqxgF+7g=
 		</data>
 		<key>Headers/SUDRTGameAudioSession.h</key>
 		<data>
@@ -198,7 +202,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Xy7JC6ZeKJ8xNt6v1k/sGvf20Tg=
+		oDeh3otihpqGdBe9AL5PReiXzr4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -210,7 +214,7 @@
 		</data>
 		<key>SUDGI_Res.bundle/Info.plist</key>
 		<data>
-		xXdHY7PIRSIdX47/xtgqgOHgpWs=
+		uQHortmBAiEnJb7/MVzn0Uk8eMA=
 		</data>
 		<key>SUDGI_Res.bundle/SudPlugin</key>
 		<data>
@@ -228,13 +232,17 @@
 		<data>
 		P9pF8NkplrEkx5lAjSWSAw7c0QM=
 		</data>
+		<key>SUDGI_Res.bundle/sud-video.js</key>
+		<data>
+		KmkEbrpQcNosqyT2FJn8Ls1gf2A=
+		</data>
 		<key>SUDGI_Res.bundle/sud.png</key>
 		<data>
 		vQlHDEdu0+Q1In7/lmqL55xESZU=
 		</data>
 		<key>SudGIP-Res.bundle/Info.plist</key>
 		<data>
-		rSS7FXm+5VDJ2YJzUo/bMMwEcss=
+		1X6FQ2WT26tCEntElonk77BVlOc=
 		</data>
 		<key>SudGIP-Res.bundle/SudPlugin</key>
 		<data>
@@ -252,17 +260,21 @@
 		<data>
 		P9pF8NkplrEkx5lAjSWSAw7c0QM=
 		</data>
+		<key>SudGIP-Res.bundle/sud-video.js</key>
+		<data>
+		KmkEbrpQcNosqyT2FJn8Ls1gf2A=
+		</data>
 		<key>SudGIP-Res.bundle/sud.png</key>
 		<data>
 		vQlHDEdu0+Q1In7/lmqL55xESZU=
 		</data>
 		<key>default-assets.bundle/App.momd/App.mom</key>
 		<data>
-		ENtlbSZGqTq5GYhtPYZBM3GekHE=
+		qeCtTLqzbD+EJNlXKquWgqB41z4=
 		</data>
 		<key>default-assets.bundle/App.momd/App_v2.mom</key>
 		<data>
-		tdElziUQO4bcTYyF5lpACS1qunc=
+		2+ti9NTmfKlpyqabOmpy30vNU+E=
 		</data>
 		<key>default-assets.bundle/App.momd/App_v2.omo</key>
 		<data>
@@ -274,23 +286,19 @@
 		</data>
 		<key>default-assets.bundle/Info.plist</key>
 		<data>
-		J83a2dfAPGkPI1Jfkiqf20HTDDc=
+		09lpdhsW/F77LgM9anOs1T7hfjw=
 		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		doEqPHUZxr+QMSfxpcERz4VkVSs=
+		KzjoFdACC0/4Y3eP7A4yEYiqjj0=
 		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
 		OnX22wWFKRSOFN1+obRynMCeyXM=
 		</data>
-		<key>default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		p2D2/LFAINVLlq8F9Wz8uDdO6kU=
-		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeResources</key>
 		<data>
-		JYR2jukrZgcPqfgcrs+tPySa0G8=
+		TgxdlAkp2IzkSzybCIU2TYieupo=
 		</data>
 		<key>default-assets.bundle/_CodeSignature/CodeSignature</key>
 		<data>
@@ -311,7 +319,7 @@
 		</dict>
 		<key>default-assets.bundle/rt-script/_jsb-runtime.js</key>
 		<data>
-		PgZwdZ+0YObzk66yBGFESrriwRQ=
+		zrn6knGZEWAGuz+TrGdNS2dCka8=
 		</data>
 		<key>default-assets.bundle/rt-script/_jsb-worker.js</key>
 		<data>
@@ -404,7 +412,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B5kjeBsqfUKYHAUPrLvnwGRl71ZNd9BWFfxF9rWJL+8=
+			kpiasDw10vSiu5je9bvkuUS/ww/x7lmvuf8junygwJE=
 			</data>
 		</dict>
 		<key>Headers/SUDGI.h</key>
@@ -460,14 +468,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OtsZrcMYlwwHV8JSu+boNXlr/LuhU2pEJ9wqWtU2YvQ=
+			oMOimRaO1Uuu9KjbQrUkF0ae7C8uWExDMoNTPqTn31k=
 			</data>
 		</dict>
 		<key>Headers/SUDOPBannerAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UOkGF4vYaAAmuF9ww+c/39yq+gjpL8nCwm57E7wfhGg=
+			SVTRQr3awYK+S0Nu1wigglQeNZY/PUkqo9B6hj/oGVo=
 			</data>
 		</dict>
 		<key>Headers/SUDOPChooseImageOptions.h</key>
@@ -481,7 +489,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zZ64H7jkP7uloPcWyRNGdsH7fsc7ZkSMKimcwNc7p0k=
+			ZMZu6XiUrTeipNDvMl8ogmyreAT7JsFzCLFKHcXetOE=
 			</data>
 		</dict>
 		<key>Headers/SUDOPCustomAd.h</key>
@@ -538,6 +546,13 @@
 			<key>hash2</key>
 			<data>
 			Qy1vYOhmt0c6fdy9W7ptU6HEhBxb65W9B6pgE+9PTtE=
+			</data>
+		</dict>
+		<key>Headers/SUDOPMenuButtonBoundingClientRect.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2rUvjHzTR/G3gJ3/qhpw1BX+fCjO34VLj24Cicmybjs=
 			</data>
 		</dict>
 		<key>Headers/SUDOPPreviewImageOptions.h</key>
@@ -600,7 +615,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RWJkmH5GuOaxi7GAeuKcZbv3B1uJ5gy8c/tKAEMHKVg=
+			jXrvOGV1ftaeP9G6U902hkz9jEpaLNjEN/KLzfqjxIc=
 			</data>
 		</dict>
 		<key>Headers/SUDRT.h</key>
@@ -614,7 +629,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EBAq84nQ8AIwipX8GrtwT4cH1vyUflp0lvZG+iNhO+M=
+			34g0F4hjgl8dJm7xy/GGv3gAJXVmefZXl+RPEdfvqvM=
 			</data>
 		</dict>
 		<key>Headers/SUDRTGameAudioSession.h</key>
@@ -691,7 +706,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fBxZCBmoVqWAQT7D86qbQMmbnG3BGsnpQSwXuVJyFcY=
+			UMcqnsVOy6fFx6kucKNEpajou2a7VeWsok8AMSkzwjg=
 			</data>
 		</dict>
 		<key>SUDGI_Res.bundle/SudPlugin</key>
@@ -722,6 +737,13 @@
 			i11y86KOUUhIOjmMDUvIO3PPYo3PZkFyK2X7e8E8KXA=
 			</data>
 		</dict>
+		<key>SUDGI_Res.bundle/sud-video.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ccNCVd/Bi+TnfIBgm+xBDpDLHtnVk1nPWd29+ahVZCg=
+			</data>
+		</dict>
 		<key>SUDGI_Res.bundle/sud.png</key>
 		<dict>
 			<key>hash2</key>
@@ -733,7 +755,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			94gGyDywTxcng6IN4tMzgRnEWhvi+LxiT/3cky2QjUs=
+			4SujrbvelbYimr6datKKT8UjRNReOXDHXWPSfCzX2ys=
 			</data>
 		</dict>
 		<key>SudGIP-Res.bundle/SudPlugin</key>
@@ -764,6 +786,13 @@
 			i11y86KOUUhIOjmMDUvIO3PPYo3PZkFyK2X7e8E8KXA=
 			</data>
 		</dict>
+		<key>SudGIP-Res.bundle/sud-video.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ccNCVd/Bi+TnfIBgm+xBDpDLHtnVk1nPWd29+ahVZCg=
+			</data>
+		</dict>
 		<key>SudGIP-Res.bundle/sud.png</key>
 		<dict>
 			<key>hash2</key>
@@ -775,14 +804,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C6zRXyZcjejm09t3XuQBGK3kE6eIImYAVRVAxLyTGIk=
+			vv8bvtgEzn24kHgBTclISmX5gZ0OB6FHLY8wucmtxCQ=
 			</data>
 		</dict>
 		<key>default-assets.bundle/App.momd/App_v2.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			thmlUrbQKmevKsGrj4nJIDSnTk48VVEAOV2g9xlnJhI=
+			piznqXC7MzOQ9dt+MN45BaBIXI1BApnX/SAyNN/uw9c=
 			</data>
 		</dict>
 		<key>default-assets.bundle/App.momd/App_v2.omo</key>
@@ -803,14 +832,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zHHZXsb710zFAYUrBoXt5b5muiyRinWaamDMovzNNQw=
+			newWBVLLKKRVxEg9+RW7oZvc39IXMBRKLHpeIQ35EvY=
 			</data>
 		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cav8yA+7hmaHLOEy7iu8Oa/xzAx0oAnVjiLpdfAhH14=
+			Lgx3l4p4QaIFXVHpubsj6XlAipqMaSl5VN90fVhMGvI=
 			</data>
 		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeRequirements</key>
@@ -820,18 +849,11 @@
 			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
 			</data>
 		</dict>
-		<key>default-assets.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4ZZmvgzcKmHo63+ySwBK48yGIrjqLXmHpsy2EaLvucU=
-			</data>
-		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ib2QLS2mTHXzt5GO0WzZcqwYtmkTUT25N1+a56Rbb6o=
+			x1Jni2ounw2IB0MSqwZ3iYLa3FyD2XAgNJpUQ3fbeBM=
 			</data>
 		</dict>
 		<key>default-assets.bundle/_CodeSignature/CodeSignature</key>
@@ -861,7 +883,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RiTP+MmGyHwTage6mIMy/aaifoHL9Np9GqVuAMvBmwg=
+			Ossod7paIZ3EYmgwxXWYA9HfZc+oGzqHg40l0f+30wo=
 			</data>
 		</dict>
 		<key>default-assets.bundle/rt-script/_jsb-worker.js</key>

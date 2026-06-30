@@ -33,17 +33,19 @@
 }
 
 
-- (void)sudopAdShow:(SUDOPGameBannerAd *)ad {
+- (void)showAd:(SUDOPGameBannerAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.adView showInView:self.viewController.view];
     [self.ad notifyDidShow];
+    [stateHandle success:nil];
 }
 
-- (void)sudopAdHide:(SUDOPGameBannerAd *)ad {
+- (void)hideAd:(SUDOPGameBannerAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.adView closeAd];
+    [stateHandle success:nil];
     
 }
 
-- (void)sudopAdDestroy:(SUDOPGameBannerAd *)ad {
+- (void)destroyAd:(SUDOPGameBannerAd *)ad {
     [self.adView closeAd];
     self.ad = nil;
     [self.adView removeFromSuperview];

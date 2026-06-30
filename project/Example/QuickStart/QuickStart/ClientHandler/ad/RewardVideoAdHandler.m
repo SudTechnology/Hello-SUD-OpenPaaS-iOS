@@ -33,13 +33,17 @@
     ad.delegate = self;
     self.adView = [[SUDDemoRewardedVideoAdView alloc]initWithAdUnitId:ad.adUnitId];
     self.adView.delegate = self;
-    [self.adView loadAd];
+    
     
     WeakSelf
     NSString *userId = [Common.shared currentUserId];
-    [Common reqAdMaterialWithUserId:userId completion:^(NSDictionary * _Nonnull result, NSError * _Nonnull error) {
+    /// 这里的user_id是设置游戏中用户名，由接入方传入,这里uuid只是示例
+    NSDictionary * param = @{@"user_id": userId,
+                             @"slot_code":@"",
+                             @"app_id":SUDGI_APP_ID};
+    [SUDDemoHttpService.shared reqAdMaterialWithOptions:param completion:^(NSDictionary * _Nonnull result, NSError * _Nonnull error) {
         if (error) {
-            NSLog(@"reqAdMaterialWithUserId:%@", error.localizedDescription);
+            NSLog(@"reqAdMaterialWithOptions:%@", error.localizedDescription);
             [SVProgressHUD showErrorWithStatus:error.localizedDescription];
             return;
         }
@@ -53,22 +57,30 @@
 }
 
 
-- (void)sudopAdDestroy:(SUDOPRewardVideoAd *)rewardVideoAd {
+- (void)destroyAd:(SUDOPRewardVideoAd *)rewardVideoAd {
     [self.adView removeFromSuperview];
     self.adView = nil;
     self.ad = nil;
 }
 
-- (void)sudopAdHide:(SUDOPRewardVideoAd *)rewardVideoAd {
-    [self.adView closeAd];
+- (void)loadAd:(SUDOPAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
+    [self.adView loadAd];
+    [stateHandle success:nil];
 }
 
-- (void)sudopAdShow:(nonnull SUDOPRewardVideoAd *)rewardVideoAd {
+- (void)hideAd:(SUDOPRewardVideoAd *)rewardVideoAd withStateHandle:(id<SUDOPStateHandle>)stateHandle {
+    [self.adView closeAd];
+    [stateHandle success:nil];
+}
+
+- (void)showAd:(nonnull SUDOPRewardVideoAd *)rewardVideoAd withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     
     [self.adView showAdFromViewController:self.viewController];
+    [stateHandle success:nil];
 }
 
-- (void)sudopAd:(SUDOPRewardVideoAd *)rewardVideoAd setServerSideVerificationData:(SUDOPRewardVideoAdSSVData *)ssvData {
+- (void)setServerSideVerificationData:(SUDOPRewardVideoAdSSVData *)ssvData forAd:(SUDOPAd *)ad {
+    
     self.ssvData = ssvData;
 
     [self checkIfNeedToReportSSVData];
@@ -85,7 +97,7 @@
     options[@"reward_item"] = self.ssvData.rewardItem;
     options[@"reward_amount"] = @(self.ssvData.rewardAmount);
     
-    [Common reqReportRewardAdSSVWithOptions:options completion:^(NSDictionary * _Nonnull result, NSError * _Nonnull error) {
+    [SUDDemoHttpService.shared reqReportRewardAdSSVWithOptions:options completion:^(NSDictionary * _Nonnull result, NSError * _Nonnull error) {
         if (error) {
             NSLog(@"reqReportRewardAdSSVWithOptions error:%@", error.localizedDescription);
             [SVProgressHUD showErrorWithStatus:error.localizedDescription];
@@ -125,7 +137,7 @@
     options[@"sud_transaction_id"] = self.ssvData.sudTransactionId;
     options[@"status"] = @(isRewarded ? 1 : 0);
     
-    [Common reqReportRewardAdStatusWithOptions:options respClass:SUDDemoBaseRespModel.class completion:^(SUDDemoBaseRespModel * _Nonnull resp, NSError * _Nonnull error) {
+    [SUDDemoHttpService.shared reqReportRewardAdStatusWithOptions:options respClass:SUDDemoBaseRespModel.class completion:^(SUDDemoBaseRespModel * _Nonnull resp, NSError * _Nonnull error) {
         if (error) {
             NSLog(@"reqReportRewardAdStatusWithOptions error:%@", error.localizedDescription);
             [SVProgressHUD showErrorWithStatus:error.localizedDescription];

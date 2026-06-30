@@ -50,6 +50,10 @@ typedef void(^SUDOPGameSessionStartCompletion)(NSError * _Nullable error);
                           gameId:(NSString *)gameId
                           config:(SUDOPGameConfig *)config;
 
+- (instancetype)initWithGameView:(UIView *)gameView
+                   gameSignature:(NSString *)gameSignature
+                          config:(SUDOPGameConfig *)config;
+
 /// Starts the game asynchronously.
 ///
 /// @param completion The completion callback invoked after the game starts.

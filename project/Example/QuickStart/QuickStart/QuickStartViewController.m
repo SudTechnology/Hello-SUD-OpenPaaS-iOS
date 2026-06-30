@@ -98,15 +98,15 @@
     config.appKey = SUDGI_APP_KEY;
     config.userId = userId;
     config.userSignatureProvider = ^(NSString * _Nonnull userId, SUDOPUserSignatureCompletion  _Nonnull completion) {
-        [Common requestUserSignatureWithUserId:userId completion:^(NSString * _Nonnull userSignature, NSError * _Nonnull error) {
-            
+        
+        NSDictionary * param = @{@"user_id": userId, @"app_id":Common.shared.selectedGameAppId};
+        [SUDDemoHttpService.shared requestUserSignatureWithOptions:param completion:^(NSDictionary * _Nonnull result, NSError * _Nonnull error) {
             [SVProgressHUD dismiss];
             if (error) {
                 completion(nil, error);
                 return;
             }
-            completion(userSignature, nil);
-
+            completion(result[@"user_signature"], nil);
         }];
     };
     

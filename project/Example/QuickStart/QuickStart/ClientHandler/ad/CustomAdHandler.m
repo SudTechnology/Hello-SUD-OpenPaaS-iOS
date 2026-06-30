@@ -38,18 +38,20 @@
 
 
 
-- (void)sudopAdShow:(SUDOPCustomAd *)ad {
+- (void)showAd:(SUDOPCustomAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     self.customAdView.hidden = NO;
     [self.customAdView showAdFromViewController:self.viewController atOrigin:CGPointMake(self.ad.style.left, self.ad.style.top)];
+    [stateHandle success:nil];
 }
-- (BOOL)sudopAdIsShow:(SUDOPCustomAd *)ad {
+- (BOOL)isShowAd:(SUDOPCustomAd *)ad {
     return self.customAdView.hidden == NO;
 }
-- (void)sudopAdHide:(SUDOPCustomAd *)ad {
+- (void)hideAd:(SUDOPCustomAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     self.customAdView.hidden = YES;
     [self.ad notifyDidHide];
+    [stateHandle success:nil];
 }
-- (void)sudopAdDestroy:(SUDOPCustomAd *)ad{
+- (void)destroyAd:(SUDOPCustomAd *)ad{
     [self.customAdView removeFromSuperview];
     self.customAdView = nil;
     self.ad = nil;

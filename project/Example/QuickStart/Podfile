@@ -8,7 +8,8 @@ target 'QuickStart' do
   pod 'AFNetworking'
   # 图片加载
   pod 'SDWebImage', '5.12.2'
-  pod 'SUDGI', :path => '../../'
+  #pod 'SUDGI', :path => '../../'
+  pod 'SUDGI', '2.0.0'
   pod 'SUDOPWrappedClientKit', :path => '../../SUDOPWrappedClientKit/'
 end
 

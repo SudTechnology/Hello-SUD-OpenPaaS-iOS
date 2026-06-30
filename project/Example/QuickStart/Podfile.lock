@@ -19,7 +19,7 @@ PODS:
   - SDWebImage (5.12.2):
     - SDWebImage/Core (= 5.12.2)
   - SDWebImage/Core (5.12.2)
-  - SUDGI (0.1.0)
+  - SUDGI (2.0.0)
   - SUDOPWrappedClientKit (1.0.0):
     - SUDOPWrappedClientKit/SUDOPWrappedClientKit (= 1.0.0)
   - SUDOPWrappedClientKit/SUDOPWrappedClientKit (1.0.0):
@@ -33,7 +33,7 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - SDWebImage (= 5.12.2)
-  - SUDGI (from `../../`)
+  - SUDGI (= 2.0.0)
   - SUDOPWrappedClientKit (from `../../SUDOPWrappedClientKit/`)
   - SVProgressHUD (~> 2.2.5)
 
@@ -43,11 +43,10 @@ SPEC REPOS:
     - Masonry
     - MJExtension
     - SDWebImage
+    - SUDGI
     - SVProgressHUD
 
 EXTERNAL SOURCES:
-  SUDGI:
-    :path: "../../"
   SUDOPWrappedClientKit:
     :path: "../../SUDOPWrappedClientKit/"
 
@@ -56,10 +55,10 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
-  SUDGI: 13f4299059340e5e8b68156c1dbd20a162cab47b
-  SUDOPWrappedClientKit: 5ad340a2d901b442d015584a222b8822ab44ab9f
+  SUDGI: 100357d31096b7aeb3cdb3fc5e89a70ac3571d64
+  SUDOPWrappedClientKit: c032f581bde99b2709d24057161bdf21ac4c20b4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 7a55ebc45f2181d0ae3f0e44d662c6aeed0e2690
+PODFILE CHECKSUM: b16b998150a8c5f8b120c70c9cccf8f3dd9016b4
 
 COCOAPODS: 1.16.2

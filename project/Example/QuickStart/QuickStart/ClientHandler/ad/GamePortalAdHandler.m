@@ -35,16 +35,18 @@ SUDDemoBoxAdViewDelegate>
 }
 
 
-- (void)sudopAdLoad:(SUDOPGamePortalAd *)ad {
+- (void)loadAd:(SUDOPGamePortalAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.adView loadAd];
+    [stateHandle success:nil];
 }
 
-- (void)sudopAdShow:(SUDOPGamePortalAd *)ad {
+- (void)showAd:(SUDOPGamePortalAd *)ad withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.adView showInView:self.viewController.view];
     [self.ad notifyDidShow];
+    [stateHandle success:nil];
 }
 
-- (void)sudopAdDestroy:(SUDOPGamePortalAd *)gamePortalAd {
+- (void)destroyAd:(SUDOPGamePortalAd *)gamePortalAd {
     [self.adView closeAd];
     self.ad = nil;
     [self.adView removeFromSuperview];

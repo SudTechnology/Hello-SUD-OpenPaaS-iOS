@@ -35,20 +35,23 @@
 }
 
 
-- (void)sudopAdDestroy:(nonnull SUDOPBannerAd *)bannerAd {
+- (void)destroyAd:(nonnull SUDOPBannerAd *)bannerAd {
     [self.bannerView removeFromSuperview];
     self.bannerView = nil;
     self.bannerAd = nil;
+
 }
 
-- (void)sudopAdHide:(nonnull SUDOPBannerAd *)bannerAd {
+- (void)hideAd:(nonnull SUDOPBannerAd *)bannerAd withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.bannerView closeAd];
+    [stateHandle success:nil];
 }
 
-- (void)sudopAdShow:(nonnull SUDOPBannerAd *)bannerAd {
+- (void)showAd:(nonnull SUDOPBannerAd *)bannerAd withStateHandle:(id<SUDOPStateHandle>)stateHandle {
     [self.bannerView showInView:self.viewController.view
                      atPosition:CGPointMake(self.bannerAd.style.left, self.bannerAd.style.top)
                            size:CGSizeMake(self.bannerAd.style.width, self.bannerAd.style.height)];
+    [stateHandle success:nil];
 }
 
 

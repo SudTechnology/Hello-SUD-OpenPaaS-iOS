@@ -18,6 +18,7 @@ typedef void(^SUDOPUserSignatureCompletion)(NSString * _Nullable userSignature,
 
 typedef void(^SUDOPUserSignatureProvider)(NSString *userId,
                                           SUDOPUserSignatureCompletion completion);
+typedef void(^SUDOPGameDeviceOrientationUpdated)(SUDOPGameInfo *gameInfo);
 
 typedef id<SUDOPWrappedClientDelegate> _Nullable (^SUDOPWrappedClientHandlerProvider)(
     NSString *gameId,
@@ -51,7 +52,7 @@ typedef id<SUDOPWrappedClientDelegate> _Nullable (^SUDOPWrappedClientHandlerProv
 /// Wrapped client handler provider for multi-game scenarios.
 /// Recommended for multi-game scenarios to create an independent handler for each session.
 @property (nonatomic, copy, nullable) SUDOPWrappedClientHandlerProvider wrappedClientHandlerProvider;
-
+@property(nonatomic, copy)SUDOPGameDeviceOrientationUpdated gameDeviceOrientationUpdated;
 @end
 
 NS_ASSUME_NONNULL_END

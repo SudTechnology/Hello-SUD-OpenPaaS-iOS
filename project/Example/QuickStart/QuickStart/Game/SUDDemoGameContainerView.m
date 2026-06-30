@@ -161,4 +161,8 @@
     }
 }
 
+- (CGRect)capsuleViewRect {
+    return self.capsuleView.frame;;
+}
+
 @end

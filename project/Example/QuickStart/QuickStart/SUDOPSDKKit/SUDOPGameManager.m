@@ -10,13 +10,12 @@
 static NSString * const SUDOPGameManagerErrorDomain = @"com.sudop.game.manager";
 
 typedef NS_ENUM(NSInteger, SUDOPGameManagerErrorCode) {
-    SUDOPGameManagerErrorCodeInvalidGameView = 11001,
-    SUDOPGameManagerErrorCodeInvalidGameId,
-    SUDOPGameManagerErrorCodeInvalidAppId,
-    SUDOPGameManagerErrorCodeInvalidAppKey,
-    SUDOPGameManagerErrorCodeInvalidUserId,
-    SUDOPGameManagerErrorCodeMissingUserSignatureProvider,
-    SUDOPGameManagerErrorCodeInvalidUserSignature,
+    SUDOPGameManagerErrorCodeInvalidParam = -10104,
+};
+
+typedef NS_ENUM(NSInteger, SUDOPGameStartType) {
+    SUDOPGameManagerStartTypeGameId,
+    SUDOPGameManagerStartTypeGameSignature,
 };
 
 @interface SUDOPGameManager ()
@@ -50,15 +49,16 @@ typedef NS_ENUM(NSInteger, SUDOPGameManagerErrorCode) {
     return self;
 }
 
-- (void)startGameWithGameId:(NSString *)gameId
-                     config:(SUDOPGameConfig *)config
-                   gameView:(UIView *)gameView
-                 completion:(nullable SUDOPGameStartCompletion)completion {
-  
+- (void)startGameWithIdentifier:(NSString *)identifier
+                           type:(SUDOPGameStartType)type
+                         config:(SUDOPGameConfig *)config
+                       gameView:(UIView *)gameView
+                     completion:(nullable SUDOPGameStartCompletion)completion {
+    
     dispatch_async(dispatch_get_main_queue(), ^{
-      
+        
         NSError *validateError = [self validateGameView:gameView
-                                                 gameId:gameId
+                                                 gameId:identifier
                                                  config:config];
         if (validateError) {
             if (completion) {
@@ -66,57 +66,76 @@ typedef NS_ENUM(NSInteger, SUDOPGameManagerErrorCode) {
             }
             return;
         }
-      
-        [self obtainUserSignatureWithConfig:config completion:^(NSString * _Nullable userSignature, NSError * _Nullable error) {
-          
+        
+        [self obtainUserSignatureWithConfig:config
+                                 completion:^(NSString * _Nullable userSignature, NSError * _Nullable error) {
+            
             if (error) {
                 if (completion) {
                     completion(nil, error);
                 }
                 return;
             }
+            
             if (userSignature.length == 0) {
-                NSError *signatureError = [self errorWithCode:SUDOPGameManagerErrorCodeInvalidUserSignature
+                NSError *signatureError = [self errorWithCode:SUDOPGameManagerErrorCodeInvalidParam
                                                       message:@"userSignature is empty"];
                 if (completion) {
                     completion(nil, signatureError);
                 }
                 return;
             }
-            /// Initialize SDK
-            [self initializeSDKIfNeededWithConfig:config completion:^(NSError * _Nullable error) {
-              
+            
+            [self initializeSDKIfNeededWithConfig:config
+                                       completion:^(NSError * _Nullable error) {
+                
                 if (error) {
                     if (completion) {
                         completion(nil, error);
                     }
                     return;
                 }
-                /// Authenticate
-                [self authWithUserSignature:userSignature completion:^(NSError * _Nullable error) {
-                  
+                
+                [self authWithUserSignature:userSignature
+                                 completion:^(NSError * _Nullable error) {
+                    
                     if (error) {
                         if (completion) {
                             completion(nil, error);
                         }
                         return;
                     }
-                    /// Start game
-                    SUDOPGameSession *session = [[SUDOPGameSession alloc] initWithGameView:gameView
-                                                                                    gameId:gameId
-                                                                                    config:config];
+                    
+                    SUDOPGameSession *session = nil;
+                    
+                    switch (type) {
+                        case SUDOPGameManagerStartTypeGameId: {
+                            session = [[SUDOPGameSession alloc] initWithGameView:gameView
+                                                                          gameId:identifier
+                                                                          config:config];
+                        } break;
+                            
+                        case SUDOPGameManagerStartTypeGameSignature: {
+                            session = [[SUDOPGameSession alloc] initWithGameView:gameView
+                                                                   gameSignature:identifier
+                                                                          config:config];
+                        } break;
+                    }
+                    
                     self.sessionMap[session.sessionId] = session;
-
+                    
                     [session startWithCompletion:^(NSError * _Nullable error) {
-                      
+                        
                         if (error) {
                             [self.sessionMap removeObjectForKey:session.sessionId];
                             [session destroy];
+                            
                             if (completion) {
                                 completion(nil, error);
                             }
                             return;
                         }
+                        
                         if (completion) {
                             completion(session, nil);
                         }
@@ -126,6 +145,31 @@ typedef NS_ENUM(NSInteger, SUDOPGameManagerErrorCode) {
         }];
     });
 }
+
+- (void)startGameWithGameId:(NSString *)gameId
+                     config:(SUDOPGameConfig *)config
+                   gameView:(UIView *)gameView
+                 completion:(nullable SUDOPGameStartCompletion)completion {
+    
+    [self startGameWithIdentifier:gameId
+                             type:SUDOPGameManagerStartTypeGameId
+                           config:config
+                         gameView:gameView
+                       completion:completion];
+}
+
+- (void)startGameWithGameSignature:(NSString *)gameSignature
+                            config:(SUDOPGameConfig *)config
+                          gameView:(UIView *)gameView
+                        completion:(nullable SUDOPGameStartCompletion)completion {
+    
+    [self startGameWithIdentifier:gameSignature
+                             type:SUDOPGameManagerStartTypeGameSignature
+                           config:config
+                         gameView:gameView
+                       completion:completion];
+}
+
 
 #pragma mark - UserSignature
 
@@ -140,7 +184,7 @@ typedef NS_ENUM(NSInteger, SUDOPGameManagerErrorCode) {
     }
   
     if (!config.userSignatureProvider) {
-        NSError *error = [self errorWithCode:SUDOPGameManagerErrorCodeMissingUserSignatureProvider
+        NSError *error = [self errorWithCode:SUDOPGameManagerErrorCodeInvalidParam
                                      message:@"Neither userSignature nor userSignatureProvider is set"];
         if (completion) {
             completion(nil, error);
@@ -241,27 +285,27 @@ typedef NS_ENUM(NSInteger, SUDOPGameManagerErrorCode) {
                        config:(SUDOPGameConfig *)config {
   
     if (!gameView) {
-        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidGameView
+        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidParam
                            message:@"gameView cannot be empty"];
     }
   
     if (gameId.length == 0) {
-        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidGameId
+        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidParam
                            message:@"gameId cannot be empty"];
     }
   
     if (config.appId.length == 0) {
-        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidAppId
+        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidParam
                            message:@"appId cannot be empty"];
     }
   
     if (config.appKey.length == 0) {
-        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidAppKey
+        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidParam
                            message:@"appKey cannot be empty"];
     }
   
     if (config.userId.length == 0) {
-        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidUserId
+        return [self errorWithCode:SUDOPGameManagerErrorCodeInvalidParam
                            message:@"userId cannot be empty"];
     }
   

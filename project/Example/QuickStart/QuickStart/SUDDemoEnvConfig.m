@@ -37,12 +37,28 @@
     return [self apiURLWithPath:@"/v1/app/get/user/profile"];
 }
 
-+ (NSString *)verifyOrderURL {
-    return [self apiURLWithPath:@"/v1/app/pay/validate"];
++ (NSString *)createOrderURL {
+    return [self apiURLWithPath:@"v1/app/order/create"];
 }
 
-+ (NSString *)mockPayURL {
-    return [self apiURLWithPath:@"/v1/app/pay/mock"];
++ (NSString *)payInfoURL {
+    return [self apiURLWithPath:@"v1/app/pay/wap/pay"];
+}
+
++ (NSString *)queryPayResultURL {
+    return [self apiURLWithPath:@"v1/app/pay/wap/query"];
+}
+
++ (NSString *)adMeterialURL {
+    return [self apiURLWithPath:@"/v1/app/service/ads/material/query"];
+}
+
++ (NSString *)reportRewarAdSSVDataURL {
+    return [self apiURLWithPath:@"/v1/app/service/ads/ad-txn/reward"];
+}
+
++ (NSString *)closeRewarAdURL {
+    return [self apiURLWithPath:@"/v1/app/service/ads/ad-txn/complete"];
 }
 
 @end

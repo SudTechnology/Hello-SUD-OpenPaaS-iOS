@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实现SDKwrapped类接口模块
 @interface DemoWrappedClientHandler : SUDOPWCKDefaultWrappedClient
 @property(nonatomic, weak)UIView *gameContentView;
-
+@property(nonatomic,strong)CGRect(^boundRectBlock)(void);
 - (void)cleanup;
 @end
 

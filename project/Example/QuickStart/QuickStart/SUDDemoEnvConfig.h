@@ -22,8 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)loginURL;
 + (NSString *)getUserSignatureURL;
 + (NSString *)getUserProfileURL;
-+ (NSString *)verifyOrderURL;
-+ (NSString *)mockPayURL;
++ (NSString *)createOrderURL;
++ (NSString *)payInfoURL;
++ (NSString *)queryPayResultURL;
++ (NSString *)adMeterialURL;
++ (NSString *)reportRewarAdSSVDataURL;
++ (NSString *)closeRewarAdURL;
 
 @end
 
