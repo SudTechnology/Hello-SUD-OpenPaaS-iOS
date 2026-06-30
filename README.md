@@ -35,7 +35,7 @@ Open the generated `.xcworkspace` file.
 Objective-C:
 
 ```objc
-#import <SUDGI/SUDGI.h>
+#import <SUDGI/SUDOP.h>
 ```
 
 Swift:
@@ -43,7 +43,7 @@ Swift:
 Add to your Bridging Header:
 
 ```objc
-#import <SUDGI/SUDGI.h>
+#import <SUDGI/SUDOP.h>
 ```
 
 ## Troubleshooting
