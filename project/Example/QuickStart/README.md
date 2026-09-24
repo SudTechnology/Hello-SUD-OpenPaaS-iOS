@@ -45,4 +45,4 @@ pod 'SUDOPWrappedClientKit', :path => '../../SUDOPWrappedClientKit/'
 
 ## 参考文档
 
-[开发文档](https://ifzx25dxpkx57hb6.sud.tech/)
+[开发文档](https://developer.sud.tech/openpaas/app/guide/guide-dev/start.html)

@@ -45,4 +45,4 @@ See the [repository README](../../../README.md) for host app integration.
 
 ## Documentation
 
-[Developer documentation](https://ifzx25dxpkx57hb6.sud.tech/en/)
+[Developer documentation](https://developer.sud.tech/openpaas/app/guide/guide-dev/start.html)
