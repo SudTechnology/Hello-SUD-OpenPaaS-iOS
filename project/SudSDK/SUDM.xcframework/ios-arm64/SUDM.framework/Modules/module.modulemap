@@ -1,0 +1,10 @@
+framework module SUDM {
+  umbrella header "SUDM-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module SUDM.Swift {
+  header "SUDM-Swift.h"
+}

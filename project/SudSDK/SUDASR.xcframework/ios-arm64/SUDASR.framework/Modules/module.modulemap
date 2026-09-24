@@ -1,0 +1,6 @@
+framework module SUDASR {
+  umbrella header "SUDASR-umbrella.h"
+
+  export *
+  module * { export * }
+}

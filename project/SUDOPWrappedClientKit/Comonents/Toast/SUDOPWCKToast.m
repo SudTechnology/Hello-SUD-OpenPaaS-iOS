@@ -6,6 +6,7 @@
 //
 
 #import "SUDOPWCKToast.h"
+#import "SUDOPWCKLanguageHelper.h"
 #import <Masonry/Masonry.h>
 
 @interface SUDOPWCKToast ()
@@ -15,6 +16,8 @@
 @property (nonatomic, strong) UIImageView *iconImageView;
 @property (nonatomic, strong) UILabel *textLabel;
 @property (nonatomic, assign) BOOL maskEnabled;
+@property (nonatomic, copy, nullable) NSString *localizedTextKey;
+@property (nonatomic, copy, nullable) NSString *localizedTextDefaultValue;
 
 @end
 
@@ -84,8 +87,16 @@
     if (self) {
         _maskEnabled = mask;
         [self setupUI];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(languageDidChange:)
+                                                     name:SUDOPWCKLanguageDidChangeNotification
+                                                   object:nil];
     }
     return self;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - UI
@@ -129,7 +140,12 @@
 }
 
 - (void)setupLoadingWithText:(NSString *)text {
-    self.textLabel.text = text ?: @"加载中...";
+    self.localizedTextKey = text.length > 0 ? nil : @"sudop_wck.loading.default";
+    self.localizedTextDefaultValue = text.length > 0 ? nil : @"Loading…";
+    self.textLabel.text = text.length > 0
+        ? text
+        : [SUDOPWCKLanguageHelper localizedStringForKey:self.localizedTextKey
+                                           defaultValue:self.localizedTextDefaultValue];
     self.iconImageView.hidden = YES;
     [self.indicatorView startAnimating];
     
@@ -148,7 +164,12 @@
 
 - (void)setupSuccessWithText:(NSString *)text image:(UIImage *)image {
     [self.indicatorView stopAnimating];
-    self.textLabel.text = text ?: @"成功";
+    self.localizedTextKey = text.length > 0 ? nil : @"sudop_wck.toast.success_default";
+    self.localizedTextDefaultValue = text.length > 0 ? nil : @"Success";
+    self.textLabel.text = text.length > 0
+        ? text
+        : [SUDOPWCKLanguageHelper localizedStringForKey:self.localizedTextKey
+                                           defaultValue:self.localizedTextDefaultValue];
     self.iconImageView.hidden = NO;
     self.iconImageView.image = image ?: [self defaultSuccessImage];
     
@@ -166,6 +187,14 @@
 }
 
 #pragma mark - Private
+
+- (void)languageDidChange:(NSNotification *)notification {
+    if (self.localizedTextKey.length == 0) {
+        return;
+    }
+    self.textLabel.text = [SUDOPWCKLanguageHelper localizedStringForKey:self.localizedTextKey
+                                                           defaultValue:self.localizedTextDefaultValue];
+}
 
 + (void)hideToastInView:(UIView *)view {
     NSMutableArray<UIView *> *targetViews = [NSMutableArray array];
@@ -202,5 +231,3 @@
 }
 
 @end
-
-

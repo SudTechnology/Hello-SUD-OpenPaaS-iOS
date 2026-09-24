@@ -13,6 +13,7 @@
 #import "SUDOPDemoGameInfoSheetView.h"
 #import "SUDDemoGameInfoViewController.h"
 #import "SUDOPGameManager.h"
+#import <SUDGI/SUDOP.h>
 @interface QuickStartViewController()
 
 @property(nonatomic, strong)UIButton *backBtn;
@@ -31,8 +32,12 @@
     [super viewDidLoad];
 
     // 2 by gameId, contact SUD about how to getting gameId
-    self.gameInfo = @{@"gameId": @"2061017615804846082",
+//    self.gameInfo = @{@"gameId": @"2061017615804846082",
+//                      @"version":@"1.0.0"};
+    
+    self.gameInfo = @{@"gameId": @"2100859257868963842",
                       @"version":@"1.0.0"};
+    
     
     [SVProgressHUD setOffsetFromCenter:UIOffsetMake(self.view.frame.size.width/2., self.view.frame.size.height/2.)];
     self.view.backgroundColor = UIColor.redColor;
@@ -87,7 +92,7 @@
 - (void)startClick:(UIButton *)sender {
     WeakSelf
     [self destroyClick:nil];
-    [[SUDGI getCfg] setLogLevel:SudLogDEBUG];
+//    [[SUDGI getCfg] setLogLevel:SudLogDEBUG];
     [SVProgressHUD showWithStatus:@"Login"];
     [SVProgressHUD setMaximumDismissTimeInterval:3];
 

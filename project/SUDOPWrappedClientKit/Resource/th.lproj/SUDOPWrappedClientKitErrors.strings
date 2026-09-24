@@ -1,0 +1,16 @@
+"sudop_wck.error.no_top_view_controller" = "ไม่พบตัวควบคุมมุมมองที่พร้อมใช้งาน";
+"sudop_wck.error.invalid_source_types" = "แหล่งที่มาของรูปภาพว่างเปล่าหรือไม่ถูกต้อง";
+"sudop_wck.error.cannot_present_controller" = "ไม่สามารถเปิดตัวเลือกรูปภาพได้";
+"sudop_wck.error.user_cancelled" = "ผู้ใช้ยกเลิกการดำเนินการ";
+"sudop_wck.error.camera_permission_denied" = "ไม่ได้รับอนุญาตให้เข้าถึงกล้อง";
+"sudop_wck.error.camera_unavailable" = "กล้องไม่พร้อมใช้งานบนอุปกรณ์นี้";
+"sudop_wck.error.photo_permission_denied" = "ไม่ได้รับอนุญาตให้เข้าถึงรูปภาพ";
+"sudop_wck.error.photo_unavailable" = "รูปภาพไม่พร้อมใช้งานบนอุปกรณ์นี้";
+"sudop_wck.error.load_image_failed" = "โหลดรูปภาพไม่สำเร็จ";
+"sudop_wck.error.no_valid_images" = "ไม่พบรูปภาพที่ถูกต้อง";
+"sudop_wck.error.get_image_failed" = "ไม่สามารถดึงรูปภาพได้";
+"sudop_wck.error.image_nil" = "รูปภาพว่างเปล่า";
+"sudop_wck.error.generate_image_data_failed" = "สร้างข้อมูลรูปภาพไม่สำเร็จ";
+"sudop_wck.error.temp_directory_missing" = "ไม่พบไดเรกทอรีชั่วคราว";
+"sudop_wck.error.file_path_empty" = "เส้นทางไฟล์ว่างเปล่า";
+"sudop_wck.error.unknown" = "ข้อผิดพลาดที่ไม่ทราบสาเหตุ";

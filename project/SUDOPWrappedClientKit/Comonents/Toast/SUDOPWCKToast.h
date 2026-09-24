@@ -11,30 +11,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SUDOPWCKToast : UIView
 
-/// 显示 loading
+/// Shows a loading toast.
 + (instancetype)showLoadingInView:(UIView *)view
                              text:(nullable NSString *)text
                              mask:(BOOL)mask;
 
-/// 显示成功
+/// Shows a success toast.
 + (instancetype)showSuccessInView:(UIView *)view
                              text:(nullable NSString *)text
                              mask:(BOOL)mask;
 
-/// 显示成功（支持自定义图片）
+/// Shows a success toast with an optional custom image.
 + (instancetype)showSuccessInView:(UIView *)view
                              text:(nullable NSString *)text
                             image:(nullable UIImage *)image
                              mask:(BOOL)mask;
 
-/// 隐藏
+/// Hides the toast.
 - (void)hide;
 
-/// 延迟隐藏
+/// Hides the toast after the specified delay.
 - (void)hideAfterDelay:(NSTimeInterval)delay;
 
 @end
 
 NS_ASSUME_NONNULL_END
-
 

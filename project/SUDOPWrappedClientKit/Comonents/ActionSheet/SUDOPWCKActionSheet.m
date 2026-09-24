@@ -6,6 +6,7 @@
 //
 
 #import "SUDOPWCKActionSheet.h"
+#import "SUDOPWCKLanguageHelper.h"
 
 @implementation SUDOPWCKActionSheet
 
@@ -40,7 +41,9 @@
         [alertController addAction:action];
     }];
     
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"
+    NSString *cancelText = [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.common.cancel"
+                                                             defaultValue:@"Cancel"];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelText
                                                            style:UIAlertActionStyleCancel
                                                          handler:^(__unused UIAlertAction * _Nonnull action) {
         if (completion) {
@@ -80,4 +83,3 @@
 }
 
 @end
-

@@ -50,6 +50,12 @@ typedef void(^SUDOPGameSessionStartCompletion)(NSError * _Nullable error);
                           gameId:(NSString *)gameId
                           config:(SUDOPGameConfig *)config;
 
+/// Initializes a session with a language forwarded to SUDOP when starting by game ID.
+- (instancetype)initWithGameView:(UIView *)gameView
+                          gameId:(NSString *)gameId
+                        language:(nullable NSString *)language
+                          config:(SUDOPGameConfig *)config;
+
 - (instancetype)initWithGameView:(UIView *)gameView
                    gameSignature:(NSString *)gameSignature
                           config:(SUDOPGameConfig *)config;

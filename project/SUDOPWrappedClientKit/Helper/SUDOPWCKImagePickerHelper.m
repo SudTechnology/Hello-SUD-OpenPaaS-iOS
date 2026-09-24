@@ -10,6 +10,7 @@
 #import <PhotosUI/PhotosUI.h>
 #import <AVFoundation/AVFoundation.h>
 #import <objc/runtime.h>
+#import "SUDOPWCKLanguageHelper.h"
 
 static NSString * const SUDImageSourceTypeAlbum = @"album";
 static NSString * const SUDImageSourceTypeCamera = @"camera";
@@ -21,6 +22,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
 @property (nonatomic, assign) NSInteger maxCount;
 @property (nonatomic, assign) BOOL allowsEditing;
 @property (nonatomic, copy) void(^completion)(NSArray<UIImage *> * _Nullable images, NSError * _Nullable error);
+
++ (NSString *)localizedErrorForKey:(NSString *)key defaultValue:(NSString *)defaultValue;
+- (NSError *)errorWithKey:(NSString *)key defaultValue:(NSString *)defaultValue;
 
 @end
 
@@ -36,7 +40,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
         if (completion) {
             NSError *error = [NSError errorWithDomain:@"SUDImagePickerHelperErrorDomain"
                                                  code:-100
-                                             userInfo:@{NSLocalizedDescriptionKey : @"Cannot find top view controller"}];
+                                             userInfo:@{NSLocalizedDescriptionKey :
+                                                 [self localizedErrorForKey:@"sudop_wck.error.no_top_view_controller"
+                                                              defaultValue:@"Cannot find an available view controller."]}];
             completion(nil, error);
         }
         return;
@@ -47,7 +53,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
         if (completion) {
             NSError *error = [NSError errorWithDomain:@"SUDImagePickerHelperErrorDomain"
                                                  code:-101
-                                             userInfo:@{NSLocalizedDescriptionKey : @"sourceTypes is empty or invalid"}];
+                                             userInfo:@{NSLocalizedDescriptionKey :
+                                                 [self localizedErrorForKey:@"sudop_wck.error.invalid_source_types"
+                                                              defaultValue:@"Image sources are empty or invalid."]}];
             completion(nil, error);
         }
         return;
@@ -111,7 +119,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
     targetVC = [SUDOPWCKImagePickerHelper sud_topViewControllerFrom:targetVC];
     
     if (!targetVC || !targetVC.view.window) {
-        [self callbackWithImages:nil error:[self errorWithMessage:@"Cannot present controller"]];
+        [self callbackWithImages:nil
+                           error:[self errorWithKey:@"sudop_wck.error.cannot_present_controller"
+                                      defaultValue:@"Unable to present the image picker."]];
         return;
     }
     
@@ -127,7 +137,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
     __weak typeof(self) weakSelf = self;
     
     if ([self.sourceTypes containsObject:SUDImageSourceTypeCamera]) {
-        UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"拍照"
+        NSString *cameraText = [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.image_picker.camera"
+                                                                defaultValue:@"Take Photo"];
+        UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:cameraText
                                                                style:UIAlertActionStyleDefault
                                                              handler:^(__unused UIAlertAction * _Nonnull action) {
             [weakSelf chooseFromCamera];
@@ -136,7 +148,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
     }
     
     if ([self.sourceTypes containsObject:SUDImageSourceTypeAlbum]) {
-        UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"从手机相册选择"
+        NSString *albumText = [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.image_picker.album"
+                                                               defaultValue:@"Choose from Photos"];
+        UIAlertAction *albumAction = [UIAlertAction actionWithTitle:albumText
                                                               style:UIAlertActionStyleDefault
                                                             handler:^(__unused UIAlertAction * _Nonnull action) {
             [weakSelf chooseFromPhotoLibrary];
@@ -144,10 +158,14 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
         [alert addAction:albumAction];
     }
     
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消"
+    NSString *cancelText = [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.common.cancel"
+                                                             defaultValue:@"Cancel"];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelText
                                                            style:UIAlertActionStyleCancel
                                                          handler:^(__unused UIAlertAction * _Nonnull action) {
-            [weakSelf callbackWithImages:nil error:[weakSelf errorWithMessage:@"User cancelled"]];
+            [weakSelf callbackWithImages:nil
+                                   error:[weakSelf errorWithKey:@"sudop_wck.error.user_cancelled"
+                                                   defaultValue:@"The user cancelled the operation."]];
         }];
     [alert addAction:cancelAction];
     
@@ -178,18 +196,24 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
                 if (granted) {
                     [self presentCameraPicker];
                 } else {
-                    [self callbackWithImages:nil error:[self errorWithMessage:@"Camera permission denied"]];
+                    [self callbackWithImages:nil
+                                       error:[self errorWithKey:@"sudop_wck.error.camera_permission_denied"
+                                                   defaultValue:@"Camera access is denied."]];
                 }
             });
         }];
     } else {
-        [self callbackWithImages:nil error:[self errorWithMessage:@"Camera permission denied"]];
+        [self callbackWithImages:nil
+                           error:[self errorWithKey:@"sudop_wck.error.camera_permission_denied"
+                                       defaultValue:@"Camera access is denied."]];
     }
 }
 
 - (void)presentCameraPicker {
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        [self callbackWithImages:nil error:[self errorWithMessage:@"Camera is not available"]];
+        [self callbackWithImages:nil
+                           error:[self errorWithKey:@"sudop_wck.error.camera_unavailable"
+                                       defaultValue:@"The camera is unavailable on this device."]];
         return;
     }
     
@@ -214,12 +238,16 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
                     if (status == PHAuthorizationStatusAuthorized || status == PHAuthorizationStatusLimited) {
                         [self presentPhotoLibraryPicker];
                     } else {
-                        [self callbackWithImages:nil error:[self errorWithMessage:@"Photo library permission denied"]];
+                        [self callbackWithImages:nil
+                                           error:[self errorWithKey:@"sudop_wck.error.photo_permission_denied"
+                                                       defaultValue:@"Photos access is denied."]];
                     }
                 });
             }];
         } else {
-            [self callbackWithImages:nil error:[self errorWithMessage:@"Photo library permission denied"]];
+            [self callbackWithImages:nil
+                               error:[self errorWithKey:@"sudop_wck.error.photo_permission_denied"
+                                           defaultValue:@"Photos access is denied."]];
         }
     } else {
         PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
@@ -231,12 +259,16 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
                     if (status == PHAuthorizationStatusAuthorized) {
                         [self presentPhotoLibraryPicker];
                     } else {
-                        [self callbackWithImages:nil error:[self errorWithMessage:@"Photo library permission denied"]];
+                        [self callbackWithImages:nil
+                                           error:[self errorWithKey:@"sudop_wck.error.photo_permission_denied"
+                                                       defaultValue:@"Photos access is denied."]];
                     }
                 });
             }];
         } else {
-            [self callbackWithImages:nil error:[self errorWithMessage:@"Photo library permission denied"]];
+            [self callbackWithImages:nil
+                               error:[self errorWithKey:@"sudop_wck.error.photo_permission_denied"
+                                           defaultValue:@"Photos access is denied."]];
         }
     }
 }
@@ -254,7 +286,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
     }
     
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-        [self callbackWithImages:nil error:[self errorWithMessage:@"Photo library is not available"]];
+        [self callbackWithImages:nil
+                           error:[self errorWithKey:@"sudop_wck.error.photo_unavailable"
+                                       defaultValue:@"Photos are unavailable on this device."]];
         return;
     }
     
@@ -275,7 +309,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
         if (!self) return;
         
         if (results.count == 0) {
-            [self callbackWithImages:nil error:[self errorWithMessage:@"User cancelled"]];
+            [self callbackWithImages:nil
+                               error:[self errorWithKey:@"sudop_wck.error.user_cancelled"
+                                       defaultValue:@"The user cancelled the operation."]];
             return;
         }
         
@@ -295,7 +331,8 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
                     if (image) {
                         [images addObject:image];
                     } else if (!loadError) {
-                        loadError = error ?: [self errorWithMessage:@"Failed to load image"];
+                        loadError = error ?: [self errorWithKey:@"sudop_wck.error.load_image_failed"
+                                                       defaultValue:@"Failed to load the image."];
                     }
                 }
                 dispatch_group_leave(group);
@@ -306,7 +343,9 @@ static NSString * const SUDImageSourceTypeCamera = @"camera";
             if (images.count > 0) {
                 [self callbackWithImages:images.copy error:nil];
             } else {
-                [self callbackWithImages:nil error:loadError ?: [self errorWithMessage:@"No valid images"]];
+                [self callbackWithImages:nil
+                                   error:loadError ?: [self errorWithKey:@"sudop_wck.error.no_valid_images"
+                                                                defaultValue:@"No valid images were found."]];
             }
         });
     }];
@@ -328,14 +367,18 @@ didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *
         if (image) {
             [self callbackWithImages:@[image] error:nil];
         } else {
-            [self callbackWithImages:nil error:[self errorWithMessage:@"Failed to get image"]];
+            [self callbackWithImages:nil
+                               error:[self errorWithKey:@"sudop_wck.error.get_image_failed"
+                                           defaultValue:@"Failed to retrieve the image."]];
         }
     }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [picker dismissViewControllerAnimated:YES completion:^{
-        [self callbackWithImages:nil error:[self errorWithMessage:@"User cancelled"]];
+        [self callbackWithImages:nil
+                           error:[self errorWithKey:@"sudop_wck.error.user_cancelled"
+                                       defaultValue:@"The user cancelled the operation."]];
     }];
 }
 
@@ -356,10 +399,17 @@ didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *
     }
 }
 
-- (NSError *)errorWithMessage:(NSString *)message {
+- (NSError *)errorWithKey:(NSString *)key defaultValue:(NSString *)defaultValue {
     return [NSError errorWithDomain:@"SUDImagePickerHelperErrorDomain"
                                code:-1
-                           userInfo:@{NSLocalizedDescriptionKey : message ?: @"Unknown error"}];
+                           userInfo:@{NSLocalizedDescriptionKey :
+                               [[self class] localizedErrorForKey:key defaultValue:defaultValue]}];
+}
+
++ (NSString *)localizedErrorForKey:(NSString *)key defaultValue:(NSString *)defaultValue {
+    return [SUDOPWCKLanguageHelper localizedStringForKey:key
+                                                   table:@"SUDOPWrappedClientKitErrors"
+                                            defaultValue:defaultValue];
 }
 
 #pragma mark - Top ViewController
@@ -421,5 +471,3 @@ didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey,id> *
 }
 
 @end
-
-

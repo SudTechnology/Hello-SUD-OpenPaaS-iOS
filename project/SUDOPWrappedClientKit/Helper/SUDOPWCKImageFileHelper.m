@@ -6,6 +6,13 @@
 //
 
 #import "SUDOPWCKImageFileHelper.h"
+#import "SUDOPWCKLanguageHelper.h"
+
+static NSString *SUDOPWCKImageFileError(NSString *key, NSString *defaultValue) {
+    return [SUDOPWCKLanguageHelper localizedStringForKey:key
+                                                   table:@"SUDOPWrappedClientKitErrors"
+                                            defaultValue:defaultValue];
+}
 
 @implementation SUDOPWCKImageFileHelper
 
@@ -18,7 +25,9 @@
         if (error) {
             *error = [NSError errorWithDomain:@"SUDOPWCKImageFileHelperErrorDomain"
                                          code:-1
-                                     userInfo:@{NSLocalizedDescriptionKey : @"image is nil"}];
+                                     userInfo:@{NSLocalizedDescriptionKey :
+                                         SUDOPWCKImageFileError(@"sudop_wck.error.image_nil",
+                                                               @"The image is empty.")}];
         }
         return nil;
     }
@@ -41,7 +50,9 @@
         if (error) {
             *error = [NSError errorWithDomain:@"SUDOPWCKImageFileHelperErrorDomain"
                                          code:-2
-                                     userInfo:@{NSLocalizedDescriptionKey : @"failed to generate image data"}];
+                                     userInfo:@{NSLocalizedDescriptionKey :
+                                         SUDOPWCKImageFileError(@"sudop_wck.error.generate_image_data_failed",
+                                                               @"Failed to generate image data.")}];
         }
         return nil;
     }
@@ -51,7 +62,9 @@
         if (error) {
             *error = [NSError errorWithDomain:@"SUDOPWCKImageFileHelperErrorDomain"
                                          code:-3
-                                     userInfo:@{NSLocalizedDescriptionKey : @"temporary directory not found"}];
+                                     userInfo:@{NSLocalizedDescriptionKey :
+                                         SUDOPWCKImageFileError(@"sudop_wck.error.temp_directory_missing",
+                                                               @"The temporary directory was not found.")}];
         }
         return nil;
     }
@@ -86,4 +99,3 @@
 }
 
 @end
-

@@ -19,6 +19,7 @@ typedef void(^SUDOPUserSignatureCompletion)(NSString * _Nullable userSignature,
 typedef void(^SUDOPUserSignatureProvider)(NSString *userId,
                                           SUDOPUserSignatureCompletion completion);
 typedef void(^SUDOPGameDeviceOrientationUpdated)(SUDOPGameInfo *gameInfo);
+typedef NSDictionary<NSString*, id>*_Nullable(^SUDOPGameExtendClientBlock)(void);
 
 typedef id<SUDOPWrappedClientDelegate> _Nullable (^SUDOPWrappedClientHandlerProvider)(
     NSString *gameId,
@@ -33,6 +34,10 @@ typedef id<SUDOPWrappedClientDelegate> _Nullable (^SUDOPWrappedClientHandlerProv
 
 /// SDK App Key.
 @property (nonatomic, copy) NSString *appKey;
+
+/// Host-provided privacy configuration applied during SDK initialization.
+/// Pass nil when the host has no confirmed privacy status.
+@property (nonatomic, strong, nullable) SUDOPPrivacyConfig *privacyConfig;
 
 /// Current user ID.
 @property (nonatomic, copy) NSString *userId;
@@ -52,7 +57,8 @@ typedef id<SUDOPWrappedClientDelegate> _Nullable (^SUDOPWrappedClientHandlerProv
 /// Wrapped client handler provider for multi-game scenarios.
 /// Recommended for multi-game scenarios to create an independent handler for each session.
 @property (nonatomic, copy, nullable) SUDOPWrappedClientHandlerProvider wrappedClientHandlerProvider;
-@property(nonatomic, copy)SUDOPGameDeviceOrientationUpdated gameDeviceOrientationUpdated;
+@property(nonatomic, copy, nullable)SUDOPGameDeviceOrientationUpdated gameDeviceOrientationUpdated;
+@property(nonatomic, copy, nullable)SUDOPGameExtendClientBlock extendClientBlock;
 @end
 
 NS_ASSUME_NONNULL_END

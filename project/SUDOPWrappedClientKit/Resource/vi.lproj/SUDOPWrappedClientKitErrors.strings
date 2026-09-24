@@ -1,0 +1,16 @@
+"sudop_wck.error.no_top_view_controller" = "Không tìm thấy bộ điều khiển chế độ xem khả dụng.";
+"sudop_wck.error.invalid_source_types" = "Nguồn ảnh trống hoặc không hợp lệ.";
+"sudop_wck.error.cannot_present_controller" = "Không thể mở trình chọn ảnh.";
+"sudop_wck.error.user_cancelled" = "Người dùng đã hủy thao tác.";
+"sudop_wck.error.camera_permission_denied" = "Quyền truy cập camera bị từ chối.";
+"sudop_wck.error.camera_unavailable" = "Camera không khả dụng trên thiết bị này.";
+"sudop_wck.error.photo_permission_denied" = "Quyền truy cập ảnh bị từ chối.";
+"sudop_wck.error.photo_unavailable" = "Ảnh không khả dụng trên thiết bị này.";
+"sudop_wck.error.load_image_failed" = "Không thể tải ảnh.";
+"sudop_wck.error.no_valid_images" = "Không tìm thấy ảnh hợp lệ.";
+"sudop_wck.error.get_image_failed" = "Không thể lấy ảnh.";
+"sudop_wck.error.image_nil" = "Ảnh trống.";
+"sudop_wck.error.generate_image_data_failed" = "Không thể tạo dữ liệu ảnh.";
+"sudop_wck.error.temp_directory_missing" = "Không tìm thấy thư mục tạm thời.";
+"sudop_wck.error.file_path_empty" = "Đường dẫn tệp trống.";
+"sudop_wck.error.unknown" = "Lỗi không xác định.";

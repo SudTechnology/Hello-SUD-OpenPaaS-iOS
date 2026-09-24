@@ -1,0 +1,6 @@
+framework module SUDMAdapterTopOn {
+  umbrella header "SUDMAdapterTopOn-umbrella.h"
+
+  export *
+  module * { export * }
+}

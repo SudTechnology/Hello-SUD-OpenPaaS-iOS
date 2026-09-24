@@ -1,0 +1,6 @@
+"sudop_wck.image_picker.camera" = "拍照";
+"sudop_wck.image_picker.album" = "从手机相册选择";
+"sudop_wck.common.cancel" = "取消";
+"sudop_wck.common.confirm" = "确认";
+"sudop_wck.loading.default" = "加载中…";
+"sudop_wck.toast.success_default" = "成功";

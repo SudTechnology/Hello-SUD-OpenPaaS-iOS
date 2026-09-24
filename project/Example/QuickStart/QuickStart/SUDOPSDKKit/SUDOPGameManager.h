@@ -33,6 +33,14 @@ typedef void(^SUDOPGameStartCompletion)(SUDOPGameSession * _Nullable session,
                    gameView:(UIView *)gameView
                  completion:(nullable SUDOPGameStartCompletion)completion;
 
+/// Starts a game with the requested language, for example, `zh-CN`.
+/// Nil or empty uses the server default for the signature request and the system language for the loading name and cover.
+- (void)startGameWithGameId:(NSString *)gameId
+                   language:(nullable NSString *)language
+                     config:(SUDOPGameConfig *)config
+                   gameView:(UIView *)gameView
+                 completion:(nullable SUDOPGameStartCompletion)completion;
+
 /// Starts a game with the specified game signature, configuration, and game view.
 ///
 /// @param gameSignature The signature of the game to start.

@@ -1,0 +1,6 @@
+framework module SUDCoreKit {
+  umbrella header "SUDCoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

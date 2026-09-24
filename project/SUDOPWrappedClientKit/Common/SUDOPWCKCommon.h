@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SUDOPWCKCommon : NSObject
 + (NSError *)errorWithCode:(NSInteger)code msg:(NSString *)msg;
++ (nullable NSBundle *)resourceBundle;
 +(UIImage *)imageWithName:(NSString *)name;
 +(CGFloat)pointFromPx:(CGFloat)px;
 +(CGFloat)pxFromPoint:(CGFloat)point;

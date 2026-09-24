@@ -1,0 +1,16 @@
+"sudop_wck.error.no_top_view_controller" = "Cannot find an available view controller.";
+"sudop_wck.error.invalid_source_types" = "Image sources are empty or invalid.";
+"sudop_wck.error.cannot_present_controller" = "Unable to present the image picker.";
+"sudop_wck.error.user_cancelled" = "The user cancelled the operation.";
+"sudop_wck.error.camera_permission_denied" = "Camera access is denied.";
+"sudop_wck.error.camera_unavailable" = "The camera is unavailable on this device.";
+"sudop_wck.error.photo_permission_denied" = "Photos access is denied.";
+"sudop_wck.error.photo_unavailable" = "Photos are unavailable on this device.";
+"sudop_wck.error.load_image_failed" = "Failed to load the image.";
+"sudop_wck.error.no_valid_images" = "No valid images were found.";
+"sudop_wck.error.get_image_failed" = "Failed to retrieve the image.";
+"sudop_wck.error.image_nil" = "The image is empty.";
+"sudop_wck.error.generate_image_data_failed" = "Failed to generate image data.";
+"sudop_wck.error.temp_directory_missing" = "The temporary directory was not found.";
+"sudop_wck.error.file_path_empty" = "The file path is empty.";
+"sudop_wck.error.unknown" = "Unknown error.";

@@ -12,12 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SUDOPWCKImagePickerHelper : NSObject
 
-/// 选择图片（支持拍照/相册，多张）
-/// @param viewController 当前控制器
-/// @param sourceTypes 可传：@[@"album"], @[@"camera"], @[@"album", @"camera"]
-/// @param maxCount 最大选择数量，<=0 按 1 处理
-/// @param allowsEditing 是否允许编辑（仅 UIImagePickerController 路径有效；PHPicker 不支持系统裁剪）
-/// @param completion 返回图片数组；取消/失败时 error 非空
+/// Selects one or more images from the camera or photo library.
+/// @param viewController The view controller used to present the picker.
+/// @param sourceTypes Supported values: @[@"album"], @[@"camera"], or @[@"album", @"camera"].
+/// @param maxCount The maximum selection count. Values less than or equal to zero are treated as 1.
+/// @param allowsEditing Whether editing is allowed. This only applies to UIImagePickerController; PHPicker does not provide system cropping.
+/// @param completion Returns the selected images. The error is non-nil when the operation is cancelled or fails.
 + (void)chooseImagesFromViewController:(UIViewController * _Nullable)viewController
                            sourceTypes:(NSArray<NSString *> *)sourceTypes
                               maxCount:(NSInteger)maxCount
@@ -27,4 +27,3 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
-

@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SUDRTGameHandle;
 @protocol SUDOPGameHandleProvider;
 @class SUDOPGameInfo;
+@class SUDOPPrivacyConfig;
 #pragma mark - Common Types
 
 typedef NS_ENUM(NSInteger, SUDOPFIDType) {
@@ -89,6 +90,13 @@ typedef void(^SUDOPProgressBlock)(NSInteger progress);
 /// App Key
 @property(nonatomic, strong) NSString *appKey;
 
+/**
+* Privacy configuration (optional). The privacy status confirmed by the host app,
+* which takes effect along with the ad SDK during initialization.
+* Pass nil when the host has no confirmed privacy status.
+*/
+@property(nonatomic, strong, nullable) SUDOPPrivacyConfig *privacyConfig;
+
 @end
 
 /// Base options describing a game package.
@@ -141,6 +149,9 @@ extern NSString * const kSUDOPGameDeviceOrientationLanscape;
 /// URL of the game icon
 @property (nonatomic, strong) NSString *gameIcon;
 
+/// Localized game icon URLs keyed by language identifier
+@property (nonatomic, strong) NSDictionary<NSString *, NSString *> *icon;
+
 /// Game introduction (localized dictionary)
 @property (nonatomic, strong) NSDictionary<NSString *, NSString *> *gameIntroduction;
 
@@ -173,12 +184,110 @@ extern NSString * const kSUDOPGameDeviceOrientationLanscape;
 /// Privacy policy URL
 @property (nonatomic, strong) NSString *privacyPolicyUrl;
 
+/// Localized privacy policy URLs keyed by language identifier
+@property (nonatomic, strong) NSDictionary<NSString *, NSString *> *privacyPolicy;
+
+/// MD5 checksum of the game package
+@property (nonatomic, strong) NSString *packageMd5;
+
 /// Game version string
 @property (nonatomic, strong) NSString *version;
 
 /// Last update timestamp (in milliseconds)
 @property (nonatomic, assign) long long updateTime;
 
+@end
+
+/** Options for requesting a page of games. */
+@interface SUDOPGameListOptions : NSObject
+/// Page number, starting from 0. Defaults to 0.
+@property (nonatomic, assign) NSInteger pageNo;
+/// Number of records per page. Defaults to 10.
+@property (nonatomic, assign) NSInteger pageSize;
+/// Language identifier, for example, `zh-CN`. Nil or empty uses the server default.
+@property (nonatomic, copy, nullable) NSString *language;
+@end
+
+/** Options for requesting a page of games by category. */
+@interface SUDOPGameListByCategoryOptions : SUDOPGameListOptions
+/// Primary category code.
+@property (nonatomic, copy, nullable) NSString *primaryCategoryId;
+/// Secondary category code. Requires primaryCategoryId when set.
+@property (nonatomic, copy, nullable) NSString *secondaryCategoryId;
+@end
+
+/** A game returned by the game list API. */
+@interface SUDOPGameListItem : NSObject
+/// Unique identifier of the game.
+@property (nonatomic, copy) NSString *gameId;
+/// Localized game names keyed by language identifier.
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> *gameName;
+/// URL of the game icon.
+@property (nonatomic, copy) NSString *gameIcon;
+/// Localized game icon URLs keyed by language identifier.
+@property (nonatomic, copy, nullable) NSDictionary<NSString *, NSString *> *icon;
+/// Game version.
+@property (nonatomic, copy) NSString *version;
+@end
+
+/** A page returned by the game list API. */
+@interface SUDOPGameListResult : NSObject
+@property (nonatomic, assign) NSInteger pageNo;
+@property (nonatomic, assign) NSInteger pageSize;
+@property (nonatomic, assign) NSInteger total;
+@property (nonatomic, copy) NSArray<SUDOPGameListItem *> *records;
+@end
+
+/** Options for requesting a page of game selections. */
+@interface SUDOPSelectionListOptions : NSObject
+/// Page number, starting from 0. Defaults to 0.
+@property (nonatomic, assign) NSInteger pageNo;
+/// Number of records per page. Defaults to 10.
+@property (nonatomic, assign) NSInteger pageSize;
+/// Nil or empty uses the server default.
+@property (nonatomic, copy, nullable) NSString *language;
+@end
+
+@interface SUDOPSelectionListItem : NSObject
+/// Server field "id", preserved as a string without precision loss.
+@property (nonatomic, copy) NSString *selectionId;
+/// Localized names keyed by language identifier, including "default".
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> *name;
+@end
+
+@interface SUDOPSelectionListResult : NSObject
+@property (nonatomic, assign) NSInteger pageNo;
+@property (nonatomic, assign) NSInteger pageSize;
+@property (nonatomic, assign) NSInteger total;
+@property (nonatomic, copy) NSArray<SUDOPSelectionListItem *> *records;
+@end
+
+/** Options for requesting a page of game categories. */
+@interface SUDOPCategoryListOptions : NSObject
+/// Page number, starting from 0. Defaults to 0.
+@property (nonatomic, assign) NSInteger pageNo;
+/// Number of records per page. Defaults to 10.
+@property (nonatomic, assign) NSInteger pageSize;
+/// Nil or empty uses the server default.
+@property (nonatomic, copy, nullable) NSString *language;
+@end
+
+@interface SUDOPCategoryListItem : NSObject
+/// Category code.
+@property (nonatomic, copy) NSString *code;
+/// Localized category names keyed by language identifier, including "default".
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> *name;
+/// Parent category code.
+@property (nonatomic, copy) NSString *parentCode;
+/// 1 - primary category, 2 - secondary category.
+@property (nonatomic, assign) NSInteger level;
+@end
+
+@interface SUDOPCategoryListResult : NSObject
+@property (nonatomic, assign) NSInteger pageNo;
+@property (nonatomic, assign) NSInteger pageSize;
+@property (nonatomic, assign) NSInteger total;
+@property (nonatomic, copy) NSArray<SUDOPCategoryListItem *> *records;
 @end
 
 NS_ASSUME_NONNULL_END

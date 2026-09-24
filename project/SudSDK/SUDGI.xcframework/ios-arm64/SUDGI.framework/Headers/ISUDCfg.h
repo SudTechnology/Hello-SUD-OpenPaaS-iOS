@@ -3,7 +3,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ISUDLogger.h"
 
 @protocol ISUDCfg <NSObject>
 /// 获取加载游戏时，是否显示游戏背景图
@@ -94,5 +93,5 @@
 
 /// 设置日志级别
 /// @param logLevel logLevel description
-- (void)setLogLevel:(SudLogType)logLevel;
+- (void)setLogLevel:(NSInteger)logLevel;
 @end

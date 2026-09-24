@@ -1,0 +1,6 @@
+"sudop_wck.image_picker.camera" = "ถ่ายรูป";
+"sudop_wck.image_picker.album" = "เลือกจากรูปภาพ";
+"sudop_wck.common.cancel" = "ยกเลิก";
+"sudop_wck.common.confirm" = "ยืนยัน";
+"sudop_wck.loading.default" = "กำลังโหลด…";
+"sudop_wck.toast.success_default" = "สำเร็จ";

@@ -6,6 +6,7 @@
 //
 
 #import "SUDOPWCKModalView.h"
+#import "SUDOPWCKLanguageHelper.h"
 #import <Masonry/Masonry.h>
 
 @interface SUDOPWCKModalView () <UITextFieldDelegate>
@@ -65,8 +66,16 @@
         _options = options ?: [[SUDOPWCKModalOptions alloc] init];
         [self setupUI];
         [self refreshUI];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(languageDidChange:)
+                                                     name:SUDOPWCKLanguageDidChangeNotification
+                                                   object:nil];
     }
     return self;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - UI
@@ -153,8 +162,14 @@
     self.textField.placeholder = self.options.placeholderText ?: @"";
     self.textField.hidden = !editable;
     
-    NSString *cancelText = [self safeButtonText:self.options.cancelText defaultText:@"取消"];
-    NSString *confirmText = [self safeButtonText:self.options.confirmText defaultText:@"确认"];
+    NSString *cancelText = self.options.cancelText.length > 0
+        ? self.options.cancelText
+        : [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.common.cancel"
+                                           defaultValue:@"Cancel"];
+    NSString *confirmText = self.options.confirmText.length > 0
+        ? self.options.confirmText
+        : [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.common.confirm"
+                                           defaultValue:@"Confirm"];
     
     [self.cancelButton setTitle:cancelText forState:UIControlStateNormal];
     [self.confirmButton setTitle:confirmText forState:UIControlStateNormal];
@@ -285,12 +300,17 @@
 
 #pragma mark - Helper
 
-- (NSString *)safeButtonText:(NSString *)text defaultText:(NSString *)defaultText {
-    NSString *result = text.length > 0 ? text : defaultText;
-    if (result.length > 4) {
-        result = [result substringToIndex:4];
+- (void)languageDidChange:(NSNotification *)notification {
+    if (self.options.cancelText.length == 0) {
+        NSString *cancelText = [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.common.cancel"
+                                                                defaultValue:@"Cancel"];
+        [self.cancelButton setTitle:cancelText forState:UIControlStateNormal];
     }
-    return result;
+    if (self.options.confirmText.length == 0) {
+        NSString *confirmText = [SUDOPWCKLanguageHelper localizedStringForKey:@"sudop_wck.common.confirm"
+                                                                 defaultValue:@"Confirm"];
+        [self.confirmButton setTitle:confirmText forState:UIControlStateNormal];
+    }
 }
 
 - (UIColor *)colorFromHexString:(NSString *)hexString defaultColor:(UIColor *)defaultColor {
@@ -368,6 +388,5 @@
 }
 
 @end
-
 
 

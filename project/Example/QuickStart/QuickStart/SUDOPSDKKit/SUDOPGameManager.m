@@ -51,10 +51,11 @@ typedef NS_ENUM(NSInteger, SUDOPGameStartType) {
 
 - (void)startGameWithIdentifier:(NSString *)identifier
                            type:(SUDOPGameStartType)type
+                       language:(nullable NSString *)language
                          config:(SUDOPGameConfig *)config
                        gameView:(UIView *)gameView
                      completion:(nullable SUDOPGameStartCompletion)completion {
-    
+    NSString *requestedLanguage = [language isKindOfClass:[NSString class]] ? [language copy] : nil;
     dispatch_async(dispatch_get_main_queue(), ^{
         
         NSError *validateError = [self validateGameView:gameView
@@ -112,6 +113,7 @@ typedef NS_ENUM(NSInteger, SUDOPGameStartType) {
                         case SUDOPGameManagerStartTypeGameId: {
                             session = [[SUDOPGameSession alloc] initWithGameView:gameView
                                                                           gameId:identifier
+                                                                        language:requestedLanguage
                                                                           config:config];
                         } break;
                             
@@ -150,9 +152,17 @@ typedef NS_ENUM(NSInteger, SUDOPGameStartType) {
                      config:(SUDOPGameConfig *)config
                    gameView:(UIView *)gameView
                  completion:(nullable SUDOPGameStartCompletion)completion {
-    
+    [self startGameWithGameId:gameId language:nil config:config gameView:gameView completion:completion];
+}
+
+- (void)startGameWithGameId:(NSString *)gameId
+                   language:(nullable NSString *)language
+                     config:(SUDOPGameConfig *)config
+                   gameView:(UIView *)gameView
+                 completion:(nullable SUDOPGameStartCompletion)completion {
     [self startGameWithIdentifier:gameId
                              type:SUDOPGameManagerStartTypeGameId
+                         language:language
                            config:config
                          gameView:gameView
                        completion:completion];
@@ -165,6 +175,7 @@ typedef NS_ENUM(NSInteger, SUDOPGameStartType) {
     
     [self startGameWithIdentifier:gameSignature
                              type:SUDOPGameManagerStartTypeGameSignature
+                         language:nil
                            config:config
                          gameView:gameView
                        completion:completion];
@@ -217,7 +228,8 @@ typedef NS_ENUM(NSInteger, SUDOPGameStartType) {
     SUDOPSDKConfiguration *configuration = [[SUDOPSDKConfiguration alloc] init];
     configuration.appId = config.appId;
     configuration.appKey = config.appKey;
-  
+    configuration.privacyConfig = config.privacyConfig;
+
     [SUDOP initializeWithConfiguration:configuration completion:^(NSError * _Nullable error) {
         if (!error) {
             self.sdkInitialized = YES;
@@ -321,4 +333,3 @@ typedef NS_ENUM(NSInteger, SUDOPGameStartType) {
 }
 
 @end
-

@@ -1,0 +1,6 @@
+framework module SUDReport {
+  umbrella header "SUDReport-umbrella.h"
+
+  export *
+  module * { export * }
+}

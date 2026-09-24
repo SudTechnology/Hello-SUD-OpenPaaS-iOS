@@ -11,20 +11,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SUDOPWCKPermissionHelper : NSObject
 
-/// 相册保存权限
+/// Requests permission to add items to the photo library.
 + (void)requestPhotoAddPermission:(void(^)(BOOL granted))completion;
 
-/// 相机权限
+/// Requests camera access.
 + (void)requestCameraPermission:(void(^)(BOOL granted))completion;
 
-/// 录音权限
+/// Requests microphone access.
 + (void)requestMicrophonePermission:(void(^)(BOOL granted))completion;
 
-/// 位置权限（前台使用）
+/// Requests location access while the app is in use.
 + (void)requestLocationPermission:(void(^)(BOOL granted))completion;
 
 @end
 
 NS_ASSUME_NONNULL_END
-
 

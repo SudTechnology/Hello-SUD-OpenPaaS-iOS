@@ -11,12 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SUDOPWCKActionSheet : NSObject
 
-/// 展示 ActionSheet
-/// @param viewController 当前控制器
-/// @param alertText 顶部提示文本
-/// @param itemList 选项数组
-/// @param itemColor 选项文字颜色，默认黑色 #000000
-/// @param completion 点击选项返回索引，取消返回 -1
+/// Presents an action sheet.
+/// @param viewController The presenting view controller.
+/// @param alertText The message displayed above the options.
+/// @param itemList The option titles.
+/// @param itemColor The option text color. The default is black (#000000).
+/// @param completion Returns the selected option index, or -1 when cancelled.
 + (void)showInViewController:(UIViewController *)viewController
                    alertText:(nullable NSString *)alertText
                     itemList:(NSArray<NSString *> *)itemList

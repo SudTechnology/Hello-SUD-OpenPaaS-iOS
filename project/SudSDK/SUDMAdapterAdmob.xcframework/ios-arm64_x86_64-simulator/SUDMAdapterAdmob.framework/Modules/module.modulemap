@@ -1,0 +1,6 @@
+framework module SUDMAdapterAdmob {
+  umbrella header "SUDMAdapterAdmob-umbrella.h"
+
+  export *
+  module * { export * }
+}

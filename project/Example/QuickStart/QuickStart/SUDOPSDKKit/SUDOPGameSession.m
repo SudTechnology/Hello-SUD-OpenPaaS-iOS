@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, SUDOPGameSessionErrorCode) {
 
 @property (nonatomic, copy, readwrite) NSString *sessionId;
 @property (nonatomic, copy, readwrite) NSString *gameId;
+@property (nonatomic, copy, nullable) NSString *language;
 @property (nonatomic, copy, readwrite) NSString *gameSignature;
 @property (nonatomic, strong, readwrite) SUDOPGameConfig *config;
 @property (nonatomic, weak, readwrite) UIView *gameView;
@@ -46,11 +47,19 @@ typedef NS_ENUM(NSInteger, SUDOPGameSessionErrorCode) {
 - (instancetype)initWithGameView:(UIView *)gameView
                           gameId:(NSString *)gameId
                           config:(SUDOPGameConfig *)config {
+    return [self initWithGameView:gameView gameId:gameId language:nil config:config];
+}
+
+- (instancetype)initWithGameView:(UIView *)gameView
+                          gameId:(NSString *)gameId
+                        language:(nullable NSString *)language
+                          config:(SUDOPGameConfig *)config {
     self = [super init];
     if (self) {
         _sessionId = [[NSUUID UUID] UUIDString];
         _gameView = gameView;
         _gameId = [gameId copy];
+        _language = [language isKindOfClass:[NSString class]] ? [language copy] : nil;
         _config = config;
         _state = SUDOPGameSessionStateIdle;
         _startSequence = 0;
@@ -190,33 +199,42 @@ typedef NS_ENUM(NSInteger, SUDOPGameSessionErrorCode) {
         };
         
         SUDOPDidGameHandleCreatedBlock didGameHandleCreated = ^(id<SUDRTGameHandle>  _Nonnull gameHandle, SUDOPGameInfo *_Nonnull gameInfo) {
+
+            __strong typeof(weakSelf) self = weakSelf;
+            if (!self) {
+                [gameHandle destroy];
+                return;
+            }
             
-            dispatch_async(dispatch_get_main_queue(), ^{
-                __strong typeof(weakSelf) self = weakSelf;
-                if (!self) {
-                    [gameHandle destroy];
-                    return;
-                }
+            if (self.startSequence != currentStartSequence) {
+                [gameHandle destroy];
+                return;
+            }
+            
+            if (self.state == SUDOPGameSessionStateDestroyed ||
+                self.state == SUDOPGameSessionStateFailed) {
+                [gameHandle destroy];
+                return;
+            }
+            
+            self.gameHandle = gameHandle;
+            
+            // Bind the wrappedClientHandler after the gameHandle is created.
+            [self bindWrappedClientIfNeeded];
+            if (self.config.gameDeviceOrientationUpdated) {
+                self.config.gameDeviceOrientationUpdated(gameInfo);
+            }
+            if (self.config.extendClientBlock) {
                 
-                if (self.startSequence != currentStartSequence) {
-                    [gameHandle destroy];
-                    return;
+                NSDictionary *dicClient = self.config.extendClientBlock();
+                if (dicClient && [dicClient isKindOfClass:NSDictionary.class]) {
+                    NSArray *keys = dicClient.allKeys;
+                    for (NSString *key in keys) {
+                        id obj = dicClient[key];
+                        [gameHandle registerExtendedClient:key client:obj];
+                    }
                 }
-                
-                if (self.state == SUDOPGameSessionStateDestroyed ||
-                    self.state == SUDOPGameSessionStateFailed) {
-                    [gameHandle destroy];
-                    return;
-                }
-                
-                self.gameHandle = gameHandle;
-                
-                // Bind the wrappedClientHandler after the gameHandle is created.
-                [self bindWrappedClientIfNeeded];
-                if (self.config.gameDeviceOrientationUpdated) {
-                    self.config.gameDeviceOrientationUpdated(gameInfo);
-                }
-            });
+            }
         };
         
         void (^progressBlock)(NSInteger progress) = ^(NSInteger progress) {
@@ -283,6 +301,7 @@ typedef NS_ENUM(NSInteger, SUDOPGameSessionErrorCode) {
                                completion:completionBlock];
         } else {
             self.gameTask = [SUDOP startGame:self.gameId
+                    language:self.language
           didGameViewCreated:didGameViewCreated
         didGameHandleCreated:didGameHandleCreated
                     progress:progressBlock

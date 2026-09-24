@@ -1,0 +1,16 @@
+"sudop_wck.error.no_top_view_controller" = "Tidak dapat menemukan pengontrol tampilan yang tersedia.";
+"sudop_wck.error.invalid_source_types" = "Sumber gambar kosong atau tidak valid.";
+"sudop_wck.error.cannot_present_controller" = "Tidak dapat membuka pemilih gambar.";
+"sudop_wck.error.user_cancelled" = "Pengguna membatalkan operasi.";
+"sudop_wck.error.camera_permission_denied" = "Akses kamera ditolak.";
+"sudop_wck.error.camera_unavailable" = "Kamera tidak tersedia di perangkat ini.";
+"sudop_wck.error.photo_permission_denied" = "Akses foto ditolak.";
+"sudop_wck.error.photo_unavailable" = "Foto tidak tersedia di perangkat ini.";
+"sudop_wck.error.load_image_failed" = "Gagal memuat gambar.";
+"sudop_wck.error.no_valid_images" = "Tidak ditemukan gambar yang valid.";
+"sudop_wck.error.get_image_failed" = "Gagal mengambil gambar.";
+"sudop_wck.error.image_nil" = "Gambar kosong.";
+"sudop_wck.error.generate_image_data_failed" = "Gagal membuat data gambar.";
+"sudop_wck.error.temp_directory_missing" = "Direktori sementara tidak ditemukan.";
+"sudop_wck.error.file_path_empty" = "Jalur file kosong.";
+"sudop_wck.error.unknown" = "Kesalahan tidak diketahui.";

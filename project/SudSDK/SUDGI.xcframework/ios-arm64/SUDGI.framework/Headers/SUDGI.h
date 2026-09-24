@@ -2,7 +2,7 @@
 #import <UIKit/UIKit.h>
 #import "ISUDListener.h"
 #import "ISUDCfg.h"
-#import "ISUDLogger.h"
+//#import "ISUDLogger.h"
 #import "SUDInitSDKParamModel.h"
 #import "SUDLoadMGParamModel.h"
 #import "SUDNetworkCheckParamModel.h"
@@ -91,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 设置日志等级
  * @param logLevel 输出log的等级,SudLogVERBOSE,SudLogDEBUG,SudLogINFO 见ISUDLogger.h
  */
-+ (void)setLogLevel:(SudLogType)logLevel;
++ (void)setLogLevel:(NSInteger)logLevel;
 
 /// 获取SDK本地日志存储路径
 + (NSString *_Nonnull)getLogDirPath;

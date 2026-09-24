@@ -18,13 +18,12 @@
 #import "SUDOPShowToastOptions.h"
 #import "SUDOPHideToastOptions.h"
 #import "SUDOPShowActionSheetOptions.h"
-#import "SUDOPGameBannerAd.h"
-#import "SUDOPGamePortalAd.h"
-#import "SUDOPGameDrawerAd.h"
 #import "SUDOPRewardVideoAd.h"
+#import "SUDOPSplashAd.h"
 #import "SUDOPShowModalOptions.h"
 #import "SUDOPPreviewImageOptions.h"
 #import "SUDOPMenuButtonBoundingClientRect.h"
+#import "SUDOPVideo.h"
 NS_ASSUME_NONNULL_BEGIN
 
 
@@ -61,48 +60,6 @@ NS_ASSUME_NONNULL_BEGIN
  * @param dataJson A JSON string specifying the requested profile attributes.
  */
 - (void)onGetUserProfile:(id<SUDOPStateHandle>)stateHandle dataJson:(NSString*)dataJson;
-
-/**
- Creates and initializes a banner ad.
- @param bannerAd The banner ad object to be created.
- */
-- (void)createBannerAd:(SUDOPBannerAd *)bannerAd;
-
-/**
- Creates and initializes a custom ad.
- @param customAd The custom ad object to be created.
- */
-- (void)createCustomAd:(SUDOPCustomAd *)customAd;
-
-/**
- Creates and initializes an interstitial ad.
- @param interstitialAd The interstitial ad object to be created.
- */
-- (void)createInterstitialAd:(SUDOPInterstitialAd *)interstitialAd;
-
-/**
- Creates and initializes a game banner ad.
- @param gameBannerAd The game banner ad object to be created.
- */
-- (void)createGameBannerAd:(SUDOPGameBannerAd *)gameBannerAd;
-
-/**
- Creates and initializes a game portal ad.
- @param gamePortalAd The game portal ad object to be created.
- */
-- (void)createGamePortalAd:(SUDOPGamePortalAd *)gamePortalAd;
-
-/**
- Creates and initializes a game drawer ad.
- @param gameDrawerAd The game drawer ad object to be created.
- */
-- (void)createGameDrawerAd:(SUDOPGameDrawerAd *)gameDrawerAd;
-
-/**
- Creates and initializes a rewarded video ad.
- @param rewardVideoAd The rewarded video ad object to be created.
- */
-- (void)createRewardedVideoAd:(SUDOPRewardVideoAd *)rewardVideoAd;
 
 /**
  Requests a payment with the specified state handle and options.
@@ -186,6 +143,8 @@ NS_ASSUME_NONNULL_BEGIN
          The dictionary typically includes keys such as x, y, width, height, top, right, bottom, left.
  */
 - (nonnull SUDOPMenuButtonBoundingClientRect *)getMenuButtonBoundingClientRect;
+
+- (void)createVideo:(SUDOPVideo *)video;
 @end
 
 NS_ASSUME_NONNULL_END

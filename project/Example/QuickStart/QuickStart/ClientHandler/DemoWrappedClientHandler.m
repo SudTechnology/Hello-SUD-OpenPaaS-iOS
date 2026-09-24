@@ -9,81 +9,21 @@
 
 #import "Common.h"
 #import "SheetViewController.h"
-#import "SUDDemoInterstitialAdView.h"
-#import "BannerAdHandler.h"
-#import "CustomAdHandler.h"
-#import "InterstitialAdHandler.h"
-#import "GameBannerAdHandler.h"
-#import "GamePortalAdHandler.h"
-#import "GameDrawerAdHandler.h"
-#import "RewardVideoAdHandler.h"
+//#import "SUDDemoInterstitialAdView.h"
+//#import "BannerAdHandler.h"
+//#import "CustomAdHandler.h"
+//#import "InterstitialAdHandler.h"
+//#import "GameBannerAdHandler.h"
+//#import "GamePortalAdHandler.h"
+//#import "GameDrawerAdHandler.h"
+//#import "RewardVideoAdHandler.h"
 
 @interface DemoWrappedClientHandler()
 
-@property(nonatomic, strong)SUDOPInterstitialAd *interstitialAd;
-
-@property(nonatomic, strong)SUDDemoInterstitialAdView *interstitialAdView;
-
-@property(nonatomic, strong)BannerAdHandler *bannerAdHandler;
-@property(nonatomic, strong)CustomAdHandler *customAdHandler;
-@property(nonatomic, strong)InterstitialAdHandler *interstitialAdHandler;
-@property(nonatomic, strong)GameBannerAdHandler *gameBannerAdHandler;
-@property(nonatomic, strong)GamePortalAdHandler *gamePortalAdHandler;
-@property(nonatomic, strong)GameDrawerAdHandler *gameDrawerAdHandler;
-@property(nonatomic, strong)RewardVideoAdHandler *rewardVideoAdHandler;
 
 @end
 
 @implementation DemoWrappedClientHandler
-
-- (BannerAdHandler *)bannerAdHandler {
-    if (!_bannerAdHandler) {
-        _bannerAdHandler = [[BannerAdHandler alloc]init];
-    }
-    return _bannerAdHandler;
-}
-
-- (CustomAdHandler *)customAdHandler {
-    if (!_customAdHandler) {
-        _customAdHandler = [[CustomAdHandler alloc]init];
-    }
-    return _customAdHandler;
-}
-
-- (InterstitialAdHandler *)interstitialAdHandler {
-    if (!_interstitialAdHandler) {
-        _interstitialAdHandler = [[InterstitialAdHandler alloc]init];
-    }
-    return _interstitialAdHandler;
-}
-
-- (GameBannerAdHandler *)gameBannerAdHandler {
-    if (!_gameBannerAdHandler) {
-        _gameBannerAdHandler = [[GameBannerAdHandler alloc]init];
-    }
-    return _gameBannerAdHandler;
-}
-
-- (GamePortalAdHandler *)gamePortalAdHandler {
-    if (!_gamePortalAdHandler) {
-        _gamePortalAdHandler = [[GamePortalAdHandler alloc]init];
-    }
-    return _gamePortalAdHandler;
-}
-
-- (GameDrawerAdHandler *)gameDrawerAdHandler {
-    if (!_gameDrawerAdHandler) {
-        _gameDrawerAdHandler = [[GameDrawerAdHandler alloc]init];
-    }
-    return _gameDrawerAdHandler;
-}
-
-- (RewardVideoAdHandler *)rewardVideoAdHandler {
-    if (!_rewardVideoAdHandler) {
-        _rewardVideoAdHandler = [[RewardVideoAdHandler alloc]init];
-    }
-    return _rewardVideoAdHandler;
-}
 
 
 - (void)onGetLegacyUserIdentity:(id<SUDOPStateHandle>)stateHandle dataJson:(NSString*)dataJson {
@@ -124,34 +64,6 @@
     }];
 }
 
-
-- (void)createBannerAd:(SUDOPBannerAd *)bannerAd {
-    [self.bannerAdHandler createWithAd:bannerAd viewController:self.viewController];
-}
-
-- (void)createCustomAd:(SUDOPCustomAd *)customAd {
-    [self.customAdHandler createWithAd:customAd viewController:self.viewController];
-}
-
-- (void)createInterstitialAd:(SUDOPInterstitialAd *)interstitialAd {
-    [self.interstitialAdHandler createWithAd:interstitialAd viewController:self.viewController];
-}
-
-- (void)createGameBannerAd:(SUDOPGameBannerAd *)gameBannerAd {
-    [self.gameBannerAdHandler createBoxBannerAdWithAd:gameBannerAd viewController:self.viewController];
-}
-
-- (void)createGamePortalAd:(SUDOPGamePortalAd *)gamePortalAd {
-    [self.gamePortalAdHandler createBoxPortalAdWithAd:gamePortalAd viewController:self.viewController];
-}
-
-- (void)createGameDrawerAd:(SUDOPGameDrawerAd *)gameDrawerAd {
-    [self.gameDrawerAdHandler createBoxDrawerAdWithAd:gameDrawerAd viewController:self.viewController];
-}
-
-- (void)createRewardedVideoAd:(SUDOPRewardVideoAd *)rewardVideoAd {
-    [self.rewardVideoAdHandler createWithAd:rewardVideoAd viewController:self.viewController];
-}
 
 - (void)requestPayment:(id<SUDOPStateHandle>)stateHandle options:(SUDOPRequestPaymentOptions *)options {
     
@@ -307,9 +219,6 @@
 
 - (void)cleanup {
 
-    [_customAdHandler cleanup];
-    [_bannerAdHandler cleanup];
-    [_interstitialAdHandler cleanup];
 }
 
 - (void)onQueryPermission:(id<SUDRTGameQueryPermissionHandle>)handle permission:(NSString *)permission appId:(NSString *)appId authStatus:(SUDRTPermissionAuthStatus)authStatus {

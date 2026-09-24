@@ -8,13 +8,23 @@
 #import "SUDOPWCKPhotoHelper.h"
 #import <Photos/Photos.h>
 #import "SUDOPWCKCommon.h"
+#import "SUDOPWCKLanguageHelper.h"
+
+static NSString *SUDOPWCKPhotoError(NSString *key, NSString *defaultValue) {
+    return [SUDOPWCKLanguageHelper localizedStringForKey:key
+                                                   table:@"SUDOPWrappedClientKitErrors"
+                                            defaultValue:defaultValue];
+}
+
 @implementation SUDOPWCKPhotoHelper
 
 + (void)saveImageToPhotosAlbum:(UIImage *)image
                     completion:(void(^ _Nullable)(BOOL success, NSError * _Nullable error))completion {
     if (!image) {
         if (completion) {
-            NSError *error = [SUDOPWCKCommon errorWithCode:-1 msg:@"image is nil"];
+            NSError *error = [SUDOPWCKCommon errorWithCode:-1
+                                                       msg:SUDOPWCKPhotoError(@"sudop_wck.error.image_nil",
+                                                                              @"The image is empty.")];
             completion(NO, error);
         }
         return;
@@ -31,7 +41,9 @@
                         [self saveImage:image completion:completion];
                     } else {
                         if (completion) {
-                            NSError *error = [SUDOPWCKCommon errorWithCode:-1 msg:@"photo library permission denied"];
+                            NSError *error = [SUDOPWCKCommon errorWithCode:-1
+                                                                       msg:SUDOPWCKPhotoError(@"sudop_wck.error.photo_permission_denied",
+                                                                                              @"Photos access is denied.")];
                             completion(NO, error);
                         }
                     }
@@ -39,7 +51,9 @@
             }];
         } else {
             if (completion) {
-                NSError *error = [SUDOPWCKCommon errorWithCode:-1 msg:@"photo library permission denied"];
+                NSError *error = [SUDOPWCKCommon errorWithCode:-1
+                                                           msg:SUDOPWCKPhotoError(@"sudop_wck.error.photo_permission_denied",
+                                                                                  @"Photos access is denied.")];
                 completion(NO, error);
             }
         }
@@ -54,7 +68,9 @@
                         [self saveImage:image completion:completion];
                     } else {
                         if (completion) {
-                            NSError *error = [SUDOPWCKCommon errorWithCode:-1 msg:@"photo library permission denied"];
+                            NSError *error = [SUDOPWCKCommon errorWithCode:-1
+                                                                       msg:SUDOPWCKPhotoError(@"sudop_wck.error.photo_permission_denied",
+                                                                                              @"Photos access is denied.")];
                             completion(NO, error);
                         }
                     }
@@ -62,7 +78,9 @@
             }];
         } else {
             if (completion) {
-                NSError *error = [SUDOPWCKCommon errorWithCode:-1 msg:@"photo library permission denied"];
+                NSError *error = [SUDOPWCKCommon errorWithCode:-1
+                                                           msg:SUDOPWCKPhotoError(@"sudop_wck.error.photo_permission_denied",
+                                                                                  @"Photos access is denied.")];
                 completion(NO, error);
             }
         }

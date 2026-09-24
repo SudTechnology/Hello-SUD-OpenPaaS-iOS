@@ -1,0 +1,6 @@
+framework module SUDMAdapterMax {
+  umbrella header "SUDMAdapterMax-umbrella.h"
+
+  export *
+  module * { export * }
+}

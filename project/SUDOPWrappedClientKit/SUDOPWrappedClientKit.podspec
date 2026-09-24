@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'PRODUCT_BUNDLE_IDENTIFIER': 'global.sud.SUDOPWrappedClientKit' }
   
   default_resource_bundle = [
-    'Resource/*.png',
+    'Resource/**/*',
   ]
 
   s.subspec 'SUDOPWrappedClientKit' do |ss|
@@ -57,6 +57,7 @@ Pod::Spec.new do |s|
       # json
       ss.dependency 'MJExtension', '~> 3.4.1'
       ss.dependency 'Masonry'
+      ss.dependency 'SDWebImage'
       ss.dependency 'SUDGI'
     end
 end

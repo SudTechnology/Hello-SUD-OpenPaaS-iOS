@@ -1,0 +1,6 @@
+framework module SUDMAdapterCarty {
+  umbrella header "SUDMAdapterCarty-umbrella.h"
+
+  export *
+  module * { export * }
+}
