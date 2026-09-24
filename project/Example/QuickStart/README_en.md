@@ -27,8 +27,8 @@ The Podfile uses the official CocoaPods GitHub Specs source and published SDK ve
 source 'https://github.com/CocoaPods/Specs.git'
 
 # These declarations belong inside the QuickStart target.
-pod 'SUDGI', '2.1.0'
-pod 'SUDM/admob', '2.1.0'
+pod 'SUDGI', '~> 2.1.0'
+pod 'SUDM/admob', '~> 2.1.0'
 ```
 
 `SUDGI` brings in `SUDCoreKit`. `SUDM/admob` also brings in `SUDCoreKit`, `SUDReport` and the Google Mobile Ads SDK. No separate declarations for the core or reporting components are needed.

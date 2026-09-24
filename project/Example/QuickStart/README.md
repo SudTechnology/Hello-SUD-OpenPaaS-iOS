@@ -27,8 +27,8 @@ open QuickStart.xcworkspace
 source 'https://github.com/CocoaPods/Specs.git'
 
 # 以下声明位于 QuickStart target 内。
-pod 'SUDGI', '2.1.0'
-pod 'SUDM/admob', '2.1.0'
+pod 'SUDGI', '~> 2.1.0'
+pod 'SUDM/admob', '~> 2.1.0'
 ```
 
 `SUDCoreKit` 由 `SUDGI` 自动引入；`SUDM/admob` 还会引入 `SUDCoreKit`、`SUDReport` 和 Google Mobile Ads SDK，无需重复声明基础组件。
