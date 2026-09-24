@@ -16,8 +16,8 @@ target 'QuickStart' do
 #  pod 'SUDGI', :path => '../../'
 #  pod 'SUDM/admob', :path => '../../'
   #远程依赖
-  pod 'SUDGI', '2.1.0'
-  pod 'SUDM/admob', '2.1.0'
+  pod 'SUDGI', '~> 2.1.0'
+  pod 'SUDM/admob', '~> 2.1.0'
   pod 'SUDOPWrappedClientKit', :path => '../../SUDOPWrappedClientKit/'
 end
 
