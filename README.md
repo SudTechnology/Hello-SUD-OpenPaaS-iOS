@@ -19,10 +19,10 @@ platform :ios, '15.0'
 use_frameworks!
 
 target 'YourAppTarget' do
-  pod 'SUDGI', '~> 2.1.0'
+  pod 'SUDGI', '~> 2.2.0'
 
   # Include this subspec when using AdMob advertising.
-  pod 'SUDM/admob', '~> 2.1.0'
+  pod 'SUDM/admob', '~> 2.2.0'
 end
 ```
 
