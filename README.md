@@ -19,14 +19,14 @@ platform :ios, '15.0'
 use_frameworks!
 
 target 'YourAppTarget' do
-  pod 'SUDGI', '~> 2.2.0'
+  pod 'SUDGI', '~> 3.0.0'
 
   # Include this subspec when using AdMob advertising.
-  pod 'SUDM/admob', '~> 2.2.0'
+  pod 'SUDM/admob', '~> 3.0.0'
 end
 ```
 
-`SUDCoreKit` is brought in by `SUDGI`. `SUDM/admob` also brings in `SUDCoreKit`, `SUDReport` and the Google Mobile Ads SDK. You do not need to declare `SUDCoreKit` or `SUDReport` separately.
+`SUDGI` brings in `SUDCoreKit` and `SUDReport`. `SUDM/admob` also brings in the Google Mobile Ads SDK. You do not need to declare the core or reporting components separately.
 
 Then run:
 
@@ -48,9 +48,9 @@ open QuickStart.xcworkspace
 
 Select the `QuickStart` scheme and an iOS 15.0+ simulator or device. For a device build, configure your development team and signing in Xcode.
 
-The sample uses remote `SUDGI` and `SUDM/admob` with the version constraint `~> 2.1.0` (at least `2.1.0` and below `2.2.0`). `SUDOPWrappedClientKit` remains a local dependency at `../../SUDOPWrappedClientKit/` and is included in this repository.
+The sample uses published `SUDGI` and `SUDM/admob` 3.0.x releases. `SUDOPWrappedClientKit` remains a local dependency at `../../SUDOPWrappedClientKit/` and is included in this repository.
 
-To use local SDKs for development, uncomment the four local dependency lines in the sample Podfile and comment out the two remote SDK lines. Do not enable local and remote declarations for the same SDK at the same time. Run `pod install` after switching.
+To use local SDKs for development, place the SDK artifacts in `project/SUDSDK/`, uncomment the four local dependency lines in the sample Podfile and comment out the two remote SDK lines. Do not enable local and remote declarations for the same SDK at the same time. Run `pod install` after switching.
 
 ## Import
 
@@ -68,7 +68,7 @@ For Swift, add the same import to your app's Objective-C bridging header:
 
 ## Troubleshooting
 
-If CocoaPods cannot find `SUDGI (~> 2.1.0)` or another newly published SDK version, check the public Specs source in your Podfile and run `pod install --repo-update`.
+If CocoaPods cannot find `SUDGI (~> 3.0.0)` or another newly published SDK version, check the public Specs source in your Podfile and run `pod install --repo-update`.
 
 If the CocoaPods CDN reports download or HTTP/2 errors, use the official GitHub Specs source shown above. A private Specs repository is not required. The first GitHub Specs checkout may take longer than a CDN update.
 

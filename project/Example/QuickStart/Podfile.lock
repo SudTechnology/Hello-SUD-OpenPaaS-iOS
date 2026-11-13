@@ -22,15 +22,16 @@ PODS:
   - SDWebImage (5.12.2):
     - SDWebImage/Core (= 5.12.2)
   - SDWebImage/Core (5.12.2)
-  - SUDCoreKit (2.1.0.1)
-  - SUDGI (2.1.0.1):
-    - SUDCoreKit (~> 2.1.0.1)
-  - SUDM/admob (2.1.0.1):
+  - SUDCoreKit (3.0.0)
+  - SUDGI (3.0.0):
+    - SUDCoreKit (~> 3.0.0)
+    - SUDReport (~> 3.0.0)
+  - SUDM/admob (3.0.0):
     - Google-Mobile-Ads-SDK (~> 13.7.0)
     - SUDM/base
-  - SUDM/base (2.1.0.1):
-    - SUDCoreKit (~> 2.1.0.1)
-    - SUDReport (= 2.1.0.1)
+  - SUDM/base (3.0.0):
+    - SUDCoreKit (~> 3.0.0)
+    - SUDReport (= 3.0.0)
   - SUDOPWrappedClientKit (1.0.0):
     - SUDOPWrappedClientKit/SUDOPWrappedClientKit (= 1.0.0)
   - SUDOPWrappedClientKit/SUDOPWrappedClientKit (1.0.0):
@@ -38,8 +39,8 @@ PODS:
     - MJExtension (~> 3.4.1)
     - SDWebImage
     - SUDGI
-  - SUDReport (2.1.0.1):
-    - SUDCoreKit (~> 2.1.0.1)
+  - SUDReport (3.0.0):
+    - SUDCoreKit (~> 3.0.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -47,24 +48,23 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - SDWebImage (= 5.12.2)
-  - SUDGI (~> 2.1.0)
-  - SUDM/admob (~> 2.1.0)
+  - SUDGI (~> 3.0.0)
+  - SUDM/admob (~> 3.0.0)
   - SUDOPWrappedClientKit (from `../../SUDOPWrappedClientKit/`)
   - SVProgressHUD (~> 2.2.5)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
     - Google-Mobile-Ads-SDK
     - GoogleUserMessagingPlatform
+    - Masonry
+    - MJExtension
+    - SDWebImage
     - SUDCoreKit
     - SUDGI
     - SUDM
     - SUDReport
-  trunk:
-    - AFNetworking
-    - Masonry
-    - MJExtension
-    - SDWebImage
     - SVProgressHUD
 
 EXTERNAL SOURCES:
@@ -78,13 +78,13 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
-  SUDCoreKit: 18841658736d46674c8abe8d1daa70428407de2a
-  SUDGI: 232be525df3e5a0e7c02c1673304d65f9a69ff37
-  SUDM: 612f22715e18afb5c663582942155213aca2737d
+  SUDCoreKit: 99915b617241e33592e4754acdbd2f51d2677c0d
+  SUDGI: 95823828aa34d47629de1b8bf46f3f9f9607cdbc
+  SUDM: 8bca6cc7efeb74abc62dfa06f55d9e94b4fe78f8
   SUDOPWrappedClientKit: a9da719789675d227016779c055d0e8748fa1ced
-  SUDReport: 7a0314ee31593b11463e4694b52c92a5df5ca2ef
+  SUDReport: a26ecdc7976db6a3a336186df4e46aa57f8ece0f
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: d618fc390791c3668e6cadf09be35ca930b78eba
+PODFILE CHECKSUM: b2ce7c78864a06fd0fdd015404093c7e79758c30
 
-COCOAPODS: 1.16.2
+COCOAPODS: 1.17.0

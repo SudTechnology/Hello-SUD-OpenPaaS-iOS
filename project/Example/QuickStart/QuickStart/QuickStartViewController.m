@@ -35,7 +35,7 @@
 //    self.gameInfo = @{@"gameId": @"2061017615804846082",
 //                      @"version":@"1.0.0"};
     
-    self.gameInfo = @{@"gameId": @"2100859257868963842",
+    self.gameInfo = @{@"gameId": @"2115706023540543490",
                       @"version":@"1.0.0"};
     
     

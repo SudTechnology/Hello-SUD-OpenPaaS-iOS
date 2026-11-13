@@ -27,11 +27,11 @@ open QuickStart.xcworkspace
 source 'https://github.com/CocoaPods/Specs.git'
 
 # 以下声明位于 QuickStart target 内。
-pod 'SUDGI', '~> 2.1.0'
-pod 'SUDM/admob', '~> 2.1.0'
+pod 'SUDGI', '~> 3.0.0'
+pod 'SUDM/admob', '~> 3.0.0'
 ```
 
-`SUDCoreKit` 由 `SUDGI` 自动引入；`SUDM/admob` 还会引入 `SUDCoreKit`、`SUDReport` 和 Google Mobile Ads SDK，无需重复声明基础组件。
+`SUDGI` 自动引入 `SUDCoreKit` 和 `SUDReport`；`SUDM/admob` 还会引入 Google Mobile Ads SDK，无需重复声明基础组件。
 
 `SUDOPWrappedClientKit` 是示例使用的本地包装层，继续保留：
 
@@ -39,7 +39,7 @@ pod 'SUDM/admob', '~> 2.1.0'
 pod 'SUDOPWrappedClientKit', :path => '../../SUDOPWrappedClientKit/'
 ```
 
-需要调试本地 SDK 时，取消 Podfile 中四条本地 SDK 依赖的注释，同时注释两条远程 SDK 依赖，再执行 `pod install`。同一 SDK 的本地和远程声明不要同时启用。
+需要调试本地 SDK 时，先将 SDK 产物放入 `project/SUDSDK/`，取消 Podfile 中四条本地 SDK 依赖的注释，同时注释两条远程 SDK 依赖，再执行 `pod install`。同一 SDK 的本地和远程声明不要同时启用。
 
 完整宿主集成说明见[仓库 README](../../../README.md)。
 
